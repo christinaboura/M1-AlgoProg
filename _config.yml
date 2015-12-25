@@ -1,23 +1,59 @@
 # Settings
-baseurl: /class-boilerplate
+baseurl: /M1-AlgoProg
 permalink: pretty
 
 # About
-title: Class boilerplate
-tagline: A Jekyll template for LMS
+title: "Analyse d'algorithmes et programmation"
+tagline: M1 MINT
 authors:
+  - name: Chrstina Boura
+    url: 'http://christina-boura.info/'
   - name: Luca De Feo
     url: 'http://defeo.lu'
-created: 2014
+created: 2016
 license:
-  name: MIT license
-  shortname: MIT license
-  url: /LICENSE
+  name: Creative Commons 4.0 Attribution-ShareAlike
+  shortname: CC-BY-SA 4.0
+  url: http://creativecommons.org/licenses/by-sa/4.0/
+  badge: http://i.creativecommons.org/l/by-sa/4.0/80x15.png
   
 # Collections
 collections:
   addons:
     output: true
 
+# Default values
+defaults:
+  - scope:
+      path: ''
+    values:
+      addons:
+        mathjax: yes
+        highlightjs: yes
+        about: yes
+
+create:
+  pages: yes
+    
 kramdown:
   parse_block_html: true
+
+prose:
+  ignore:
+    - _addons
+    - _includes
+    - _layouts
+    - .gitignore
+    - _config.yml
+  media: assets
+  metadata:
+    '':
+      - name: 'layout'
+        field:
+          element: 'text'
+          value: 'post'
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Sans titre'
+          
