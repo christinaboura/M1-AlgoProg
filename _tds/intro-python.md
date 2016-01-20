@@ -2,7 +2,7 @@
 title: Introduction à Python
 ---
 
-Python est un joly langage. Allez sur [SageMathCloud](https://cloud.sagemath.com/).
+Python est un très joly langage. Allez sur [SageMathCloud](https://cloud.sagemath.com/).
 
 ## Syntaxe
 
