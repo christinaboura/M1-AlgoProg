@@ -14,7 +14,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 22 janvier
 : Analyse d’algorithmes, modèles de complexité, complexité
   asymptotique, classes de complexité, P vs NP.
-: **TD :** (Re)-introduction à Python
+: **TD :** [(Re)-introduction à Python](tds/intro-python.html)
 
 29 janvier
 : Tableaux, listes, piles, files, Tables de hachage.

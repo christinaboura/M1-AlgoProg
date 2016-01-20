@@ -27,6 +27,10 @@ defaults:
       addons:
         mathjax: yes
         highlightjs: yes
+  - scope:
+      path: 'tds'
+    values:
+      layout: article
 
 # Collections
 collections:
@@ -39,11 +43,14 @@ collections:
     name:
       one: TD
       many: TDs
-    icon: text-o
+    icon: file-text-o
     output: true
+    permalink: /:collection/:path:output_ext
 
 create:
-  pages: yes
+  collections:
+    - key: tds
+      template: Votre Markdown ici
     
 kramdown:
   parse_block_html: true
