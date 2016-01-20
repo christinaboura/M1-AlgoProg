@@ -17,20 +17,30 @@ license:
   url: http://creativecommons.org/licenses/by-sa/4.0/
   badge: http://i.creativecommons.org/l/by-sa/4.0/80x15.png
   
-# Collections
-collections:
-  addons:
-    output: true
-
-# Default values
+# Default configuration for pages.
+# Can be used to activate addons on all pages.
 defaults:
   - scope:
       path: ''
     values:
+      layout: default
       addons:
         mathjax: yes
         highlightjs: yes
-        about: yes
+
+# Collections
+collections:
+  # Leave that addons collection like this
+  # if you want to use addons
+  addons:
+    output: true
+  # Other collections. See Jekyll docs.
+  tds:
+    name:
+      one: TD
+      many: TDs
+    icon: text-o
+    output: true
 
 create:
   pages: yes
@@ -57,3 +67,8 @@ prose:
           element: 'text'
           label: 'Sans titre'
           
+# SASS configuration.
+# Better not touch this
+sass:
+  sass_dir: assets/css
+  style: compressed
