@@ -122,6 +122,52 @@ Le poids du nouveau-né est 3.67 kilos.
 
 **Attention !** Vous devez utilisez pour cet exercice la méthode `math.sqrt()`. Pour utiliser cette méthode il faut d'abord importer le module math, avec l'instruction `import math`.
 
+## Contrôle du flux d'execution 
+
+Dans la plupart des programmes que vous allez écrire vous aurez besoin d'utiliser des instructions qui permettront au programme de suivre des chemins différents selon les circonstances. Pour ceci il est nécessaire de disposer d'instructions capables de *tester une certaine condition* et de modifier le comportement du programme en conséquence.
+
+L'instruction qui est sans doute la plus utile afin de permettre un tel comportement est l'instruction `if`. Son fonctionnement sous Python est très simple. Si la condition à droite du mot-clé `if` est vraie, alors le bloc d'instructions en dessus est executé. 
+
+~~~
+>>> if age > 18 :
+...     print("La personne peut acheter de l'alcool.")
+~~~
+
+#### Indentation
+
+En Python, les instructions composées (comme c'est le cas de l'instruction `if`, mais aussi des instructions `while`, `for` et des *fonctions* que nous verrons plus tard) ont toujours la même structure : une *ligne d'en tête* terminée par un *double point*, suivie d'un bloc d'instructions indenté sous la ligne d'en tête. Tous les instructions de ce bloc **doivent être indentées exactement au même niveau**. Une convention très respectée est d'utiliser un décallage de 4 espaces. 
+
+Avec une telle convention, il est inutile de marquer le début et la fin d’un bloc par des éléments du langage (comme des accolades { et } en C ou Java , ou les mots réservés `begin` et `end` dans certains autres langages).
+
+
+On peut, si on le souhaite ajouter une instruction `else`  pour exécuter un autre bloc si la condition est fausse :
+
+~~~
+>>> if age > 18 :
+...     print("La personne peut acheter de l'alcool.")
+... else :
+...     print("Trop jeune !")
+~~~
+
+Plutôt que d’emboîter des instructions `if`, on peut utiliser une instruction `if` suivie par une ou plusieurs instructions `elif` (raccoursi de *else if*):
+
+~~~ 
+>>> if n == 0 :
+...     print("Le nombre est égal à zéro")
+... elif n > 0 :
+...     print("Le nombre est positif")
+... else :
+...     print("Le nombre est négatif") 
+~~~
+
+**:**{:.exercise}
+
+Déclarez une variable et affectez lui un entier naturel. Testez en utilisant les instructions `if` et `else` si l'entier est pair ou impair et affichez le résultat.
+
+**:**{:.exercise}
+
+Déclarez trois variables `a`, `b` et `c` correspondant aux coefficients de l'équation quadratique $$ax^2 + bx + c = 0$$. Calculer le determinant $$\Delta = b^2 - 4ac$$ de l'équation. Tester en utilisant les instructions `if`, `elif` et `else` la valeur du déterminant et calculer la ou les solutions de l'équation. Si le déterminant est négatif, affichez le message "*L'équation n'a pas de solutions*".
+
 ## Boucles
 
 Très souvent dans nos programmes nous avons besoin de répéter un certain nombre d'instructions plusieurs fois. Python, comme probablement tous les autres langages que vous connaissez, possède dans ce but les instructions `while` et `for`.
