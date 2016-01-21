@@ -4,6 +4,27 @@ title: Introduction à Python
 
 Python est un langage de programmation orienté objet. Sa première version a été écrite par Guido van Rossum qui était un grand fan de Monty Python. Allez sur [SageMathCloud](https://cloud.sagemath.com/).
 
+## Python en mode calculatrice
+
+La plus simple utilisation que vous pouvez faire du Python est de l'utiliser comme une simple calculatrice. Vous pouvez ouvrir un terminal et essayer les calculs suivants :
+
+~~~
+>>> 2+6
+8
+>>> 10 - 12   # Les espaces sont optionnels
+-2
+>>> 13 + 2*4  # La priorité des opération est comme d'habitude
+21
+>>> 21 / 4    # Attention ! En Python 2 cette instruction retourne la partie entière de la division
+5.25          # En Python3 c'est une division flottante, même entre deux entiers
+>>> 21 // 4   # Partie entière de la division
+5
+>>> 21 % 4    # Reste de la division
+1
+>>> 3 ** 4    # Opérateur puissance (3 à la puissance 4)
+81         
+~~~
+
 ## Syntaxe
 
 ~~~
