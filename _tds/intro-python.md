@@ -20,6 +20,41 @@ def syntaxe_devinee_automatiquement(self, *is, **python):
 		print('You cannot fool me')
 ~~~
 
+## Fonctions
+
+Pour créer une fonction en Python, on commence par le mot-clé `def` (définition). Il doit être suivi par le nom de la fonction, la liste des paramètres en parenthèse et un double point '`:`'. Le corps de la fonction commence à la ligne suivante et doit être écrit avec un retrait de quelques espaces.
+
+Voici une fonction qui imprime les `n` premiers termes  de la suite *Fibonacci*.
+
+~~~
+>> def fibonacci(n) :
+...     a, b = 0, 1
+...     for i in range(20) :
+...         print(a, end = ' ')
+...         a, b = b, a + b
+...     print(a)
+... 
+>>> fibonacci(20)
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765
+~~~
+
+On peut bien sûr écrire une fonction qui nous renvoie quelque chose. Ceci se fait avec le mot-clé `return`.
+Voici une fonction qui renvoie la somme des carrés des entiers de 0 à `n`.
+
+~~~
+>>> def sommeCarres(n) :
+...     sum = 0
+...     for i in range(n) :
+...         sum += i**2
+...     return sum
+... 
+>>> sommeCarres(20)
+2470
+>>> 
+~~~
+
+Vous trouverez plus d'informations sur les fonctions en Python ici : [docs.python.org](https://docs.python.org/3.1/tutorial/controlflow.html#)
+
 ## Listes
 
 Les listes sont des structures ordonnées de données. En Python, une liste est définie à l'aide des crochets.
