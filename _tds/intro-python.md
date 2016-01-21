@@ -25,6 +25,50 @@ La plus simple utilisation que vous pouvez faire du Python est de l'utiliser com
 81         
 ~~~
 
+
+## Données et variables
+
+Pour pouvoir accéder aux données qu'un programme manipule on fait usage d'un nombre de variables de différents types. Une variable apparaît dans un langage de programmation sous son *nom de variable*, mais il ne s'agit de rien d'autre qu'une référence désignant l'adresse mémoire où seront stockés les données.
+
+En Python il existe un nombre de règles simples sur les noms de variables qu'il faut respecter :
+
+* Seules les lettres a -> z,  A -> Z, les chiffres 0-9 et le caractère `_` sont autorisés.
+* La casse est significative. Par exemple `vitesse`, `Vitesse` et `VITESSE` désignent des variables différentes.
+
+Une bonne habitude à prendre est d'écrire les noms de variables en minuscules y compris la première lettre. Il s'agit d'une convention qui est largement respectée. N'utilisez les majuscules qu'à l'intérieur du nom afin de faciliter la lisibilité. Par exemple : `matriceDesCoefficients`.
+
+Le signe '`=`' est utilisé afin d'affecter une valeur à une variable. 
+
+~~~
+>>> n = 5
+>>> message = 'Bonjour'
+>>> pi = 3.14
+~~~
+
+En Python, contrairement à d'autres langages de programmation, il n'est pas nécessaire d'écrire des lignes de code spécifiques pour définir le type des variables avant de pouvoir les utiliser. Il suffit d'assigner une valeur à un nom de variable pour que celle-ci soit automatiquement créé avec le type que correspond au mieux à la valeur fournie.
+
+On peut affecter une valeur à **plusieurs variables simultanément**. 
+
+~~~
+>>> x = y = z = 1
+>>> x
+1
+>>> y
+1
+>>> z
+1
+~~~
+
+On peut aussi effectuer des **affectations parallèles**.
+
+~~~
+>>> x, y = 3.5, 7
+>>> x
+3.5
+>>> y
+7
+~~~
+
 ## Syntaxe
 
 ~~~
