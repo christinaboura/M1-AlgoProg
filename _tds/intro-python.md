@@ -20,6 +20,50 @@ def syntaxe_devinee_automatiquement(self, *is, **python):
 		print('You cannot fool me')
 ~~~
 
+## Boucles
+
+Très souvent dans nos programmes nous avons besoin de répéter un certain nombre d'instructions plusieurs fois. Python, comme probablement tous les autres langages que vous connaissez, possède dans ce but les instructions `while` et `for`.
+
+* La boucle `while` permet d'itérer un bloc d'instructions tant qu'une condition reste vraie.  
+
+~~~
+>>> a = 0
+>>> while a < 10 : # N'oubliez pas le double point !
+...     print(a)   # N'oubliez pas l'indentation !
+...     a += 2
+... 
+0
+2
+4
+6
+8
+~~~
+
+Avant d'introduire l'instruction `for` parlons un peu de la fonction `range()`. Cette function peut nous être très utile lorsque on veut itérer sur une suite de nombres. Elle génère des progressions arithmétiques.
+
+~~~
+range(2, 10) # 2, 3, 4, 5, 6, 7, 8, 9
+range(0, 15, 2) # 0, 2, 4, 6, 8, 10, 12, 14
+range(10, -50, -10) # 10, 0, -10, -20, -30, -40
+~~~
+
+
+La boucle `for` est très utile lorsque on veut répéter un bloc d'instructions un nombre des fois connu à l'avance. Si on veut par exemple imprimer tous les nombres de 0 à 5, voici comment on peut le faire à l'aide de l'instruction `for` est de la de la fonction `range`.
+
+~~~
+>>> for i in range(6) : # N'oubliez pas le double point !
+...     print(i)        # N'oubliez pas l'indentation !
+...
+0
+1
+2
+3
+4
+5
+~~~
+
+Comme on va le voir un peu plus tard, la boucle `for` peut être utilisée très facilement pour parcourir les éléments d'une liste.
+
 ## Fonctions
 
 Pour créer une fonction en Python, on commence par le mot-clé `def` (définition). Il doit être suivi par le nom de la fonction, la liste des paramètres en parenthèse et un double point '`:`'. Le corps de la fonction commence à la ligne suivante et doit être écrit avec un retrait de quelques espaces.
