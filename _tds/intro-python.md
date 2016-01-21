@@ -45,7 +45,6 @@ Le signe '`=`' est utilisé afin d'affecter une valeur à une variable.
 >>> pi = 3.14
 ~~~
 
-En Python, contrairement à d'autres langages de programmation, il n'est pas nécessaire d'écrire des lignes de code spécifiques pour définir le type des variables avant de pouvoir les utiliser. Il suffit d'assigner une valeur à un nom de variable pour que celle-ci soit automatiquement créé avec le type que correspond au mieux à la valeur fournie.
 
 On peut affecter une valeur à **plusieurs variables simultanément**. 
 
@@ -69,21 +68,35 @@ On peut aussi effectuer des **affectations parallèles**.
 7
 ~~~
 
-## Syntaxe
+En Python, contrairement à d'autres langages de programmation, il n'est pas nécessaire d'écrire des lignes de code spécifiques pour définir le type des variables avant de pouvoir les utiliser. Il suffit d'assigner une valeur à un nom de variable pour que celle-ci soit automatiquement créé avec le type que correspond au mieux à la valeur fournie. On dit alors que Python est un langage à **typage dynamique**, contrairement aux langages au **typage statique** comme c'est la cas des langages C ou Java. De plus, les variables peuvent changer le type au gré des
+affectations. On peut vérifier ceci avec l'opérateur `type`.
 
 ~~~
-a = 1 + 1
-print(a)
+>>> x = 3
+>>> type(x)
+<class 'int'>
+>>> x = 3.5
+>>> type(x)
+<class 'float'>
+>>> x = 'message'
+>>> type(x)
+<class 'str'>
 ~~~
-{:.python}
 
-Attention à la différence entre `print a` (Python 2) et `print(a)` (Python 3).
+
+* **La fonction** `print()` Pour afficher une valeur à l'écran, il existe deux possibilités. Soit, on entre au clavier le nom de la variable et ensuite *<Enter>* (comme on a fait jusqu'à ici), soit on peut utiliser la fonction `print()`. 
 
 ~~~
-def syntaxe_devinee_automatiquement(self, *is, **python):
-	for i in range(10):
-		print('You cannot fool me')
+>>> n = 3.5
+>>> print(n)
+3.5
+>>> msg = 'Ça va ?'
+>>> print(msg)
+Ça va ?
 ~~~
+
+**Attention** cependant à la différence entre `print a` (Python 2) et `print(a)` (Python 3).
+
 
 ## Boucles
 
