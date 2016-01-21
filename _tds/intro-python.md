@@ -2,7 +2,7 @@
 title: Introduction à Python
 ---
 
-Python est un très joli langage. Allez sur [SageMathCloud](https://cloud.sagemath.com/).
+Python est un langage de programmation orienté objet. Sa première version a été écrite par Guido van Rossum qui était un grand fan de Monty Python. Allez sur [SageMathCloud](https://cloud.sagemath.com/).
 
 ## Syntaxe
 
@@ -19,6 +19,130 @@ def syntaxe_devinee_automatiquement(self, *is, **python):
 	for i in range(10):
 		print('You cannot fool me')
 ~~~
+
+## Listes
+
+Les listes sont des structures ordonnées de données. En Python, une liste est définie à l'aide des crochets.
+
+~~~
+nombres = [2,5,13,-35,0]
+fromages = ['roquefort', 'camembert', 'saint-nectaire', 'comté']
+~~~
+
+On peut accéder aux données d'une liste à l'aide de leur indice associée.
+
+~~~
+>>> print(nombres[2])
+13
+>>> print(fromages[0])
+roquefort
+>>> print(fromages[-1])
+comté
+>>> print(nombres[0:3])
+[2, 5, 13]
+~~~
+
+On peut accéder à la taille d'une liste à l'aide de la fonction `len()`. Elle renvoie le nombre d'éléments présents dans la liste.
+
+~~~ 
+>>> len(nombres)
+5
+>>> len(fromages)
+4
+~~~
+
+Il existe plusieurs manières de créer une liste. Voici quelques unes :
+
+* Liste vide
+
+~~~ 
+>>> liste = []
+~~~
+
+* On peut créer une liste vide en lui indiquant directement à la création les éléments qu'elle doit contenir. Vous pouvez remarquer qu'une liste peut contenir d'éléments ayant des types variés.
+
+~~~ 
+>>> liste = ['ac/dc', 42, 3.14]
+~~~
+
+* Liste contenant tous les nombres entiers de 0 à 19.
+
+~~~ 
+>>> liste = [i for i in range(20)]
+>>> print(liste)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+~~~
+
+* Liste contenant le carré de tous les entiers de 0 à 9.
+
+~~~ 
+>>> liste = [i ** 2 for i in range(10)]
+>>> print(liste)
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+~~~
+
+On peut parcourir une liste à l'aide d'une boucle `for`,
+
+~~~ 
+>>> nombres = [9, 13, -2, 25, 31, 7, 4]
+>>> sum = 0
+>>> for i in nombres :
+...     sum += i
+>>> print(sum)
+87
+~~~
+
+où à l'aide d'une boucle `while`.
+
+~~~
+>>> i = 0
+>>> sum = 0
+>>> while i < len(nombres) :
+...     sum += i
+...     i += 3
+>>> print(sum)
+9
+~~~
+
+On peut tester si un élément est dans la liste à l'aide de l'instruction `in`.
+
+~~~ 
+>>> print(-2 in nombres) 
+True
+>>> print(8 in nombres) 
+False
+~~~
+
+Les listes sont des objets, comme de toute façon à peu près tout en Python. Il existe plusieurs méthodes déjà prêts pour la classe `list` de Python, qu'on peut utiliser pour nos listes. Pour utiliser une méthode sur une liste, on écrit le nom de la liste, suivi d'un '`.`', suivi du nom de la méthode. 
+
+Voici quelques méthodes utiles qui peuvent vous  être utiles.
+
+* La méthode `append(x)` qui permet d'ajouter un élément `x` à la fin d'une liste.
+
+~~~
+>>> liste = [0, 3, 1, 5.0, 6, 4.3]
+>>> liste.append(7)
+>>> print(liste)
+[0, 3, 1, 5.0, 6, 4.3, 7]
+~~~
+
+* La méthode `insert(index,x)`qui insère l'élément `x` à la position `index` de la liste.
+
+~~~
+>>> liste.insert(3, 13.2)
+>>> liste
+[0, 3, 1, 13.2, 5.0, 6, 4.3, 7]
+~~~
+
+* La méthode `remove(x)` qui supprime de la liste le premier élément `x`retrouvé.
+
+~~~
+>>> liste.insert(3, 13.2)
+>>> liste
+[0, 3, 1, 13.2, 5.0, 6, 4.3, 7]
+~~~
+
+Cette liste des méthodes est loin d'être exhaustive. Vous pouvez trouver plus d'informations sur la page [docs.python.org](https://docs.python.org/3.1/tutorial/datastructures.html).
 
 # Exercices
 
@@ -40,7 +164,7 @@ La recherche dichotomique est un algorithme très simple et efficace pour recher
 
 Imaginez par exemple que nous souhaitons retrouver le numéro de téléphone d'une personne dans un annuaire qui est trié par ordre alphabétique. La recherche séquentielle, ç.-à-d. parcourir l'annuaire du début en comparant tous les noms avec celui dont on cherche le numéro de téléphone peut être très longue (surtout si le nom recherché se trouve à la fin de l'annuaire). Une approche bien plus efficace est d'ouvrir l'annuaire au milieu et commencer par regarder si le nom se trouve à cette page. Si ce n'est pas le cas, et si le nom dont on cherche se trouve plus loin, alors on recommence la recherche avec la deuxième moitié de l'annuaire. Si le nom se trouve avant, alors on recommence avec la première moitié. 
 
-On peut voir qu'avec cette approche, on réduit à chaque étape la taille de l'annuaire à parcourir à la moitié. Cet algorithme fait partie alors des algorithms dits *diviser pour regner* et a une compléxité *logarithmique* en la taille de la liste.
+On peut voir qu'avec cette approche, on réduit à chaque étape la taille de l'annuaire à parcourir à la moitié. Cet algorithme fait partie alors des algorithms dits *diviser pour régner* et a une complexité *logarithmique* en la taille de la liste.
 
 Pour cet exercice, on suppose que l'utilisateur possède une liste croissante des nombres et on lui fourni un nombre qu'on suppose être dans la liste. Le but est de retourner l'indice du nombre recherche dans la liste.
 
