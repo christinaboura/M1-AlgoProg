@@ -25,6 +25,11 @@ La plus simple utilisation que vous pouvez faire du Python est de l'utiliser com
 81         
 ~~~
 
+#### (Puissance)
+{:.exercise}
+
+Calculer $$13^{13}$$.
+
 
 ## Données et variables
 

@@ -31,6 +31,8 @@ defaults:
       path: 'tds'
     values:
       layout: article
+      addons:
+        style_goodies: yes
 
 # Collections
 collections:
