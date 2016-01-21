@@ -2,7 +2,11 @@
 title: Introduction à Python
 ---
 
-Python est un langage de programmation orienté objet. Sa première version a été écrite par Guido van Rossum qui était un grand fan de Monty Python. Allez sur [SageMathCloud](https://cloud.sagemath.com/).
+Python est un langage de programmation orienté objet (mais oublions le côté objet pour l'instant). Sa première version a été écrite par Guido van Rossum qui était un grand fan de Monty Python. Ici, nous allons utilisez la version 3 du langage qui rapporte beaucoup de modifications par rapport aux versions précédentes. 
+
+Ce mini-tutoriel est une introduction très basique et rapide au syntaxe et aux règles du langage. Si vous voulez approfondir plus, plein de tutoriaux bien faits existent sur le net, n'hésitez pas à les consulter.
+
+Pendant ces TP nous allons travailler avez l'environemment [SageMathCloud](https://cloud.sagemath.com/). Commencez en vous y créant un compte. La première partie de ce tutorielle va se faire en *mode terminal*. Pour ceci, cliquez sur `New` pour créer un nouveau projet, et ensuite sur `New`pour créer un nouveau terminal. Vous êtes prêts maintenant pour commencer ! 
 
 ## Python en mode calculatrice
 
@@ -212,6 +216,19 @@ La boucle `for` est très utile lorsque on veut répéter un bloc d'instructions
 
 Comme on va le voir un peu plus tard, la boucle `for` peut être utilisée très facilement pour parcourir les éléments d'une liste.
 
+**:**{:.exercise} 
+
+Initialisez deux entiers : `a = 0` et `b = 15`.
+Écrivez une boucle qui affiche et incrémente la valeur de `a` tant qu’elle reste inférieure
+à celle de `b`.
+
+Écrivez ensuite une autre boucle qui décrémente la valeur de `b` et affiche sa valeur seulement si elle est
+impaire. Itérez tant que `b` est supérieur à 0.
+
+**:**{:.exercise}
+
+Affichez la somme des cubes de tous les multiples de 3 compris entre 0 et 99 inclus. Itulisez pour cela l'instruction `for` et la fonction `range()`.
+
 ## Fonctions
 
 Pour créer une fonction en Python, on commence par le mot-clé `def` (définition). Il doit être suivi par le nom de la fonction, la liste des paramètres en parenthèse et un double point '`:`'. Le corps de la fonction commence à la ligne suivante et doit être écrit avec un retrait de quelques espaces.
@@ -246,6 +263,18 @@ Voici une fonction qui renvoie la somme des carrés des entiers de 0 à `n`.
 ~~~
 
 Vous trouverez plus d'informations sur les fonctions en Python ici : [docs.python.org](https://docs.python.org/3.1/tutorial/controlflow.html#)
+
+**:**{:.exercise}
+
+Écrivez une fonction `tableDeMultiplication(base, fin)` qui prend en paramètre un entier `base` et un entier `fin`
+et affiche à l'écran les `fin` premiers éléments de la  table de multiplication de l'entier `base`.
+
+Par exemple :
+
+~~~
+>>> tableDeMultiplication(3, 10)
+0 3 6 9 12 15 18 21 24 27
+~~~
 
 ## Listes
 
@@ -371,7 +400,39 @@ Voici quelques méthodes utiles qui peuvent vous  être utiles.
 
 Cette liste des méthodes est loin d'être exhaustive. Vous pouvez trouver plus d'informations sur la page [docs.python.org](https://docs.python.org/3.1/tutorial/datastructures.html).
 
+**:**{:.exercise}
+
+Définissez la liste `liste = [34, 0, -17, 5, 18, 9]`, puis effectuez les actions suivantes :
+
+- Triez et affichez la liste.
+
+- Ajoutez l’élément 15 à la liste et affichez la liste.
+
+- Renversez et affichez la liste.
+
+- Affichez l’indice de l’élément -17.
+
+- Enlevez l’élément 5 et affichez la liste.
+
+- Affichez la sous-liste du $$2^e$$ au $$3^e$$ élément.
+
+- Affichez la sous-liste du début au $$4^e$$ élément.
+
+- Affichez la sous-liste du $$3^e$$ élément à la fin de la liste.
+
+- Affichez l'avant dernier élément en utilisant un indiçage négatif.
+
+**:**{:.exercise}
+
+Modifier la fonction `fibonacci(n)` de la Section 5 afin qu'elle renvoie une liste avec les `n` termes de la suite Fibonacci.
+
 # Exercices
+
+Vous êtes prêts maintenant à écrire par vous mêmes des programmes un peu plus longs et compliqués. Le mode terminal que nous avons utilisé jusqu'ici n'est plus très adapté. Pour cette raison vous allez utiliser des *scripts* pour écrire, sauvegarder et modifier vos programmes. Pour écrire un script il suffit dans votre compte [SageMathCloud](https://cloud.sagemath.com/) de cliquer sur `New` et créer un fichier dont le nom se termine par `.py` afin d'indiquer qu'il s'agit bien d'un script Python. Vous pouvez ensuite l'éxecuter sur un terminal en écrivant
+
+~~~
+python3 monPremierScript.py
+~~~
 
 ## Crible d'Ératosthène
 
