@@ -67,8 +67,9 @@ T.H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. *Algorithmique*.
 : Trad. X. Cazin, G.-L. Kocher. Dunod 2010. ISBN:
 978-2-10-054526-1. Côte BU: 005.1 COR.
 
-Un livre sur Python?
-: 
+G. Swinnen. *Apprendre à programmer avec Python 3*.
+: Eyrolles 2009-2010. ISBN:
+978-2-212-12708-9. Côte BU: 005.13pyt SWI.
 
 C. H. Papadimitriou. *Computational complexity*.
 : Addison-Wesley, 1994. 523 pages.

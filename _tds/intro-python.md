@@ -25,19 +25,25 @@ La plus simple utilisation que vous pouvez faire du Python est de l'utiliser com
 81         
 ~~~
 
-#### (Puissance)
-{:.exercise}
+**:**{:.exercise}
 
-Calculer $$13^{13}$$.
+Calculer :
+
+
+- $$5 \cdot (1293 - 390)$$,
+
+- La partie entière ainsi que le reste de la division de 1234 par 7.
+
+- $$13^{13}$$.
 
 
 ## Données et variables
 
-Pour pouvoir accéder aux données qu'un programme manipule on fait usage d'un nombre de variables de différents types. Une variable apparaît dans un langage de programmation sous son *nom de variable*, mais il ne s'agit de rien d'autre qu'une référence désignant l'adresse mémoire où seront stockés les données.
+Pour pouvoir accéder aux données qu'un programme manipule on fait usage d'un nombre de **variables** de différents types. Une variable apparaît dans un langage de programmation sous son *nom de variable*, mais il ne s'agit de rien d'autre qu'une référence désignant l'adresse mémoire où sont stockés les données.
 
 En Python il existe un nombre de règles simples sur les noms de variables qu'il faut respecter :
 
-* Seules les lettres a -> z,  A -> Z, les chiffres 0-9 et le caractère `_` sont autorisés.
+* Seules les lettres a -> z,  A -> Z, les chiffres 0-9 et le caractère '`_`' sont autorisés.
 * La casse est significative. Par exemple `vitesse`, `Vitesse` et `VITESSE` désignent des variables différentes.
 
 Une bonne habitude à prendre est d'écrire les noms de variables en minuscules y compris la première lettre. Il s'agit d'une convention qui est largement respectée. N'utilisez les majuscules qu'à l'intérieur du nom afin de faciliter la lisibilité. Par exemple : `matriceDesCoefficients`.
@@ -89,7 +95,7 @@ affectations. On peut vérifier ceci avec l'opérateur `type`.
 ~~~
 
 
-* **La fonction** `print()` Pour afficher une valeur à l'écran, il existe deux possibilités. Soit, on entre au clavier le nom de la variable et ensuite *<Enter>* (comme on a fait jusqu'à ici), soit on peut utiliser la fonction `print()`. 
+* **Fonction** `print()`. Pour afficher une valeur à l'écran, il existe deux possibilités. Soit, on entre au clavier le nom de la variable et ensuite on appyue sur *Enter* (comme on a fait jusqu'à ici), soit on peut utiliser la fonction `print()`. 
 
 ~~~
 >>> n = 3.5
@@ -102,6 +108,19 @@ affectations. On peut vérifier ceci avec l'opérateur `type`.
 
 **Attention** cependant à la différence entre `print a` (Python 2) et `print(a)` (Python 3).
 
+On peut combiner texte et variables dans une même fonction `print()`.
+
+~~~
+>>> poids = 3.67
+>>> print("Le poids du nouveau-né est", poids, "kilos.")
+Le poids du nouveau-né est 3.67 kilos.
+~~~
+
+**:**{:.exercise}
+
+ Soient deux points de l'espace $$A$$ et $$B$$.  Déclarez 4 variables $$x_A$$, $$x_B$$, $$y_A$$ et $$y_B$$ correspondant aux coordonnées réelles de ces deux points et affectez à elles des valeurs. Calculez la distance entre $$A$$ et $$B$$, donnée par la formule $$\sqrt{(x_B - x_A)^2 + (y_B - y_A)^2}$$ et afficher le résultat à l'écran sous la forme *La distance entre $$A$$ et $$B$$ est : .*
+
+**Attention !** Vous devez utilisez pour cet exercice la méthode `math.sqrt()`. Pour utiliser cette méthode il faut d'abord importer le module math, avec l'instruction `import math`.
 
 ## Boucles
 
