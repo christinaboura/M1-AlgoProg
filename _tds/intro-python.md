@@ -26,7 +26,13 @@ La plus simple utilisation que vous pouvez faire de Python est de l'utiliser com
 >>> 21 % 4    # Reste de la division
 1
 >>> 3 ** 4    # Opérateur puissance (3 à la puissance 4)
-81         
+81
+>>> 10 < 2 * 13  # Comparaison
+True
+>>> 10 < 4 or not 10 < 4  # Connecteurs boléens
+True
+>>> 1 < 2 == 1 + 1 < 3   # Comparaisons chaînées
+True
 ~~~
 
 **:**{:.exercise} Calculer :
@@ -140,6 +146,24 @@ En Python, les instructions composées (comme c'est le cas de l'instruction `if`
 
 Avec une telle convention, il est inutile de marquer le début et la fin d’un bloc par des éléments du langage (comme des accolades { et } en C ou Java , ou les mots réservés `begin` et `end` dans certains autres langages).
 
+Pour cette raison, en Python on n'est pas libres d'insérer des retours
+à la ligne partout comme en C. Les retours à la ligne sont
+*obligatoires* à la fin d'une instruction, et *permis* à l'intérieur
+des parenthèses. En effet, ce code n'est pas correct :
+
+~~~
+if a < 1
+    and b < 2:
+    print('hello')
+~~~
+
+alors que ce code l'est :
+
+~~~
+if (a < 1
+    and b < 2):
+    print('hello')
+~~~
 
 On peut, si on le souhaite ajouter une instruction `else`  pour exécuter un autre bloc si la condition est fausse :
 
@@ -318,7 +342,7 @@ Il existe plusieurs manières de créer une liste. Voici quelques unes :
 >>> liste = ['ac/dc', 42, 3.14]
 ~~~
 
-* Liste contenant tous les nombres entiers de 0 à 19.
+* La syntaxe des *compréhensions de listes* permet de générer une liste par une boucle.
 
 ~~~ 
 >>> liste = [i for i in range(20)]
