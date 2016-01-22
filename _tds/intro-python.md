@@ -6,21 +6,22 @@ Python est un langage de programmation orienté objet (mais oublions le côté o
 
 Ce mini-tutoriel est une introduction très basique et rapide à la syntaxe et aux règles du langage. Si vous voulez approfondir plus, plein de tutoriels bien faits existent sur le net, n'hésitez pas à les consulter.
 
-Pendant ces TP nous allons travailler avez l'environnement [SageMathCloud](https://cloud.sagemath.com/). Commencez par y ouvrir un compte. La première partie de ce tutoriel va se faire en *mode terminal*. Pour ceci, cliquez sur `New Project...` pour créer un nouveau projet, et ensuite sur `New` pour créer un nouveau terminal. Vous êtes prêts maintenant pour commencer ! 
+Pendant ces TPs nous allons travailler avez l'environnement [SageMathCloud](https://cloud.sagemath.com/). Commencez par y ouvrir un compte. La première partie de ce tutoriel va se faire en *mode terminal*. Pour ceci, cliquez sur `New Project...` pour créer un nouveau projet, et ensuite sur `New` pour créer un nouveau terminal. Tapez dans le terminal `python3` pour la lancer l'interpréteur. Vous êtes maintenant prêts pour commencer ! 
 
 ## Python en mode calculatrice
 
-La plus simple utilisation que vous pouvez faire de Python est de l'utiliser comme une simple calculatrice. Vous pouvez ouvrir un terminal et essayer les calculs suivants :
+La plus simple utilisation que vous pouvez faire de Python est de l'utiliser comme une simple calculatrice. Vous pouvez essayer dans le terminal les calculs suivants :
 
 ~~~
 >>> 2+6
 8
 >>> 10 - 12   # Les espaces sont optionnels
 -2
->>> 13 + 2*4  # La priorité des opération est comme d'habitude
+>>> 13 + 2*4  # La priorité des opérations est comme d'habitude
 21
->>> 21 / 4    # Attention ! En Python 2 cette instruction retourne la partie entière de la division
-5.25          # En Python3 c'est une division flottante, même entre deux entiers
+>>> 21 / 4    # Attention ! En Python 2 cette instruction retourne 
+5.25          # la partie  entière de la division. En Python3 c'est  
+              # une division flottante, même entre deux entiers
 >>> 21 // 4   # Partie entière de la division
 5
 >>> 21 % 4    # Reste de la division
@@ -40,7 +41,7 @@ True
 
 - $$5 \cdot (1293 - 390)$$,
 
-- La partie entière ainsi que le reste de la division de 1234 par 7.
+- La partie entière ainsi que le reste de la division de 1234 par 7,
 
 - $$13^{13}$$.
 
@@ -136,7 +137,7 @@ Dans la plupart des programmes que vous allez écrire vous aurez besoin d'utilis
 L'instruction qui est sans doute la plus utile afin de permettre un tel comportement est l'instruction `if`. Son fonctionnement sous Python est très simple. Si la condition à droite du mot-clé `if` est vraie, alors le bloc d'instructions en dessus est exécuté. 
 
 ~~~
->>> if age > 18:
+>>> if age > 18 :
 ...     print("La personne peut acheter de l'alcool.")
 ~~~
 
@@ -306,7 +307,7 @@ nombres = [2,5,13,-35,0]
 fromages = ['roquefort', 'camembert', 'saint-nectaire', 'comté']
 ~~~
 
-On peut accéder aux données d'une liste à l'aide de leur indice associée.
+On peut accéder aux données d'une liste à l'aide de leur indice associé.
 
 ~~~
 >>> print(nombres[2])
@@ -411,7 +412,7 @@ Voici quelques méthodes qui peuvent vous  être utiles.
 [0, 3, 1, 13.2, 5.0, 6, 4.3, 7]
 ~~~
 
-* La méthode `remove(x)` qui supprime de la liste le premier élément `x`retrouvé.
+* La méthode `remove(x)` qui supprime de la liste le premier élément `x` trouvé.
 
 ~~~
 >>> liste.insert(3, 13.2)
@@ -465,7 +466,7 @@ Vous pouvez voir une jolie animation de l'exécution de l'algorithme sur la page
 
 **Remarque**. En réalité, il suffit de tester uniquement les multiples des nombres de 2 à $$\sqrt{N}$$, puisque un nombre composé plus petit ou égal à $$N$$, a forcément un facteur plus petit ou égal à $$\sqrt{N}$$.
 
-Vous devez maintenant programmer le crible d'Ératosthène en  Python. Écrivez une fonction `Eratosthene(N)` qui prend comme paramètre un entier naturel $$N$$ et qui affiche à l'écran la liste de tous les nombres premiers plus petits ou égaux à $$N$$. Il existe plusieurs façons de coder cet algorithme en Python, vous êtes libres de faire à votre propre guise. 
+Vous devez maintenant programmer le crible d'Ératosthène en  Python. Écrivez une fonction `eratosthene(N)` qui prend comme paramètre un entier naturel $$N$$ et qui affiche à l'écran la liste de tous les nombres premiers plus petits ou égaux à $$N$$. Il existe plusieurs façons de coder cet algorithme en Python, vous êtes libres de faire à votre propre guise. 
 
 ## Recherche dichotomique
 
@@ -475,7 +476,7 @@ Imaginez par exemple que nous souhaitons retrouver le numéro de téléphone d'u
 
 On peut voir qu'avec cette approche, on réduit à chaque étape la taille de l'annuaire à parcourir de la moitié. Cet algorithme fait partie alors des algorithmes dits *diviser pour régner* et a une complexité *logarithmique* en la taille de la liste.
 
-Pour cet exercice, on suppose que l'utilisateur possède une liste croissante de nombres et on lui fournit un nombre qu'on suppose être dans la liste. Le but est de retourner l'indice du nombre recherche dans la liste.
+Pour cet exercice, on suppose que l'utilisateur possède une liste croissante de nombres et on lui fournit un nombre qu'on suppose être dans la liste. Le but est de retourner l'indice du nombre recherché dans la liste.
 
 Si la liste fournie est [1,3,4,6,10,14,15] et l'élément qu'on cherche est 10, alors le programme doit retourner 4 (souvenez-vous que, dans une liste, les indices sont numérotés à partir de 0).
 
