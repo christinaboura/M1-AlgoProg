@@ -31,7 +31,7 @@ Voici comment se passe le premier *passage*.
 
 Le tableau est déjà trié, mais on va devoir refaire un passage puisque il y a eu un échange lors du passage précedent. Ce nouveau passage n'inversera aucun élément et l'algorithme se terminera là.
 
-Voici le pseudo-code du tri à bulles (version non-optimisé), où $$n$$ est la longueur du tableau T à trier.
+Voici le pseudo-code du tri à bulles (version non-optimisée), où $$n$$ est la longueur du tableau T à trier.
 
 ~~~
 Tri-Bulles(T)
@@ -62,7 +62,7 @@ Par exemple, pour générer une liste de 10 entiers compris entre 0 et 99 il suf
 
 * Pourquoi la version de l'algorithme que vous venez d'implementer n'est pas optimale ?
 
-* Réflechissez à une façon de rendre l'algorithme plus optimisé. Implémentez cette méthode est testez-là.
+* Réflechissez à une façon de rendre l'algorithme plus optimisé. Implémentez cette méthode et testez-là.
 
 * Quel est le temps d'exécution de cet algorithme dans le cas le plus défavorable ?
 
@@ -82,7 +82,7 @@ Le tri fusion se base sur le principe diviser pour régner.
 
 1. Appliquez le tri fusion *à la main* pour trier le tableau `T = [5 2 4 7 1 3 2 6]`.
 
-2. Implémentez en Python le tri fusion vu en cours et testez le sur un tableau de taille 1000 contenant des nombres aléatoires de 0  à 10000.
+2. Implémentez en Python le tri fusion vu en cours et testez-le sur un tableau de taille 1000 contenant des nombres aléatoires de 0  à 10000.
 
 ## Autres algorithmes de tri
 
