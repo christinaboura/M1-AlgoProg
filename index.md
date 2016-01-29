@@ -13,27 +13,29 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 22 janvier
 : Analyse d’algorithmes, modèles de complexité, complexité
-  asymptotique, classes de complexité, P vs NP.
+  asymptotique, notation $$\Theta$$ et $$\Omega$$. 
 : **TD :** [(Re)-introduction à Python](tds/intro-python.html)
 
 29 janvier
-: Tableaux, listes, piles, files, Tables de hachage.
-: Tris : bubble sort, merge sort, quick sort.
-: **TD :** Structures de données en Python: listes, hashes
+: Classes de complexité, P vs NP, principe *diviser pour régner*.
+: T
+ris : bubble sort, merge sort, quick sort.
+**TD :** [Algorithmes de tri](tds/tris.html)
 
 5 février
+: Tableaux, listes, piles, files, Tables de hachage.
+: **TD :** Structures de données en Python: listes, hashes
+
+12 février
 : Arbres, graphes
 : récursion, diviser pour reigner
 : (Arbres rouge-noir)
 : **TD :** Classes python
 
-12 février
+19 février
 : Programmation dynamique
 : Algorithmes gloutons
 : (Arbres rouge-noir)
-
-19 février
-: Autres sujets des parties 4-5 du CLR
 
 26 février
 : 
