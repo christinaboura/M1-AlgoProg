@@ -58,7 +58,6 @@ Par exemple, pour générer une liste de 10 entiers compris entre 0 et 99 il suf
 [41, 21, 38, 20, 69, 14, 10, 50, 76, 9]
 ~~~
 
-* Testez le temps d'execution de votre programme.
 
 * Pourquoi la version de l'algorithme que vous venez d'implementer n'est pas optimale ?
 
@@ -86,6 +85,5 @@ Le tri fusion se base sur le principe diviser pour régner.
 
 ## Autres algorithmes de tri
 
-Implémentez les deux autres algorithmes de tri vus en cours (**tri par insertion** et **tri rapide**) et comparez le temps d'execution de tous les quatre algorithmes implementés.
-
+Implémentez les deux autres algorithmes de tri vus en cours (**tri par insertion** et **tri rapide**).
 
