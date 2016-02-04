@@ -6,6 +6,30 @@ title: Structures de données en Python
 
 Avant de commencer les exercices, voici quelques mots sur les chaînes de caractères en Python dont vous aurez besoin pendant tout au long de cette séance.
 
+Les chaînes de caractères sont vu par Python comme une *collection ordonnée d'éléments*. Ceci veut dire que les caractères qui constituent une chaîne sont disposés dans un certain ordre et qu'on peut accéder à chaque caractère à l'aide d'un indice. **Attention !** Le premier caractère de la chaîne a comme indice 0 (et pas 1).
+
+~~~
+>>> chaine = "Algorithmique et Programmation"
+>>> print(chaine[0], chaine[2], chaine[10], chaine[-1])
+A g q n
+~~~
+
+Comme vous pouvez le voir, les indices négatifs peuvent être utilisés afin d'accéder aux caractères de la chaîne par la fin. Nous pouvons determiner la longueur d'une chaîne, c.-à-d. le nombre de ses caractères,  à l'aide de la fonction `len()`.
+
+~~~
+>>> print(len(chaine))
+30
+~~~
+
+Il est possible de concaténer deux chaînes à l'aide de l'opérateur `+`.
+
+~~~
+>>> ch1 = "La raison est la tienne "
+>>> ch2 = "mais la chèvre est la mienne"
+>>> ch1 + ch2
+'La raison est la tienne mais la chèvre est la mienne'
+~~~
+
 ## Parenthésage
 
 Le but de cet exercice est d'écrire un programme en Python capable de vérifier si une expression est bien parenthésée ou pas. Les trois types de parenthésage qui seront pris en compte sont les parenthèses `(`, `)`, les crochets `[`, `]` et les accolades `{`, `}`.
