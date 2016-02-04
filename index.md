@@ -24,7 +24,7 @@ ris : bubble sort, merge sort, quick sort.
 
 5 février
 : Tableaux, listes, piles, files, Tables de hachage.
-: **TD :** Structures de données en Python: listes, hashes
+: **TD :** [Structures de données en Python](tds/structures-donnees.html)
 
 12 février
 : Arbres, graphes
