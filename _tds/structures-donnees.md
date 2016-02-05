@@ -82,7 +82,7 @@ Pour réaliser votre programme vous pouvez suivre ces étapes :
 
 * Écrire une fonction `estOuvrante(c)` qui prend en entrée un caractère `c` et qui renvoie `True` si `c` est un symbole ouvrant.
 
-* Écrire une fonction `fermante(c)` qui prend en entrée un caractère `c`. Si ce caractère est un symbole ouvrant, alors la fonction doit renvoyer le symbole fermant correspondant. Dans le cas contraire elle doit renvoyer le symbole `?`.
+* Écrire une fonction `fermante(c)` qui prend en entrée un caractère `c`. Si ce caractère est un symbole ouvrant, alors la fonction doit renvoyer le symbole fermant correspondant. Dans le cas contraire elle doit renvoyer `None`.
 
 * Écrire et tester la fonction qui vérifie le parenthèsage.
 
@@ -97,11 +97,11 @@ Le principe de cette méthode est de placer chaque opérateur juste après ses d
 Regardons maintenant comment peuvent s'écrire les opérations un peu plus complexes au moyen de cette notation
 
 
-* $$2 + 6 - 1$$ s'écrit `2 6 + 1 -` ou bien `2 6 1 - +`
+* $$2 + 6 - 1$$ s'écrit `2 6 + 1 -`
 
-* $$5*3 + 4$$ s'écrit `5 3 * 4 +` ou bien `4 5 3 * +`
+* $$5*3 + 4$$ s'écrit `5 3 * 4 +` 
 
-* $$((1 + 2) * 4) + 3$$ s'écrit `1 2 + 4 * 3 +` ou bien `3 4 1 2 + * +`
+* $$((1 + 2) * 4) + 3$$ s'écrit `1 2 + 4 * 3 +`
 
 Évaluer une expression post-fixée est facile. Pour cela il suffit de lire l'expression de gauche à droite et d'appliquer chaque opérateur aux deux opérandes qui le précèdent. Si l'opérateur n'est pas le dernier symbole on replace le résultat intermédiaire dans l'expression et on recommence avec l'opérateur suivant.
 
@@ -231,7 +231,7 @@ Faites une fonction en Python qui génére un dictionnaire pour la [suite Fibona
 * $$ F_1 = 1 $$, 
 * $$ F_{n+2} = F_{n+1} + F_{n}$$.
 
-Les clés du dictionnaire seront les indices $$n$$ et les valeurs les termes $$F_n$$. Votre fonction `fibonacci(n)` prendra donc en argument un entier `n` et retournera le dictionnaire.
+Les clés du dictionnaire seront les termes $$F_n$$ et les valeurs seront les indices $$n$$. Votre fonction `fibonacci(n)` prendra donc en argument un entier `n` et retournera le dictionnaire.
 
 ### Chiffrement par décalage
 
