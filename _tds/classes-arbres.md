@@ -230,3 +230,5 @@ Testez votre code :
 ~~~
 
 **:**{:.exercise} Modifiez la construction de votre arbre, afin que la comparaison se fasse maintenant à partir de la superficie d'une ville.
+
+**:**{:.exercise} En utilisant cette nouvelle construction, écrivez une méthode `rechercheMax(self)` qui renvoie la ville ayant la plus grande superficie.
