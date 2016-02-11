@@ -228,3 +228,5 @@ Testez votre code :
 >>> print("Nombre d'enfants = ", nombreEnfants)
 0
 ~~~
+
+**:**{:.exercise} Modifiez la construction de votre arbre, afin que la comparaison se fasse maintenant à partir de la superficie d'une ville.
