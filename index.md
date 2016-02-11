@@ -27,10 +27,8 @@ ris : bubble sort, merge sort, quick sort.
 : **TD :** [Structures de données en Python](tds/structures-donnees.html)
 
 12 février
-: Arbres, graphes
-: récursion, diviser pour reigner
-: (Arbres rouge-noir)
-: **TD :** Classes python
+: Arbres binaires de recherche, arbres rouge-noir
+: **TD :** [Classes python, les arbres avec Python](tds/classes-arbres.html)
 
 19 février
 : Programmation dynamique
