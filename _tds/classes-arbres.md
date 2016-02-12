@@ -134,7 +134,7 @@ La méthode `rsplit` de la classe `String` nous permet de *couper* une chaîne d
 
 ## Construire un arbre binaire de recherche
 
-Notre but maintenant est d'insérer toutes ses villes dans un arbre binaire de recherche. Les noeuds de l'arbre seront les objets de la classe `Ville`. Dans un premier temps, la valeur qui nous permettra de créer un *ordre*, sera l'attribue rang. Ceci veut dire qu'on va comparer les villes selon leur rang. Par exemple on va dire que `Meudon < Paris`.
+Notre but maintenant est d'insérer toutes ces villes dans un arbre binaire de recherche. Les noeuds de l'arbre seront les objets de la classe `Ville`. Dans un premier temps, la valeur qui nous permettra de créer un *ordre*, sera l'attribue rang. Ceci veut dire qu'on va comparer les villes selon leur rang. Par exemple on va dire que `Meulon < Paris`.
 
 Commencez par créer une classe `Noeud` ayant le constructeur suivant :
 
@@ -181,7 +181,7 @@ Bordeaux
 ...
 ~~~
 
-**:**{:.exercise} Modifiez la méthode `afficherArbre(self)`afin qu'elle affiche le nom de chaque ville suivi de sa superficie.
+**:**{:.exercise} Modifiez la méthode `afficherArbre(self)`afin qu'elle affiche le nom, le numéro de département et la population de chaque ville.
 
 
 ~~~
@@ -197,7 +197,7 @@ Bordeaux 33 215374 49.4
 ...
 ~~~
 
-**:**{:.exercise} Nous avons maintenant besoin d'une méthode qui permet de rechercher une ville dans l'arbre à partir de son rang. Écrivez une méthode `rechercher(self, rang)` qui prend en entrée un entier correspondant au rang de la ville recherchée et qui renvoie l'objet `Ville` correspondant. Si l'objet n'est pas trouvé, la méthode doit renvoyer `None`.
+**:**{:.exercise} Nous avons maintenant besoin d'une méthode qui permet de rechercher une ville dans l'arbre à partir de son rang. Écrivez une méthode `rechercher(self, rang)` qui prend en entrée un entier correspondant au rang de la ville recherchée et qui renvoie l'objet contentant la ville (noeud) en question correspondant. Si l'objet n'est pas trouvé, la méthode doit renvoyer `None`.
 
 Testez votre code :
 
