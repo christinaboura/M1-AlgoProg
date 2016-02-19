@@ -32,8 +32,7 @@ ris : bubble sort, merge sort, quick sort.
 
 19 février
 : Programmation dynamique
-: Algorithmes gloutons
-: (Arbres rouge-noir)
+: **TD :** [Programmation dynamique](tds/prog-dynamique.html)
 
 26 février
 : 
