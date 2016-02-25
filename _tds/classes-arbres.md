@@ -22,7 +22,7 @@ La classe `Etudiant` modélise d'une certaine façon l'entité *étudiant* et d�
 * Le mot `class` est un mot-clé utilisé lorsqu'on définit une nouvelle classe.
 * `Etudiant` est le nom de la classe. Par convention, le nom de la classe commence par une lettre majuscule et ne comporte pas d'espaces. Pn écrit par exemple : `NomDeLaClasse`.
 * `__init__` est une méthode spéciale, appelée **constructeur**, qui permet de construire et personnaliser des objets. Le constructeur, lorsqu'il est appelé, crée et renvoie un objet du type voulu et contenant ce qui est passé en paramètre. Contrairement à d'autres langages orientés-objet, le constructeur en Python, porte toujours le même nom.
-* Le mot `self` (soi) fait référence à une instance de la classe (celle que nous sommes en train de créer ou de manipuler). 
+* Le mot `self` (soi) fait référence à une instance de la classe (celle que nous sommes en train de créer ou de manipuler). C'est l'équivalent de `this` en Java et d'autres langages.
 * Notre classe `Etudiant` comporte quatre attributs ou champs. À la création d'un nouvel objet, on initialise ses champs  à l'aide des valeurs qu'on passe comme arguments au constructeur.
 
 Créons maintenant un objet `Etudiant`.
@@ -31,7 +31,7 @@ Créons maintenant un objet `Etudiant`.
 >>> unEtudiant = Etudiant("Dupont", "Marcel", 2110012, 23)
 ~~~
 
-Nous allons maintenant voir comment définir les *méthodes d'instance* d'une classe. Ce sont des méthodes (fonctions) qui s'appliquent directement aux objets, instances de la classe. Vous avez déjà utilisé des méthodes d'instance plusieurs fois sans vous en rendre compte probablement compte. Par exemple, lorsque vous écrivez
+Nous allons maintenant voir comment définir les *méthodes d'instance* d'une classe. Ce sont des méthodes (fonctions) qui s'appliquent directement aux objets, instances de la classe. Vous avez déjà utilisé des méthodes d'instance plusieurs fois sans vous en rendre probablement compte. Par exemple, lorsque vous écrivez
 
 ~~~
 >>> liste = list([1, 2, 3])
@@ -78,12 +78,12 @@ False
 
 ## Une classe Ville
 
-Téléchargez et sauvegardez le fichier <a href="villes.txt">villes.txt</a>. Ce fichier contient la liste des 200 plus grandes villes de France dans un ordre aléatoire. Chaque ligne de ce fichier contient les 5 informations suivantes :
+Téléchargez et sauvegardez le fichier [villes.txt](villes.txt). Ce fichier contient la liste des 200 plus grandes villes de France dans un ordre aléatoire. Chaque ligne de ce fichier contient les 5 informations suivantes :
 
 * Nom de la ville
 * Numéro du département
 * Nombre d'habitants
-* Superficie (en km$$^2$$)
+* Superficie (en km²)
 * Rang au niveau national (critère : nombre d'habitants)
 
 Voici à quoi ressemblent les deux premières lignes de ce fichier :
@@ -93,17 +93,17 @@ Saint-Priest 69 40944 29.7 155
 Versailles 78 85761 26.2 46
 ~~~
 
-**:**{:.exercise} Créez une classe `Ville` ayant 5 champs : chacun de ces champs doit correspondre au 5 informations concernant une ville comme décrit ci-dessus (nom, numéro de département, population, superficie, rang). Le constructeur prendra en paramètre une liste `liste`, et initialisera les 5 champs avec les 5 premières cases de la liste (`liste[0], liste[1]`) etc.
+**:**{:.exercise} Créez une classe `Ville` ayant 5 champs : chacun de ces champs doit correspondre aux 5 informations concernant une ville comme décrit ci-dessus (nom, numéro de département, population, superficie, rang). Le constructeur prendra en paramètre une liste `liste`, et initialisera les 5 champs avec les 5 premières cases de la liste (`liste[0], liste[1]`) etc.
 
 Ajoutez ensuite les 3 méthodes suivantes à votre classe :
 
-* Une méthode `getRang(self)` qui renvoie la valeur du champ *rang*
+* Une méthode `getRang(self)` qui renvoie la valeur du champ *rang*,
 
-* Une méthode `getSuperficie(self)` qui renvoie la valeur du champ *superficie*
+* Une méthode `getSuperficie(self)` qui renvoie la valeur du champ *superficie*,
 
-* Une méthode `afficherNom(self)` qui affiche la valeur du champ *nom*
+* Une méthode `afficherNom(self)` qui affiche la valeur du champ *nom*,
 
-* Une méthode `afficherVille(self)` qui affiche les valeurs des quatre premiers champs
+* Une méthode `afficherVille(self)` qui affiche les valeurs des quatre premiers champs.
 
 Testez votre classe en tapant :
 
@@ -119,7 +119,7 @@ Testez votre classe en tapant :
 Maisons-Alfort 94 51091 5.4
 ~~~
 
-Vous devez maintenant parcourir le fichier et créer un nouveau objet ville à partir les informations contenues dans chaque ligne du fichier. Pour cela, il vous suffit de copier-coller le code ci-dessous :
+Vous devez maintenant parcourir le fichier et créer un nouvel objet ville à partir des informations contenues dans chaque ligne du fichier. Pour cela, il vous suffit de copier-coller le code ci-dessous :
 
 ~~~
 >>> fichier = open("villes.txt", "r")
@@ -128,7 +128,7 @@ Vous devez maintenant parcourir le fichier et créer un nouveau objet ville à p
 ...     ville = Ville(liste)
 ~~~
 
-La première ligne indique que nous allons ouvrir le fichier `villes.txt` en mode *lecture* (d'où, le `"r"`, faisant référence à *read*). Nous pouvons ensuite parcourir le fichier ligne par ligne. La variable `ligne` contient à chaque itération la ligne qui nous sommes en train de lire, vu comme une chaîne de caractères. 
+La première ligne indique que nous allons ouvrir le fichier `villes.txt` en mode *lecture* (d'où, le `"r"`, faisant référence à *read*). Nous pouvons ensuite parcourir le fichier ligne par ligne. La variable `ligne` contient à chaque itération la ligne que nous sommes en train de lire, vue comme une chaîne de caractères. 
 
 La méthode `rsplit` de la classe `String` nous permet de *couper* une chaîne de caractères en mots. Cette méthode retourne une liste contenant les mots de la ligne. Dans notre cas, la taille de la liste créé est 5 pour chaque ligne. Vérifiez-le.
 

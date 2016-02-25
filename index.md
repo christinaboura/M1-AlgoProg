@@ -1,4 +1,5 @@
 ---
+title: Home
 ---
 
 # {{ site.title }}
@@ -18,9 +19,8 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 29 janvier
 : Classes de complexité, P vs NP, principe *diviser pour régner*.
-: T
-ris : bubble sort, merge sort, quick sort.
-**TD :** [Algorithmes de tri](tds/tris.html)
+: Tris : bubble sort, merge sort, quick sort.
+: **TD :** [Algorithmes de tri](tds/tris.html)
 
 5 février
 : Tableaux, listes, piles, files, Tables de hachage.
