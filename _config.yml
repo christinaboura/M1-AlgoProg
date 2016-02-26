@@ -48,7 +48,7 @@ collections:
       many: TDs
     icon: file-text-o
     output: true
-    permalink: /:collection/:path:output_ext
+    permalink: /:collection/:path
 
 create:
   collections:
