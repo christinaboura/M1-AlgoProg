@@ -15,39 +15,46 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 22 janvier
 : Analyse d’algorithmes, modèles de complexité, complexité
   asymptotique, notation $$\Theta$$ et $$\Omega$$. 
-: **TD :** [(Re)-introduction à Python](tds/intro-python.html)
+: **TD :** [(Re)-introduction à Python](tds/intro-python)
 
 29 janvier
 : Classes de complexité, P vs NP, principe *diviser pour régner*.
 : Tris : bubble sort, merge sort, quick sort.
-: **TD :** [Algorithmes de tri](tds/tris.html)
+: **TD :** [Algorithmes de tri](tds/tris)
 
 5 février
 : Tableaux, listes, piles, files, Tables de hachage.
-: **TD :** [Structures de données en Python](tds/structures-donnees.html)
+: **TD :** [Structures de données en Python](tds/structures-donnees)
 
 12 février
 : Arbres binaires de recherche, arbres rouge-noir
-: **TD :** [Classes python, les arbres avec Python](tds/classes-arbres.html)
+: **TD :** [Classes python, les arbres avec Python](tds/classes-arbres)
 
 19 février
 : Programmation dynamique
-: **TD :** [Programmation dynamique](tds/prog-dynamique.html)
+: **TD :** [Programmation dynamique](tds/prog-dynamique)
 
 26 février
-: 
+: Graphes:
+	
+	- Notions de base, représentation, matrice d'adjacence ;
+	- Parcours en largeur et en profondeur, ordre topologique ;
+	- Arbres couvrants minimaux, algorithme de Prim ;
+	- Chemins les plus courts, algorithme de Dijkstra.
+	
+: **TD :** [Graphes](tds/graphes)
 
 11 mars
-: 
+: Algèbre linéaire
 
 18 mars
-: 
+: Programmation linéaire
 
 25 mars
-: 
+: Programmation linéaire entière, algorithmes NP-complets
 
 1 avril
-: 
+: Algorithmes Géometriques
 
 ## Modalité de contrôle
 
