@@ -31,6 +31,17 @@ constructeur, qui :
 - stocke dans des champs `nblignes` et `nbcolonnes` les dimensions de
   la matrice.
 
+**Note :** Un constructeur ne fait jamais de `return`. Pour signaler
+une condition d'erreur dans un constructeur, vous **devez** *soulever
+une exception* en utilisant le mot clef `raise`, comme ceci :
+
+~~~python
+class Matrice:
+	def __init__(self, coeffs):
+		if len(coeffs) == 0:
+			raise RuntimeError("Matrice vide")
+~~~
+
 L'affichage par défaut des objets est peu lisible. Python offre une
 longue liste de méthodes dites *spéciales*, reconnaissables aux
 doubles tirets bas `__nom_de_la_methode__`, qui permettent de changer le
@@ -112,6 +123,7 @@ On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
 >       2. marquer $$v$$ comme parent de $$u$$ ;
 >       3. insérer $$u$$ dans la file ;
 > 3. Tant que la file n'est pas vide, recommencer.
+{: style="margin-left: 2em"}
 
 Vous pouvez utiliser une liste python pour remplir la file, servez
 vous des méthodes `pop` (on rappelle que `pop` prend un argument
@@ -130,6 +142,7 @@ On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
 >    choisir celle de poids minimal ;
 > 2. Ajouter $$e$$ et $$u$$ à $$T$$ ;
 > 3. Continuer tant qu'il reste des arêtes qui sortent de $$T$$.
+{: style="margin-left: 2em"}
 
 ## Parcours Eulériens
 
