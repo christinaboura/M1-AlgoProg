@@ -52,9 +52,9 @@ ligne entre chaque ligne, comme dans cet exemple :
 ~~~
 
 Faites l'effort de calculer la largeur maximale requise pour chaque
-colonne, afin d'avoir un affichage lisible. On rappelle que le
-caractère `"\n"` permet d'insérer un retour à la ligne dans une chaîne
-de caractères.
+colonne, afin d'avoir un affichage lisible. On rappelle que `"\n"`
+permet d'insérer un retour à la ligne dans une chaîne de caractères,
+et que `"\\"` permet d'insérer un antislash `\`.
 
 **:**{:.exercise} Écrire une fonction
 `rand_mat(lignes, colonnes, coeffs, min=1, max=1, symetrique=False)`
