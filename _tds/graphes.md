@@ -100,9 +100,36 @@ informations suivantes :
 - nombre d'arêtes entrantes et sortantes pour chaque `Noeud`,
 - nombre de composantes connexes.
 
-## Algorithme de Dijkstra
+On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
 
-**:**{:.exercise} Coder l'algorithme de Dijkstra vu en cours.
+> **Entrée :** une file $$F$$ (initialisée avec un seul nœud)
+>
+> 1. Sortir l'élement $$v$$ en tête de la file ;
+> 2. Pour chaque arrête non-visitée $$e:v→u$$ :
+>    1. marquer $$e$$ comme visitée ;
+>    2. si $$u$$ n'a pas été visité :
+>       1. marquer $$u$$ comme visité ;
+>       2. marquer $$v$$ comme parent de $$u$$ ;
+>       3. insérer $$u$$ dans la file ;
+> 3. Tant que la file n'est pas vide, recommencer.
+
+Vous pouvez utiliser une liste python pour remplir la file, servez
+vous des méthodes `pop` (on rappelle que `pop` prend un argument
+optionnel) et `append`.
+
+## Algorithme de Prim
+
+**:**{:.exercise} Coder l'algorithme de Prim vu en cours.
+
+On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
+
+> **Entrée :** un arbre $$T$$ (initialisé avec un seul nœud)
+>
+> 1. Parmi tous les arêtes $$e:T→u$$ qui partent d'un nœud de
+>    $$T$$ et qui arrivent sur un nœud pas dans $$T$$,
+>    choisir celle de poids minimal ;
+> 2. Ajouter $$e$$ et $$u$$ à $$T$$ ;
+> 3. Continuer tant qu'il reste des arêtes qui sortent de $$T$$.
 
 ## Parcours Eulériens
 
