@@ -71,7 +71,9 @@ et que `"\\"` permet d'insérer un antislash `\`.
 `rand_mat(lignes, colonnes, coeffs, min=1, max=1, symetrique=False)`
 qui renovie en sortie une matrice aléatoire à `lignes` lignes,
 `colonnes` colonnes, avec `coeffs` entrées non-nulles comprises entre
-`min` et `max`, et symétrique si `symetrique` vaut `True`.
+`min` et `max`, et symétrique si `symetrique` vaut `True` (vous avez
+droit d'interpréter plus librement `coeffs` si `symetrique` vaut
+`True`).
 
 Observez la syntaxe des *paramètres par défaut* donnée dans cet
 exercice : les paramètres `min` et `max` valent 1 par défaut,
@@ -96,7 +98,7 @@ colonnes de la matrice doivent apparaître dans le même ordre que dans
 la liste de `Noeud` du graphe.
 
 **:**{:.exercise} Donner une méthode `graphe` à la classe `Matrice`,
-qui renvoie `None` si la matrice ne représente pas un graphe (par ex.,
+qui renvoie une erreur si la matrice ne représente pas un graphe (par ex.,
 elle n'est pas carrée), le graphe représenté par la matrice sinon.
 
 Tester vos classes avec des matrices aléatoires.
