@@ -59,7 +59,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 ## Modalité de contrôle
 
 19 février
-: 1er contrôle continu
+: 1er contrôle continu ([Sujet](annales/2016-cc1.pdf))
 
 1 avril
 : 2e contrôle continu
