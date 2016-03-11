@@ -35,7 +35,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : **TD :** [Programmation dynamique](tds/prog-dynamique)
 
 26 février
-: Graphes:
+: Graphes :
 	
 	- Notions de base, représentation, matrice d'adjacence ;
 	- Parcours en largeur et en profondeur, ordre topologique ;
@@ -45,7 +45,14 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : **TD :** [Graphes](tds/graphes)
 
 11 mars
-: Algèbre linéaire
+: Algèbre linéaire :
+
+	- Méthode de Strassen pour la mutliplication de matrices ;
+	- Exposant ω de l'algèbre linéaire, et equivalence multiplication
+      ↔ inversion ;
+	- Méthode des moindres carrés.
+
+: **TD :** [Algèbre linéaire](tds/linalg)
 
 18 mars
 : Programmation linéaire
