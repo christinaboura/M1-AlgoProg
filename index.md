@@ -35,22 +35,26 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : **TD :** [Programmation dynamique](tds/prog-dynamique)
 
 26 février
-: Graphes :
+: **Graphes :**
 	
 	- Notions de base, représentation, matrice d'adjacence ;
 	- Parcours en largeur et en profondeur, ordre topologique ;
 	- Arbres couvrants minimaux, algorithme de Prim ;
 	- Chemins les plus courts, algorithme de Dijkstra.
 	
+	Références : CLRS §22, §23 et §24.
+
 : **TD :** [Graphes](tds/graphes)
 
 11 mars
-: Algèbre linéaire :
+: **Algèbre linéaire :**
 
 	- Méthode de Strassen pour la mutliplication de matrices ;
 	- Exposant ω de l'algèbre linéaire, et equivalence multiplication
       ↔ inversion ;
 	- Méthode des moindres carrés.
+
+	Références : CLRS §4.2 et §28. Bostan et al. §8.
 
 : **TD :** [Algèbre linéaire](tds/linalg)
 
@@ -75,6 +79,9 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 
 ## Bibliographie
+
+A. Bostan, F. Chyzak, M. Giusti, R. Lebreton, G. Lecerf, B. Salvy. *Algorithmes Efficaces en Calcul Formel*.
+: Notes de cours du MPRI. <http://perso.ens-lyon.fr/bruno.salvy/mpri/poly.pdf>.
 
 T.H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. *Algorithmique*.
 : Trad. X. Cazin, G.-L. Kocher. Dunod 2010. ISBN:

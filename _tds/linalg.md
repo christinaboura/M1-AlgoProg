@@ -145,13 +145,12 @@ prenant une moyenne.
 **:**{:.exercise} Optimiser la méthode de Strassen en arrêtant la
 récursion en dessous d'un seuil déterminé expérimentalement.
 
-## Décomposition LUP
-
-**:**{:.exercise} Implanter la méthode LUP (naïve) de résolution de
-systèmes linéaires.
+## Solution de systèmes
 
 **:**{:.exercise} Implanter une méthode `solve` qui prend en entrée un
-vecteur $$b$$, et qui calcule une solution au système $$Ax=b$$.
+vecteur $$b$$, et qui calcule une solution au système $$Ax=b$$ par la
+méthode de Gauss.
 
 **:**{:.exercise} Implanter la méthode `__invert__` pour inverser une
-matrice carrée.
+matrice carrée (**suggestion :** vous pouvez utiliser la méthode
+`solve` de façon répétée).
