@@ -59,7 +59,8 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : **TD :** [Algèbre linéaire](tds/linalg)
 
 18 mars
-: Programmation linéaire
+: **Programmation linéaire**
+: **TD :** [Programmation linéaire](tds/linprog)
 
 25 mars
 : Programmation linéaire entière, algorithmes NP-complets
