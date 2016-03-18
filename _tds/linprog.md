@@ -6,10 +6,55 @@ Ce TD est à développer dans un notebook Jupyter.
 
 ## Algorithme du symplexe
 
-On va code l'algorithme du symplexe, en utilisant la méthode des
+On va coder l'algorithme du symplexe, en utilisant la méthode des
 tableaux vue en cours.
 
-**:**{:.exercise} Écrire une fonction `iteration(cout, variables)` 
+Étant donné un programme linéaire sous forme relaxée
+
+> Minimiser $$c·\bar{x}$$,  
+> Sous $$A\bar{x} = b$$,
+
+où $$c$$ est la fonction de coût, $$b$$ le vecteur des constantes, et
+$$\bar{x}$$ le vecteur des variables (basiques et non-basiques), la
+méthode encode ce programme dans le tableau
+
+$$\begin{array}{c c | c}
+1 & c & 0\\
+\hline
+  & A & b
+\end{array}$$
+
+Ensuite, tant qu'il existe une entrée négative dans la ligne de coût
+$$c$$, l'algorithme exécute une transformation appelée *pivot* sur les
+lignes du tableau. L'algorithme termine lorsqu'il n'y a plus d'entrées
+négatives dans le coût, ou bien lorsqu'il détermine que le programme
+linéaire est non-borné.
+
+Si $$v$$ est la variable (non-basique) de $$x$$ sélectionnée pour
+opérer le pivot, une itération du pivot consiste en les opération
+suivantes :
+
+- Pour chaque ligne $$A_i\bar{x} = b_i$$, calculer la valeur
+  
+  $$d_i = \begin{cases}b_i/a_i &\text{si $a_i>0$,}\\ +∞ &\text{sinon,}\end{cases}$$
+  
+  où $$a_i$$ est le coefficient de $$v$$ dans $$A_i$$.
+
+- Si tous les $$d_i$$ sont $$+∞$$, renvoyer « non-borné ».
+
+- Sinon, sélectionner la ligne $$i$$ telle que $$d_i$$ est minimal ;
+
+- Diviser toute la ligne par $$a_i$$ ;
+
+- Faire apparaître des $$0$$ dans la colonne de $$v$$ en faisant des
+  combinaisons linéaires de la ligne $$i$$ avec les autres lignes.
+
+La conséquence d'un pivot est de transformer la variable $$v$$ de
+non-basique en basique. La solution associée à la transformation sera
+celle où les variables non-basiques valent $$0$$, et les variables
+basiques valent l'entrée correspondante dans le vecteur $$b$$.
+
+**:**{:.exercise} Écrire une fonction `pivot(cout, variables)` 
 prenant les entrées suivantes :
 
 - `cout` est une liste contenant la fonction de cout ;
