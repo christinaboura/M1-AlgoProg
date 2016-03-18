@@ -132,4 +132,29 @@ de pivot, on donnera en sortie `(cout, variables, faisable)`, où
 
 ## Visualisation de l'algorithme
 
-...en cours
+Dans votre notebook, insérez le code suivant
+
+~~~python
+%matplotlib inline
+import matplotlib.pyplot as plt
+~~~
+
+Le code suivant affiche le dessin d'une croix de largeur `l`, avec un
+cercle jaune au milieu.
+
+~~~python
+def cross(l):
+    fig, ax = plt.subplots()
+    ax.plot([0,l], [0,l], color='black')
+    ax.plot([0,l], [l,0], color='red')
+	ax.plot(l/2, l/2, marker='o', color='yellow')
+
+cross(10)
+~~~
+
+**:**{:.exercise} Modifier le code de `pivot` pour qu'il affiche le
+simplexe et le point faisable choisi après pivotage (uniquement
+lorsque le problème d'entrée est de dimension 2, *i.e.* il a
+uniquement deux variables non-basiques).
+
+Regardez l'algorithme avancer le long de la frontière du simplexe.
