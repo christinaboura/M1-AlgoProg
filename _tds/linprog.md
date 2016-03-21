@@ -94,11 +94,11 @@ après pivotage le tableau
 
 $$\begin{array}{c c c c c c | c}
   & x & y & r & s & t\\
-1 & & \frac{5}{4} & -\frac{1}{4} & \\
+1 & & -\frac{5}{4} & \frac{1}{4} & & & 2 \\
 \hline
-& 1 & -\frac{1}{4} &  \frac{1}{4} &   &   & 2\\
-&   &  \frac{3}{2} & -\frac{1}{2} & 1 &   & 6\\
-&   & -\frac{1}{4} & \frac{5}{4} &   & 1 & 12
+  & 1 & -\frac{1}{4} &  \frac{1}{4} &   &   & 2\\
+  &   &  \frac{3}{2} & -\frac{1}{2} & 1 &   & 6\\
+  &   &  \frac{1}{4} & \frac{5}{4} &   & 1 & 12
 \end{array},$$
 
 où $$x,s,t$$ sont devenues basiques, et où le point faisable
@@ -152,7 +152,7 @@ def cross(l):
 cross(10)
 ~~~
 
-**:**{:.exercise} Modifier le code de `pivot` pour qu'il affiche le
+**:**{:.exercise} Modifier le code de l'algorithme pour qu'il affiche le
 simplexe et le point faisable choisi après pivotage (uniquement
 lorsque le problème d'entrée est de dimension 2, *i.e.* il a
 uniquement deux variables non-basiques).
