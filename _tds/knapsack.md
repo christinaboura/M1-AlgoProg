@@ -21,34 +21,49 @@ entrée une liste d'entiers positifs `S`, un entier positif `t`, et qui
 renvoie `True` si le problème $$(S,t)$$ a une solution, en utilisant
 l'algorithme naïf décrit plus haut.
 
-## Un algorithme récursif
+## Un algorithme récursif pour le problème d'optimisation
 
-Pour $$i≥1$$, on définit l'ensemble $$P(i,t)$$ comme étant l'ensemble
+Le problème d'optimisation associé à la paire $$(S,t)$$, consiste à
+trouver le sous-ensemble $$S'⊂S$$ qui maximise la valeur
+$$\sum_{x∈S'}x$$ sous la contrainte $$\sum_{x∈S'}x≤t$$.
 
-$$P(i,t) = \left\{\sum_{x∈S'}x ≤ t \;\middle\vert\; S'⊂\{x_1,\dots,x_i\}\right\}.$$
+Pour $$i≥1$$, on définit la valeur $$M(i,t)$$ comme étant la solution
+du problème d'optimisation associé à $$(\{x_1,\dots,x_i\},t)$$ :
+
+$$M(i,t) = \max\left(\sum_{x∈S'}x ≤ t \;\middle\vert\; S'⊂\{x_1,\dots,x_i\}\right).$$
 
 **:**{:.exercise} Écrire une fonction `partial_subset_sum(S, i, t)`
-qui calcule l'ensemble $$P(i,t)$$ à l'aide de deux appels récursifs à
-`partial_subset_sum(S, i-1, t)`.
+qui calcule $$M(i,t)$$ à l'aide de deux appels récursifs à
+`partial_subset_sum(S, i-1, ...)`.
 
 **:**{:.exercise} Récrire `subset_sum(S, t)` pour qu'il fasse appel à
 `partial_subset_sum`.
 
-**:**{:.exercise} Optimiser les appels récursifs du point précédent
-pour que le troisième paramètre $$t$$ soit le plus petit possible
-(tout en donnant une solution correcte).
-
 ## Amélioration par programmation dynamique
 
 Les appels récursifs de la partie précédente passent beaucoup de temps
-à recalcuer des ensembles $$P(i,t)$$. Par la technique de la
-programmation dynamique, nous pouvons mémoriser ces appels et
+à recalcuer les valeurs $$M(i,t)$$. Par les techniques de mémoisation
+et de la programmation dynamique, nous pouvons mémoriser ces appels et
 réutiliser les résultats pour les appels suivants.
 
+L'idée de la mémoisation consiste à calculer, à la place de
+$$M(i,t)$$, toute la liste $$P(i,t)$$ définie comme suit :
+
+$$P(i,t) = \left\{\sum_{x∈S'}x ≤ t \;\middle\vert\; S'⊂\{x_1,\dots,x_i\}\right\}.$$
+
+Les deux appels récursifs de l'algorithme précedent, sont donc
+remplacés par un appel récursif qui calcule $$P(i,t)$$, suivi par le
+calcul de
+
+$$P'(i,t) = \left\{x_{i+1} + \sum_{x∈S'}x ≤ t \;\middle\vert\; S'⊂\{x_1,\dots,x_i\}\right\}.$$
+
+L'ensemble $$P(i+1,t)$$ sera alors obtenu en fusionnant $$P(i,t)$$ et
+$$P'(i,t)$$. La fusion est facilitée on fait attention à garder les
+deux listes ordonnées (comparer avec le [tri fusion](tris)).
+
 **(mémoisation) :**{:.exercise} Écrire une variante
-`partial_subset_sum_memo` qui stocke les listes $$P(i,t)$$ dans une
-structure de données globale, et qui réutilise ces calculs lorsque
-cela est possible.
+`partial_subset_sum_memo` qui procède comme décrit ci-dessus, en
+calculant les listes $$P(i,t)$$ par un appel récursif.
 
 **:**{:.exercise} Écrire une variante `partial_subset_sum_dyn` sans
 appels récursifs.
