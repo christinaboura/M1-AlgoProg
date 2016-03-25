@@ -60,10 +60,23 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 18 mars
 : **Programmation linéaire**
+	
+	Références : CLRS §29.
+
 : **TD :** [Programmation linéaire](tds/linprog)
 
 25 mars
-: Programmation linéaire entière, algorithmes NP-complets
+: **Problèmes NP-complets**
+	
+	- Problèmes d'optimisation, problèmes décionnels,
+	- Problèmes NP-complets, NP-durs, SAT,
+	- Programmation linéaire entière,
+	- Sac à dos,
+	- Autres problèmes.
+	
+	Références : CLRS §16.2, §34, §35.5.
+
+: **TD :** [Sacs à dos](tds/knapsack)
 
 1 avril
 : Algorithmes Géometriques
