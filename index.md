@@ -79,7 +79,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : **TD :** [Sacs à dos](tds/knapsack)
 
 1 avril
-: Algorithmes Géometriques
+: [2e contrôle continu](annales/2016-cc2)
 
 ## Modalité de contrôle
 
@@ -87,7 +87,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : 1er contrôle continu ([Sujet](annales/2016-cc1.pdf))
 
 1 avril
-: 2e contrôle continu
+: 2e contrôle continu ([Sujet](annales/2016-cc2))
 
 **Note finale :** (Examen + CC)/2
 
