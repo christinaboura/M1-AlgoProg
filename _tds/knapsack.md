@@ -5,7 +5,7 @@ title: Sacs à dos
 Dans ce TD nous allons implanter des algorithmes pour résoudre le
 problème de la *somme de sous-ensembles* (*Subset sum*), aussi connu
 sous le nom de problème du *sac à dos*. On rappelle le problème :
-étant donné un unsemble d'entiers positifs $$S = \{x_1, x_2, \dots,
+étant donné un ensemble d'entiers positifs $$S = \{x_1, x_2, \dots,
 x_n\}$$, et un entier $$t≥0$$, déterminer s'il existe un sous-ensemble
 $$S'⊂S$$ tel que
 
