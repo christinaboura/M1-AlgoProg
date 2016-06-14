@@ -92,6 +92,9 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 4 mai
 : examen 1e session ([Sujet](annales/2016-exam))
 
+15 juin
+: examen 2e session ([Sujet](annales/2016-exam-2))
+
 **Note finale :** (Examen + CC)/2
 
 
