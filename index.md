@@ -34,7 +34,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : Programmation dynamique
 : **TD :** [Programmation dynamique](tds/prog-dynamique)
 
-10 mars
+10 
 : **Graphes :**
 	
 	- Notions de base, représentation, matrice d'adjacence ;
