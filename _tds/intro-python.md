@@ -6,7 +6,7 @@ Python est un langage de programmation orienté objet (mais oublions le côté o
 
 Ce mini-tutoriel est une introduction très basique et rapide à la syntaxe et aux règles du langage. Si vous voulez approfondir plus, plein de tutoriels bien faits existent sur le net, n'hésitez pas à les consulter.
 
-Pendant ces TPs nous allons travailler avez l'environnement [SageMathCloud](https://cloud.sagemath.com/). Commencez par y ouvrir un compte. La première partie de ce tutoriel va se faire en *mode terminal*. Pour ceci, cliquez sur `New Project...` pour créer un nouveau projet, et ensuite sur `New` pour créer un nouveau terminal. Tapez dans le terminal `python3` pour la lancer l'interpréteur. Vous êtes maintenant prêts pour commencer ! 
+Pendant ces TPs nous allons travailler avez l'environnement [SageMathCloud](https://cloud.sagemath.com/). Commencez par y ouvrir un compte. La première partie de ce tutoriel va se faire en *mode terminal*. Pour ceci, cliquez sur `New Project...` pour créer un nouveau projet, et ensuite sur `New` pour créer un nouveau terminal. Tapez dans le terminal `python3` pour lancer l'interpréteur. Vous êtes maintenant prêts pour commencer ! 
 
 ## Python en mode calculatrice
 
@@ -30,7 +30,7 @@ La plus simple utilisation que vous pouvez faire de Python est de l'utiliser com
 81
 >>> 10 < 2 * 13  # Comparaison
 True
->>> 10 < 4 or not 10 < 4  # Connecteurs boléens
+>>> 10 < 4 or not 10 < 4  # Connecteurs booléens
 True
 >>> 1 < 2 == 1 + 1 < 3   # Comparaisons chaînées
 True
@@ -48,7 +48,7 @@ True
 
 ## Données et variables
 
-Pour pouvoir accéder aux données qu'un programme manipule on fait usage d'un nombre de **variables** de différents types. Une variable apparaît dans un langage de programmation sous son *nom de variable*, mais il ne s'agit de rien d'autre qu'une référence désignant l'adresse mémoire où sont stockés les données.
+Pour pouvoir accéder aux données qu'un programme manipule on fait usage d'un nombre de **variables** de différents types. Une variable apparaît dans un langage de programmation sous son *nom de variable*, mais il ne s'agit de rien d'autre qu'une référence désignant l'adresse mémoire où sont stockées les données.
 
 En Python il existe un nombre de règles simples sur les noms de variables qu'il faut respecter :
 
@@ -88,8 +88,7 @@ On peut aussi effectuer des **affectations parallèles**.
 7
 ~~~
 
-En Python, contrairement à d'autres langages de programmation, il n'est pas nécessaire d'écrire des lignes de code spécifiques pour définir le type des variables avant de pouvoir les utiliser. Il suffit d'assigner une valeur à un nom de variable pour que celle-ci soit automatiquement créé avec le type qui correspond à la valeur fournie. On dit alors que Python est un langage à **typage dynamique**, contrairement aux langages à **typage statique** comme c'est la cas des langages C ou Java. De plus, les variables peuvent changer de type au gré des
-affectations. On peut vérifier ceci avec l'opérateur `type`.
+En Python, contrairement à d'autres langages de programmation, il n'est pas nécessaire d'écrire des lignes de code spécifiques pour définir le type des variables avant de pouvoir les utiliser. Il suffit d'assigner une valeur à un nom de variable pour que celle-ci soit automatiquement créée avec le type qui correspond à la valeur fournie. On dit alors que Python est un langage à **typage dynamique**, contrairement aux langages à **typage statique** comme c'est le cas des langages C ou Java. De plus, les variables peuvent changer de type au gré des affectations. On peut vérifier ceci avec l'opérateur `type`.
 
 ~~~
 >>> x = 3
@@ -143,7 +142,7 @@ L'instruction qui est sans doute la plus utile afin de permettre un tel comporte
 
 #### Indentation
 
-En Python, les instructions composées (comme c'est le cas de l'instruction `if`, mais aussi des instructions `while`, `for` et des *fonctions* que nous verrons plus tard) ont toujours la même structure : une *ligne d'entête* terminée par un *deux-points*, suivie d'un bloc d'instructions indenté sous la ligne d'entête. Tous les instructions de ce bloc **doivent être indentées exactement au même niveau**. Une convention très respectée est d'utiliser un décalage de 4 espaces. 
+En Python, les instructions composées (comme c'est le cas de l'instruction `if`, mais aussi des instructions `while`, `for` et des *fonctions* que nous verrons plus tard) ont toujours la même structure : une *ligne d'entête* terminée par un *deux-points*, suivie d'un bloc d'instructions indenté sous la ligne d'entête. Toutes les instructions de ce bloc **doivent être indentées exactement au même niveau**. Une convention très respectée est d'utiliser un décalage de 4 espaces. 
 
 Avec une telle convention, il est inutile de marquer le début et la fin d’un bloc par des éléments du langage (comme des accolades { et } en C ou Java , ou les mots réservés `begin` et `end` dans certains autres langages).
 
