@@ -414,9 +414,9 @@ Voici quelques méthodes qui peuvent vous  être utiles.
 * La méthode `remove(x)` qui supprime de la liste le premier élément `x` trouvé.
 
 ~~~
->>> liste.insert(3, 13.2)
+>>> liste.remove(13.2)
 >>> liste
-[0, 3, 1, 13.2, 5.0, 6, 4.3, 7]
+[0, 3, 1, 5.0, 6, 4.3, 7]
 ~~~
 
 Cette liste des méthodes est loin d'être exhaustive. Vous pouvez trouver plus d'informations sur la page [docs.python.org](https://docs.python.org/3.1/tutorial/datastructures.html).
@@ -427,7 +427,7 @@ Définissez la liste `liste = [34, 0, -17, 5, 18, 9]`, puis effectuez les action
 
 - Triez et affichez la liste.
 
-- Ajoutez l’élément 15 à la liste et affichez la liste.
+- Ajoutez l’élément 15 à la fin de la liste et affichez la.
 
 - Renversez et affichez la liste.
 
@@ -445,7 +445,7 @@ Définissez la liste `liste = [34, 0, -17, 5, 18, 9]`, puis effectuez les action
 
 **:**{:.exercise}
 
-Modifier la fonction `fibonacci(n)` de la Section 5 afin qu'elle renvoie une liste avec les `n` termes de la suite Fibonacci.
+Modifier la fonction `fibonacci(n)` de la Section 5 afin qu'elle renvoie une liste avec les `n` premiers termes de la suite Fibonacci.
 
 # Exercices
 

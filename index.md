@@ -34,7 +34,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : Programmation dynamique
 : **TD :** [Programmation dynamique](tds/prog-dynamique)
 
-10 
+10 mars
 : **Graphes :**
 	
 	- Notions de base, représentation, matrice d'adjacence ;
@@ -99,13 +99,13 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 ## Sujets d'examen
 
-: [1er contrôle 2016](annales/2016-cc1.pdf)
+ [1er contrôle 2016](annales/2016-cc1.pdf)
 
-: [2e contrôle 2016](annales/2016-cc2.pdf)
+ [2e contrôle 2016](annales/2016-cc2)
 
-: [Examen 1er session 2016](annales/2016-exam)
+ [Examen 1e session 2016](annales/2016-exam)
 
-: [Examen 2e session 2016](annales/2016-exam-2)
+ [Examen 2e session 2016](annales/2016-exam-2)
 
 ## Bibliographie
 
