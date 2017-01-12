@@ -28,7 +28,7 @@ defaults:
         mathjax: yes
         highlightjs: yes
   - scope:
-      path: 'tds'
+      path: '_tds'
     values:
       layout: article
       addons:
