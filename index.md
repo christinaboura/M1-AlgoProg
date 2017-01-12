@@ -8,33 +8,33 @@ title: Home
 
 Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
-**Chargés des cours et des TDs :** [Christina Boura](http://christina-boura.info/en/content/home), [Luca De Feo](http://defeo.lu/).
+**Chargés des cours et des TDs :** [Christina Boura](http://christina-boura.info/en/content/home), [Gaëtan Leurent](https://who.rocq.inria.fr/Gaetan.Leurent/).
 
 ## Liste des cours
 
-22 janvier
+20 janvier
 : Analyse d’algorithmes, modèles de complexité, complexité
   asymptotique, notation $$\Theta$$ et $$\Omega$$. 
 : **TD :** [(Re)-introduction à Python](tds/intro-python)
 
-29 janvier
+27 janvier
 : Classes de complexité, P vs NP, principe *diviser pour régner*.
 : Tris : bubble sort, merge sort, quick sort.
 : **TD :** [Algorithmes de tri](tds/tris)
 
-5 février
+3 février
 : Tableaux, listes, piles, files, Tables de hachage.
 : **TD :** [Structures de données en Python](tds/structures-donnees)
 
-12 février
+10 février
 : Arbres binaires de recherche, arbres rouge-noir
 : **TD :** [Classes python, les arbres avec Python](tds/classes-arbres)
 
-19 février
+24 février
 : Programmation dynamique
 : **TD :** [Programmation dynamique](tds/prog-dynamique)
 
-26 février
+10 mars
 : **Graphes :**
 	
 	- Notions de base, représentation, matrice d'adjacence ;
@@ -46,7 +46,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 : **TD :** [Graphes](tds/graphes)
 
-11 mars
+17 mars
 : **Algèbre linéaire :**
 
 	- Méthode de Strassen pour la mutliplication de matrices ;
@@ -58,14 +58,14 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 : **TD :** [Algèbre linéaire](tds/linalg)
 
-18 mars
+24 mars
 : **Programmation linéaire**
 	
 	Références : CLRS §29.
 
 : **TD :** [Programmation linéaire](tds/linprog)
 
-25 mars
+31 mars
 : **Problèmes NP-complets**
 	
 	- Problèmes d'optimisation, problèmes décionnels,
@@ -78,25 +78,34 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 : **TD :** [Sacs à dos](tds/knapsack)
 
-1 avril
+7 avril
 : [2e contrôle continu](annales/2016-cc2)
 
 ## Modalité de contrôle
 
-19 février
-: 1er contrôle continu ([Sujet](annales/2016-cc1.pdf))
+24 février
+: 1er contrôle continu <!--([Sujet](annales/2016-cc1.pdf))-->
 
-1 avril
-: 2e contrôle continu ([Sujet](annales/2016-cc2))
+7 avril
+: 2e contrôle continu <!--([Sujet](annales/2016-cc2))-->
 
-4 mai
+<!--4 mai
 : examen 1e session ([Sujet](annales/2016-exam))
 
 15 juin
-: examen 2e session ([Sujet](annales/2016-exam-2))
+: examen 2e session ([Sujet](annales/2016-exam-2))-->
 
 **Note finale :** (Examen + CC)/2
 
+## Sujets d'examen
+
+: [1er contrôle 2016](annales/2016-cc1.pdf)
+
+: [2e contrôle 2016](annales/2016-cc2.pdf)
+
+: [Examen 1er session 2016](annales/2016-exam)
+
+: [Examen 2e session 2016](annales/2016-exam-2)
 
 ## Bibliographie
 
