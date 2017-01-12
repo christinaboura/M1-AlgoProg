@@ -1,5 +1,4 @@
 # Settings
-baseurl: /M1-AlgoProg
 permalink: pretty
 
 # About
@@ -25,6 +24,7 @@ defaults:
     values:
       layout: default
       addons:
+        favicon: yes
         mathjax: yes
         highlightjs: yes
   - scope:

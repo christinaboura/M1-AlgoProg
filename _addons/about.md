@@ -11,7 +11,7 @@ title: About
 
 # About this website
 
-[{{ site.title }}]({{ site.baseurl }}) was created by
+[{{ site.title }}]({{ '/' | relative_url }}) was created by
 {{ site.authors | map: 'name' | array_to_sentence_string }}.
 {% if site.license %}Its contents are distributed under the
 [{{ site.license.name }}]({% include utils/joinpath.str root=site.baseurl base='' path=site.license.url %}){% endif %}.
@@ -34,18 +34,18 @@ how to improve this site, this help page is for you!
 ### Editing pages
 
 You can edit any page by clicking on the
-[* *{:.icon.fa.fa-edit}Edit](#) link in the top menu.
+[<i></i>{:.icon.fa.fa-edit} Edit](#) link in the top menu.
 {% if site.create %}You can also add new pages by clicking on the
-[* *{:.icon.fa.fa-plus}New](#) link.{% endif %}
+[<i></i>{:.icon.fa.fa-plus} New](#) link.{% endif %}
 
 This will drop you in
 {%if site.prose%}[Prose](http://prose.io/){%else%}GitHub{%endif%}'s
 file editing interface, where you can modify the source code, preview
-it, and save your changes, by giving a short description of what you
+it, and save your changes by giving a short description of what you
 modified. If you are a collaborator to this website, and have
 [write access](https://help.github.com/articles/what-are-the-different-access-permissions/)
 to [the GitHub repository]({{site.github.repository_url}}), your
-modifications will be published rightaway.  If you do not have right
+modifications will be published right away.  If you do not have write
 access, you will be asked to
 [fork the repository and make a pull request](https://help.github.com/articles/fork-a-repo/).
 See also the [next section](#forking-the-website-for-your-own-use).
@@ -95,7 +95,7 @@ by your GitHub user name).{% endif %}
 Now you can make changes to your own copy of the site. Edit some
 files, save the changes, and examine the result. The compiled static
 site will be served at
-**http://*username*.github.io/{% unless site.github.is_project_page %}{{site.github.project_title}}{% endunless %}**
+**https://*username*.github.io/{% unless site.github.is_project_page %}{{site.github.project_title}}{% endunless %}**
 (replace *username* by your GitHub user name).
 
 **Note:** the website will not be compiled when you first fork the
@@ -143,7 +143,7 @@ and start coding right away.
 
 At some point, you will need to preview your work, but pushing to
 GitHub each time you want to preview is clumsy. Your best option is to
-[install Jekyll and the required dependencies](https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll)
+[install Jekyll and the required dependencies](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
 on your machine. It is recommended to install the
 [GitHub pages gem](https://github.com/github/pages-gem) which provides
 you with the exact same versions used by GitHub to compile your site.
@@ -152,7 +152,8 @@ If you already have Ruby `≥{{ site.github.versions.ruby }}`, the
 install part should be as easy as
 
 ~~~
-gem install github-pages
+gem install bundler
+bundle install
 ~~~
 
 Note that you will need Ruby headers (`ruby-dev` package on Ubuntu) in
@@ -162,11 +163,11 @@ Now you can `cd` into your local clone of the repository and launch
 the compilation by
 
 ~~~
-jekyll serve -w -b''
+bundle exec jekyll serve
 ~~~
 
 Your site will be generated in a `_site` sub-directory, and served
-live at <http://localhost:4000/>. Any changes to the sources will
+live at <{{ site.url }}>. Any changes to the sources will
 trigger an automatic recompilation!
 
 Have fun coding!
@@ -183,6 +184,6 @@ compile it when you push.
 
 ### Starting from scratch
 
-This website was created from an empty template ate
-<https://github.com/defeo/class-boilerplate/>.  You can start from
+This website was created from an empty template at
+<https://github.com/elementsLMS/eLeMentS/>.  You can start from
 there if you want to create a website for your own class.
