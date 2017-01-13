@@ -53,6 +53,7 @@ Pour pouvoir accéder aux données qu'un programme manipule on fait usage d'un n
 En Python il existe un nombre de règles simples sur les noms de variables qu'il faut respecter :
 
 * Seules les lettres a -> z,  A -> Z, les chiffres 0-9 et le caractère '`_`' sont autorisés.
+* Le nom d'une variable doit toujours commencer par une lettre.
 * La casse est significative. Par exemple `vitesse`, `Vitesse` et `VITESSE` désignent des variables différentes.
 
 Une bonne habitude à prendre est d'écrire les noms de variables en minuscules y compris la première lettre. Il s'agit d'une convention qui est largement respectée. N'utilisez les majuscules qu'à l'intérieur du nom afin de faciliter la lisibilité. Par exemple : `matriceDesCoefficients`.
@@ -102,7 +103,7 @@ En Python, contrairement à d'autres langages de programmation, il n'est pas né
 <class 'str'>
 ~~~
 
-* **Fonction** `print()`. Pour afficher une valeur à l'écran, il existe deux possibilités. Soit, on entre au clavier le nom de la variable et ensuite on appuie sur *Enter* (comme on a fait jusqu'à ici), soit on peut utiliser la fonction `print()`. 
+* **Fonction** `print()`. Pour afficher une valeur à l'écran, il existe deux possibilités. Soit, on entre au clavier le nom de la variable et ensuite on appuie sur *Enter* (comme on a fait jusqu'à ici), soit on peut utiliser la fonction `print()`.
 
 ~~~
 >>> n = 3.5
