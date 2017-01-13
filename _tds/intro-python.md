@@ -480,7 +480,7 @@ Pour cet exercice, on suppose que l'utilisateur possède une liste croissante de
 
 Si la liste fournie est [1,3,4,6,10,14,15] et l'élément qu'on cherche est 10, alors le programme doit retourner 4 (souvenez-vous que, dans une liste, les indices sont numérotés à partir de 0).
 
-Écrivez une fonction `triDichotomique(valeur, listeTriee)` qui prend en entrée une liste triée de nombres et une valeur à rechercher dans la liste et renvoie l'indice de la liste correspondant à cette valeur.
+Écrivez une fonction `rechercheDichotomique(valeur, listeTriee)` qui prend en entrée une liste triée de nombres et une valeur à rechercher dans la liste et renvoie l'indice de la liste correspondant à cette valeur.
 
 
 
