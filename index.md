@@ -13,8 +13,14 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 ## Liste des cours
 
 20 janvier
-: Analyse d’algorithmes, modèles de complexité, complexité
-  asymptotique, notation $$\Theta$$ et $$\Omega$$. 
+: **Introduction à l'analyse des algorithmes :**
+
+    - Tri par insertion
+    - Analyse de complexité
+    - Complexité asymtotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
+
+    Références :  CLRS §1, §2 et §3.
+
 : **TD :** [(Re)-introduction à Python](tds/intro-python)
 
 27 janvier
@@ -112,7 +118,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 A. Bostan, F. Chyzak, M. Giusti, R. Lebreton, G. Lecerf, B. Salvy. *Algorithmes Efficaces en Calcul Formel*.
 : Notes de cours du MPRI. <http://perso.ens-lyon.fr/bruno.salvy/mpri/poly.pdf>.
 
-T.H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. *Algorithmique*.
+T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. *Introduction à l'Algorithmique*.
 : Trad. X. Cazin, G.-L. Kocher. Dunod 2010. ISBN:
 978-2-10-054526-1. Côte BU: 005.1 COR.
 
