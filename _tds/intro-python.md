@@ -2,7 +2,7 @@
 title: Introduction à Python
 ---
 
-Python est un langage de programmation orienté objet (mais oublions le côté objet pour l'instant). Sa première version a été écrite par Guido van Rossum qui était un grand fan de Monty Python. Ici, nous allons utilisez la version 3 du langage qui apporte beaucoup de modifications par rapport aux versions précédentes. 
+Python est un langage de programmation orienté objet (mais oublions le côté objet pour l'instant). Sa première version a été écrite par Guido van Rossum qui était un grand fan de Monty Python. Ici, nous allons utiliser la version 3 du langage qui apporte beaucoup de modifications par rapport aux versions précédentes. 
 
 Ce mini-tutoriel est une introduction très basique et rapide à la syntaxe et aux règles du langage. Si vous voulez approfondir plus, plein de tutoriels bien faits existent sur le net, n'hésitez pas à les consulter.
 
@@ -20,7 +20,7 @@ La plus simple utilisation que vous pouvez faire de Python est de l'utiliser com
 >>> 13 + 2*4  # La priorité des opérations est comme d'habitude
 21
 >>> 21 / 4    # Attention ! En Python 2 cette instruction retourne 
-5.25          # la partie  entière de la division. En Python3 c'est  
+5.25          # la partie  entière de la division. En Python 3 c'est  
               # une division flottante, même entre deux entiers
 >>> 21 // 4   # Partie entière de la division
 5
