@@ -34,7 +34,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 10 février
 : Arbres binaires de recherche, arbres rouge-noir
-: **TD :** [Classes python, les arbres avec Python](tds/classes-arbres)
+: **TD :** [Classes python, les arbres avec Python](tds/classes-arbres), [Code de Huffman](tds/huffman)
 
 24 février
 : Programmation dynamique
@@ -89,7 +89,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 ## Modalité de contrôle
 
-24 février
+3 mars
 : 1er contrôle continu <!--([Sujet](annales/2016-cc1.pdf))-->
 
 7 avril

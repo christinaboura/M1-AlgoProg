@@ -124,7 +124,7 @@ Vous devez maintenant parcourir le fichier et créer un nouvel objet ville à pa
 ~~~
 >>> fichier = open("villes.txt", "r")
 >>> for ligne in fichier :
-...     liste = ligne.rsplit(" ",-1)
+...     liste = ligne.rsplit(" ")
 ...     ville = Ville(liste)
 ~~~
 
@@ -159,7 +159,7 @@ Testez votre code :
 >>> liste = ["Maisons-Alfort", 94, 51091, 5.4, 100]
 >>> noeud = Noeud(liste)
 >>> for ligne in fichier :
-...     liste = ligne.rsplit(" ",-1)
+...     liste = ligne.rsplit(" ")
 ...     noeud.inserer(liste)
 
 fichier.close()
@@ -210,21 +210,21 @@ Testez votre code :
 Saint-Brieuc
 ~~~
 
-**:**{:.exercise} Écrivez une méthode `compter_enfants(self)` qui compte le nombre d'enfants (0, 1 ou 2) d'un noeud de l'arbre.
+**:**{:.exercise} Écrivez une méthode `compterEnfants(self)` qui compte le nombre d'enfants (0, 1 ou 2) d'un noeud de l'arbre.
 
 Testez votre code :
 
 ~~~
 >>> unNoeud = noeud.rechercher(130)
->>> nombreEnfants = unNoeud.compter_enfants()
+>>> nombreEnfants = unNoeud.compterEnfants()
 >>> print("Nombre d'enfants = ", nombreEnfants)
 1
 >>> unNoeud = noeud.rechercher(100)
->>> nombreEnfants = unNoeud.compter_enfants()
+>>> nombreEnfants = unNoeud.compterEnfants()
 >>> print("Nombre d'enfants = ", nombreEnfants)
 2
 >>> unNoeud = noeud.rechercher(200)
->>> nombreEnfants = unNoeud.compter_enfants()
+>>> nombreEnfants = unNoeud.compterEnfants()
 >>> print("Nombre d'enfants = ", nombreEnfants)
 0
 ~~~
