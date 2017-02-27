@@ -20,7 +20,7 @@ La création d'un objet se fait en deux étapes. On décrit d'abord à quoi ress
 La classe `Etudiant` modélise d'une certaine façon l'entité *étudiant* et décrit ses caractéristiques principales à travers ses *champs*.
 
 * Le mot `class` est un mot-clé utilisé lorsqu'on définit une nouvelle classe.
-* `Etudiant` est le nom de la classe. Par convention, le nom de la classe commence par une lettre majuscule et ne comporte pas d'espaces. Pn écrit par exemple : `NomDeLaClasse`.
+* `Etudiant` est le nom de la classe. Par convention, le nom de la classe commence par une lettre majuscule et ne comporte pas d'espaces. On écrit par exemple : `NomDeLaClasse`.
 * `__init__` est une méthode spéciale, appelée **constructeur**, qui permet de construire et personnaliser des objets. Le constructeur, lorsqu'il est appelé, crée et renvoie un objet du type voulu et contenant ce qui est passé en paramètre. Contrairement à d'autres langages orientés-objet, le constructeur en Python, porte toujours le même nom.
 * Le mot `self` (soi) fait référence à une instance de la classe (celle que nous sommes en train de créer ou de manipuler). C'est l'équivalent de `this` en Java et d'autres langages.
 * Notre classe `Etudiant` comporte quatre attributs ou champs. À la création d'un nouvel objet, on initialise ses champs  à l'aide des valeurs qu'on passe comme arguments au constructeur.

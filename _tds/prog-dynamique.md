@@ -16,7 +16,7 @@ Supposons que nous nous retrouvons devant un très haut immeuble avec un sac rem
 
 On fait plusieurs suppositions :
 
-* Un œuf qui survit à une chute peut être réutilise.
+* Un œuf qui survit à une chute peut être réutilisé.
 
 * Un œuf cassé doit être éliminé.
 
