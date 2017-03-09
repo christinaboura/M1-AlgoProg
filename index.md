@@ -48,7 +48,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 	- Arbres couvrants minimaux, algorithme de Prim ;
 	- Chemins les plus courts, algorithme de Dijkstra.
 	
-	Références : CLRS §22, §23 et §24.
+	Références : CLRS §22, §23, §24 §B.4, et §B.5.
 
 : **TD :** [Graphes](tds/graphes)
 
