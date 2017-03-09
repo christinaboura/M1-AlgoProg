@@ -1,5 +1,7 @@
 ---
 title: Graphes
+published: true
+layout: post
 ---
 
 ## Représenter des graphes
@@ -117,14 +119,13 @@ On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
 
 > **Entrée :** une file $$F$$ (initialisée avec un seul nœud)
 >
-> 1. Sortir l'élement $$v$$ en tête de la file ;
-> 2. Pour chaque arrête non-visitée $$e:v→u$$ :
->    1. marquer $$e$$ comme visitée ;
->    2. si $$u$$ n'a pas été visité :
->       1. marquer $$u$$ comme visité ;
->       2. marquer $$v$$ comme parent de $$u$$ ;
->       3. insérer $$u$$ dans la file ;
-> 3. Tant que la file n'est pas vide, recommencer.
+> 1. Sortir l'élement $$u$$ en tête de la file ;
+> 2. Marquer $$u$$ comme visité ;
+> 3. Pour chaque arrête $$e:u→v$$ :
+>    1. si $$v$$ n'a pas été visité :
+>       1. marquer $$u$$ comme parent de $$v$$ ;
+>       2. insérer $$v$$ dans la file ;
+> 4. Tant que la file n'est pas vide, recommencer.
 {: style="margin-left: 2em"}
 
 Vous pouvez utiliser une liste python pour remplir la file, servez
