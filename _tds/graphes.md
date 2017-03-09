@@ -1,7 +1,5 @@
 ---
 title: Graphes
-published: true
-layout: post
 ---
 
 ## Représenter des graphes
