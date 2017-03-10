@@ -67,7 +67,7 @@ colonne, afin d'avoir un affichage lisible. On rappelle que `"\n"`
 permet d'insérer un retour à la ligne dans une chaîne de caractères,
 et que `"\\"` permet d'insérer un antislash `\`.
 
-**:**{:.exercise} Écrire une fonction
+**:**{:.exercise} (facultatif) Écrire une fonction
 `rand_mat(lignes, colonnes, coeffs, min=1, max=1, symetrique=False)`
 qui renovie en sortie une matrice aléatoire à `lignes` lignes,
 `colonnes` colonnes, avec `coeffs` entrées non-nulles comprises entre
@@ -101,7 +101,7 @@ la liste de `Noeud` du graphe.
 qui renvoie une erreur si la matrice ne représente pas un graphe (par ex.,
 elle n'est pas carrée), le graphe représenté par la matrice sinon.
 
-Tester vos classes avec des matrices aléatoires.
+Tester vos classes avec des matrices aléatoires où des graphes construits à la main.
 
 ## Parcours de graphes
 
@@ -129,6 +129,13 @@ On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
 Vous pouvez utiliser une liste python pour remplir la file, servez
 vous des méthodes `pop` (on rappelle que `pop` prend un argument
 optionnel) et `append`.
+
+**:**{:.exercise} (facultatif)
+Python propose aussi une classe `deque` qui est plus efficace pour
+implémenter une file.  Il faut charger le module avec `from
+collections import deque`, puis créer une file avec `deque()` et
+utiliser les méthodes `append()` et `popleft()`.  Comparez les deux
+implémentations.
 
 ## Algorithme de Prim
 
