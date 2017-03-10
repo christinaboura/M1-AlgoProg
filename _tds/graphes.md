@@ -69,7 +69,7 @@ et que `"\\"` permet d'insérer un antislash `\`.
 
 **:**{:.exercise} **(facultatif)** Écrire une fonction
 `rand_mat(lignes, colonnes, coeffs, min=1, max=1, symetrique=False)`
-qui renovie en sortie une matrice aléatoire à `lignes` lignes,
+qui renvoie en sortie une matrice aléatoire à `lignes` lignes,
 `colonnes` colonnes, avec `coeffs` entrées non-nulles comprises entre
 `min` et `max`, et symétrique si `symetrique` vaut `True` (vous avez
 droit d'interpréter plus librement `coeffs` si `symetrique` vaut
