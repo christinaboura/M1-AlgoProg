@@ -37,18 +37,19 @@ class Matrice:
         # On mesure la largeur maximale des colonnes
         largeur = max(max(len(str(c)) for c in ligne) for ligne in self.coeffs)
         
-        # On compose la sortie. On fait un large usage des fonctions de formatage
-        # 
-        # https://docs.python.org/3.5/library/stdtypes.html#printf-style-string-formatting
+        # On compose la sortie. On utilise str.rjust() pour remplir une chaîne
+        #
+        # Pour du formatage plus général, voire:
+        # https://docs.python.org/3.5/library/string.html#formatstrings
         resultat = ""
         for (i, ligne) in enumerate(self.coeffs):
+            s = " ".join(str(c).rjust(largeur) for c in ligne)
             if i == 0:
-                template = "/ %s \\\n" 
+                resultat += "/ "+s+" \\\n" 
             elif i < len(self.coeffs) - 1:
-                template = "| %s |\n" 
+                resultat += "| "+s+" |\n" 
             else:
-                template = "\\ %s /"
-            resultat += template % " ".join(("%%%dd" % largeur) % c for c in ligne)
+                resultat += "\\ "+s+" /"
         return resultat
     
     def __eq__(self, other):
@@ -119,7 +120,7 @@ class Noeud:
         Noeud.counter += 1
         
     def __repr__(self):
-        return "Noeud(%d) %s" % (self.cnt, " ".join("→%d" % u.cnt for u in self.out))
+        return "Noeud({0}) ".format(self.cnt) + " ".join("→{0}".format(u.cnt) for u in self.out)
     
 class Graphe:
     def __init__(self, noeuds):
