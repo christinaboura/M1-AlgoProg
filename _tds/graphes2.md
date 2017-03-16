@@ -5,7 +5,8 @@ title: Graphes, suite
 ## Représenter des graphes
 
 On utilisera les classes du TD précédent pour représenter les graphes,
-par matrice d'adjacence et par pointeur.
+par matrice d'adjacence et par pointeur.  Les classes données ici
+ajoutent des poids optionnels aux arrêtes.
 
 ### Matrices
 
@@ -120,8 +121,11 @@ class Noeud:
         Noeud.counter += 1
         
     def __repr__(self):
-        return "Noeud({0}) ".format(self.cnt) + " ".join("→{0}".format(u.cnt) for u in self.out)
-    
+        if hasattr(self, 'weight'):
+            return "Noeud({0}) ".format(self.cnt) + " ".join("→{0}({1})".format(u.cnt,w) for u,w in zip(self.out,self.weight))
+        else:
+            return "Noeud({0}) ".format(self.cnt) + " ".join("→{0}".format(u.cnt) for u in self.out)
+
 class Graphe:
     def __init__(self, noeuds):
         assert isinstance(noeuds, list), "Pas une liste"
@@ -136,37 +140,57 @@ class Graphe:
         mat = [[0 for _ in self.noeuds] for _ in self.noeuds]
         # On met les 1
         for (i,v) in enumerate(self.noeuds):
-            for u in v.out:
-                mat[i][self.noeuds.index(u)] = 1
+            if hasattr(v, 'weight'):
+                for u,w in zip(v.out,v.weight):
+                    mat[i][self.noeuds.index(u)] = w
+            else:
+                for u in v.out:
+                    mat[i][self.noeuds.index(u)] = 1
         return Matrice(mat)
 
 def mat_to_graph(mat):
     assert mat.nblignes == mat.nbcolonnes, "Pas une matrice carrée"
     G = Graphe([Noeud([]) for _ in range(mat.nblignes)])
+    weighted = not all(x == 0 or x == 1 for ligne in mat.coeffs for x in ligne)
+    if weighted:
+        for u in G.noeuds:
+            u.weight= []
     for (i, ligne) in enumerate(mat.coeffs):
         for (j, c) in enumerate(ligne):
             if c:
                 G.noeuds[i].out.append(G.noeuds[j])
+                if weighted:
+                    G.noeuds[i].weight.append(c)
     return G
 
 Matrice.graphe = mat_to_graph
 ~~~
 
-On peut construire un graphe avec les operation suivantes:
+On peut construire le suivant graphe suivant avec ces opérations:
+!(https://upload.wikimedia.org/wikipedia/commons/a/ae/Graphe.jpg)
 
 ~~~python
-nodes = [ Noeud([]) for i in range(4) ]
-nodes[0].out = [ nodes[1], nodes[2] ]
-nodes[1].out = [ nodes[1], nodes[3] ]
-nodes[2].out = [ nodes[0] ]
-nodes[3].out = [ nodes[0] ]
+nodes = [ Noeud([]) for _ in range(9) ]
+nodes[0].out = [ nodes[1], nodes[7] ]
+nodes[1].out = [ nodes[2], nodes[7] ]
+nodes[2].out = [ nodes[5] ]
+nodes[3].out = [ nodes[2], nodes[4] ]
+nodes[4].out = [ nodes[5] ]
+nodes[8].out = [ nodes[7] ]
 G = Graphe(nodes)
 ~~~
 
 ## Tri topolgique
 
 **:**{:.exercise} Coder l'algorithme de tri topologique, en utilisant un
-parcours de graphe en profondeur.
+parcours de graphe en profondeur.  On rapelle l'algorithme:
+
+> **Initialisation :** une liste $$L$$ (vide)
+>
+> 1. Parcourir le graphe avec un parcours en profondeur
+> 2. Ajouter les nœud dans L quand on a finit de les explorer
+{: style="margin-left: 2em"}
+
 
 **:**{:.exercise} Ajouter un test pour detecter si le graphe est acyclique.
 
@@ -184,6 +208,35 @@ On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
 > 2. Ajouter $$e$$ et $$u$$ à $$T$$ ;
 > 3. Continuer tant qu'il reste des arêtes qui sortent de $$T$$.
 {: style="margin-left: 2em"}
+
+On pourra utiliser le gaphe suivant comme test:
+!(https://upload.wikimedia.org/wikipedia/commons/b/b4/Kruskal_Algorithm_1.svg)
+
+~~~python
+A = Noeud([])
+B = Noeud([])
+C = Noeud([])
+D = Noeud([])
+E = Noeud([])
+F = Noeud([])
+G = Noeud([])
+
+A.out = [B, D]
+A.weight = [7,5]
+B.out = [A, C, D, E]
+B.weight = [7, 8, 9, 7]
+C.out = [B, E]
+C.weight = [8, 5]
+D.out = [A, B, E, F]
+D.weight = [5, 9, 15, 6]
+E.out = [B, C, D, F, G]
+E.weight = [7, 5, 15, 8, 9]
+F.out = [D, E, G]
+F.weight = [6, 8, 11]
+G.out = [E, F]
+G.weight = [9, 11]
+Gr = Graphe([A, B, C, D, E, F, G])
+~~~
 
 ## Algorithme de Dijkstra
 
