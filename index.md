@@ -44,15 +44,23 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : **Graphes :**
 	
 	- Notions de base, représentation, matrice d'adjacence ;
-	- Parcours en largeur et en profondeur, ordre topologique ;
-	- Arbres couvrants minimaux, algorithme de Prim ;
-	- Chemins les plus courts, algorithme de Dijkstra.
+	- Parcours en largeur et en profondeur ;
 	
-	Références : CLRS §22, §23, §24, §B.4, et §B.5.
+	Références : CLRS §22, §B.4.
 
 : **TD :** [Graphes](tds/graphes)
 
 17 mars
+: **Graphes (suite) **
+	- Tri topologique
+	- Arbres couvrants minimaux, algorithme de Prim ;
+	- Chemins les plus courts, algorithme de Dijkstra.
+
+	Références : CLRS §23, §24, et §B.5.
+
+: **TD :** [Graphes](tds/graphes2)
+
+24 mars
 : **Algèbre linéaire :**
 
 	- Méthode de Strassen pour la mutliplication de matrices ;
@@ -63,13 +71,6 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 	Références : CLRS §4.2 et §28. Bostan et al. §8.
 
 : **TD :** [Algèbre linéaire](tds/linalg)
-
-24 mars
-: **Programmation linéaire**
-	
-	Références : CLRS §29.
-
-: **TD :** [Programmation linéaire](tds/linprog)
 
 31 mars
 : **Problèmes NP-complets**
