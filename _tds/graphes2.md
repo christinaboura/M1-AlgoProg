@@ -5,8 +5,8 @@ title: Graphes, suite
 ## Représenter des graphes
 
 On utilisera les classes du TD précédent pour représenter les graphes,
-par matrice d'adjacence et par pointeur.  Les classes données ici
-ajoutent des poids optionnels aux arrêtes.
+par matrice d'adjacence et par pointeur.  La solution donnée ici
+ajoute des poids optionnels aux arrêtes.
 
 ### Matrices
 
@@ -122,9 +122,10 @@ class Noeud:
         
     def __repr__(self):
         if hasattr(self, 'weight'):
-            return "Noeud({0}) ".format(self.cnt) + " ".join("→{0}({1})".format(u.cnt,w) for u,w in zip(self.out,self.weight))
+            s = " ".join("→{0}({1})".format(u.cnt,w) for u,w in zip(self.out,self.weight))
         else:
-            return "Noeud({0}) ".format(self.cnt) + " ".join("→{0}".format(u.cnt) for u in self.out)
+            s = " ".join("→{0}".format(u.cnt) for u in self.out)
+        return "Noeud({0}) ".format(self.cnt) + s
 
 class Graphe:
     def __init__(self, noeuds):
@@ -177,7 +178,7 @@ nodes[2].out = [ nodes[5] ]
 nodes[3].out = [ nodes[2], nodes[4] ]
 nodes[4].out = [ nodes[5] ]
 nodes[8].out = [ nodes[7] ]
-G = Graphe(nodes)
+G1 = Graphe(nodes)
 ~~~
 
 ## Tri topolgique
@@ -235,7 +236,7 @@ F.out = [D, E, G]
 F.weight = [6, 8, 11]
 G.out = [E, F]
 G.weight = [9, 11]
-Gr = Graphe([A, B, C, D, E, F, G])
+G2 = Graphe([A, B, C, D, E, F, G])
 ~~~
 
 ## Algorithme de Dijkstra
