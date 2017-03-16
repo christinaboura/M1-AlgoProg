@@ -111,7 +111,7 @@ def rand_mat(lignes, colonnes, coeffs, min=1, max=1, sym=False):
 ~~~python
 class Noeud:
     # Variable de classe, pour avoir un affichage plus lisible
-    counter = 0
+    counter = 1
     
     def __init__(self, out):
         assert isinstance(out, list), "Pas une liste"
