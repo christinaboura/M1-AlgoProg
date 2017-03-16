@@ -51,14 +51,15 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : **TD :** [Graphes](tds/graphes)
 
 17 mars
-: **Graphes (suite) **
+: **Graphes (suite) :**
+
 	- Tri topologique
 	- Arbres couvrants minimaux, algorithme de Prim ;
 	- Chemins les plus courts, algorithme de Dijkstra.
 
 	Références : CLRS §23, §24, et §B.5.
 
-: **TD :** [Graphes](tds/graphes2)
+: **TD :** [Graphes, suite](tds/graphes2)
 
 24 mars
 : **Algèbre linéaire :**
