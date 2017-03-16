@@ -167,7 +167,7 @@ Matrice.graphe = mat_to_graph
 ~~~
 
 On peut construire le suivant graphe suivant avec ces opérations:
-!(https://upload.wikimedia.org/wikipedia/commons/a/ae/Graphe.jpg)
+![Graphe](https://upload.wikimedia.org/wikipedia/commons/a/ae/Graphe.jpg)
 
 ~~~python
 nodes = [ Noeud([]) for _ in range(9) ]
@@ -210,7 +210,7 @@ On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
 {: style="margin-left: 2em"}
 
 On pourra utiliser le gaphe suivant comme test:
-!(https://upload.wikimedia.org/wikipedia/commons/b/b4/Kruskal_Algorithm_1.svg)
+![Graphe](https://upload.wikimedia.org/wikipedia/commons/b/b4/Kruskal_Algorithm_1.svg)
 
 ~~~python
 A = Noeud([])
