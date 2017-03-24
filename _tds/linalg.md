@@ -2,7 +2,21 @@
 title: Algèbre linéaire
 ---
 
-Ce TD est à développer **exclusivement** dans un *notebook* Jupyter.
+## Analyse de complexité
+
+V. Pan a découvert en 1978 une méthode pour multiplier:
+- des matrices $$68 × 68$$ à l'aide de 132464 multiplications
+- des matrices $$70 × 70$$ à l'aide de 143640 multiplications
+- des matrices $$72 × 72$$ à l'aide de 155424 multiplications
+
+**:**{:.exercise} Quelle est la complexité d'un algorithme diviser pour
+régner utilisant ces formules?  Comparer avec la complexité de
+l'algorithme de Strassen.
+
+
+## Arithmétique naïve des matrices
+
+Ce TD est à développer **de préférence** dans un *notebook* Jupyter.
 
 - Dans SageMathCloud, créez un nouveau notebook via l'onglet
   _« ⊕ New »_, en cliquant sur le bouton _« Jupyter Notebook »_.
@@ -24,10 +38,9 @@ Ce TD est à développer **exclusivement** dans un *notebook* Jupyter.
   [installer Jupyter](http://jupyter.readthedocs.org/en/latest/install.html)
   sur votre propre machine.
 
-## Arithmétique naïve des matrices
 
 Nous allons enrichir la classe `Matrice`, créée au
-[TD précédent](graphes), avec les méthodes pour les opérations
+[TD précédent](graphes2), avec les méthodes pour les opérations
 arithmétiques de base : addition, négation, multiplication.
 
 Nous avons déjà appris à définir la méthode spéciale `__repr__` pour
@@ -126,6 +139,8 @@ Nous voulons maintenant comparer les performances des méthodes naïve
 et de Strassen, afin de mesurer la taille à partir de laquelle la
 deuxième devient intéressante.
 
+#### Avec Jupyter
+
 Le notebook Jupyter nous permet de faire ces mesures aisément. La
 *clef magique* `%time` permet de mesurer le temps d'exécution d'une
 instruction Python. Par exemple
@@ -138,6 +153,21 @@ affichera plusieurs informations sur le temps d'exécution de la
 méthode `strassen`. La clef magique `%timeit` fait des mesures plus
 précises en exécutant plusieurs fois la même instruction, et en
 prenant une moyenne.
+
+#### Sans Jupyter
+
+Nous pouvons aussi utiliser le module `timeit` en python.
+
+Avec python ≥ 3.6, on utilise:
+~~~python
+print(timeit.autorange('A.strassen(X)', globals=globals()))
+~~~
+
+Avec python ≥ 3.5:
+~~~python
+print(timeit.repeat('A.strassen(X)', globals=globals()))
+~~~
+
 
 **:**{:.exercise} Déterminer le point où l'algorithme de Strassen
 *croise* l'algorithme naïf.
