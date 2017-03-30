@@ -66,4 +66,4 @@ $$t = \sum_{x∈S'} x.$$
 
 À partir d'une instance $$X = \{x_1, x_2, \dots, x_n\}$$ du *sac à dos*,
 construire une instance de *bin packing* telle que le nombre minimal de
-boîte soit 2 si l'instance $X$ a une solution, et 3 sinon.
+boîte soit 2 si l'instance $$X$$ a une solution, et 3 sinon.
