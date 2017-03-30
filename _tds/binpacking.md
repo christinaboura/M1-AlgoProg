@@ -49,3 +49,21 @@ On peut générer des instances de test avec:
 import random
 L = [ random.uniform(0,1) for _ in range(16) ]
 ~~~
+
+## NP-complétude
+
+On veut montrer que le problème de *bin packing* est NP-complet, par
+réduction au problème du *sac à dos*.
+
+On rappelle le problème du *sac à dos*: étant donné un ensemble
+d'entiers positifs $$X = \{x_1, x_2, \dots, x_n\}$$, et un entier
+$$t≥0$$, déterminer s'il existe un sous-ensemble $$X'⊂X$$ tel que
+
+$$t = \sum_{x∈S'} x.$$
+
+**:**{:.exercise} Montrer que le problème de *bin packing* est
+  NP-complet.  
+
+À partir d'une instance $$X = \{x_1, x_2, \dots, x_n\}$$ du *sac à dos*,
+construire une instance de *bin packing* telle que le nombre minimal de
+boîte soit 2 si l'instance $X$ a une solution, et 3 sinon.
