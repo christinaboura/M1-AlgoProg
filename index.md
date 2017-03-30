@@ -84,7 +84,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 	
 	Références : CLRS §16.2, §34, §35.5.
 
-: **TD :** [Sacs à dos](tds/knapsack)
+: **TD :** [Bin packing](tds/binpacking)
 
 7 avril
 : [2e contrôle continu](annales/2016-cc2)
@@ -95,7 +95,7 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : 1er contrôle continu ([Sujet](annales/2017-cc1.pdf))
 
 7 avril
-: 2e contrôle continu <!--([Sujet](annales/2016-cc2))-->
+: 2e contrôle continu ([Sujet d'annales](annales/2016-cc2))
 
 <!--4 mai
 : examen 1e session ([Sujet](annales/2016-exam))
