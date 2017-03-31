@@ -52,6 +52,9 @@ L = [ random.uniform(0,1) for _ in range(16) ]
 
 ## NP-complétude
 
+**:**{:.exercise} Définir le problème de décision associé au *bin
+  packing*, et montrer qu'il est dans la classe NP.
+
 On veut montrer que le problème de *bin packing* est NP-complet, par
 réduction au problème du *sac à dos*.
 
@@ -61,9 +64,12 @@ $$t≥0$$, déterminer s'il existe un sous-ensemble $$X'⊂X$$ tel que
 
 $$t = \sum_{x∈S'} x.$$
 
-**:**{:.exercise} Montrer que le problème de *bin packing* est
-  NP-complet.  
+**:**{:.exercise} Montrer que *sac à dos*$$\le_P$$*bin packing*.
 
-À partir d'une instance $$X = \{x_1, x_2, \dots, x_n\}$$ du *sac à dos*,
+Indice: à partir d'une instance $$X = \{x_1, x_2, \dots, x_n\}$$ du *sac à dos*,
 construire une instance de *bin packing* telle que le nombre minimal de
 boîte soit 2 si l'instance $$X$$ a une solution, et 3 sinon.
+
+**:**{:.exercise} En déduire que le problème de *bin packing* est
+  NP-complet.  Pensez-vous pouvoir trouver un algorithme polynomial pour
+  résoudre le *bin packing*?
