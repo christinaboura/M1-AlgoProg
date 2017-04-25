@@ -95,10 +95,10 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 7 avril
 : 2e contrôle continu ([Sujet](annales/2017-cc2.pdf))([Code pour l'exercice 6](annales/2017-cc2))([Corrigé](annales/2017-cc2_cor.pdf))
 
-<!--4 mai
-: examen 1e session ([Sujet](annales/2016-exam))
+3 mai
+: examen 1e session
 
-15 juin
+<!--15 juin
 : examen 2e session ([Sujet](annales/2016-exam-2))-->
 
 **Note finale :** (Examen + CC)/2
