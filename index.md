@@ -67,7 +67,6 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 	- Méthode de Strassen pour la mutliplication de matrices ;
 	- Exposant ω de l'algèbre linéaire, et equivalence multiplication
       ↔ inversion ;
-	- Méthode des moindres carrés.
 
 	Références : CLRS §4.2 et §28. Bostan et al. §8.
 
@@ -78,11 +77,10 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 	
 	- Problèmes d'optimisation, problèmes décionnels,
 	- Problèmes NP-complets, NP-durs, SAT,
-	- Programmation linéaire entière,
-	- Sac à dos,
 	- Autres problèmes.
+	- Algorithmes d'approximation
 	
-	Références : CLRS §16.2, §34, §35.5.
+	Références : CLRS §16.2, §34, §35.2.
 
 : **TD :** [Bin packing](tds/binpacking)
 
@@ -95,12 +93,12 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 : 1er contrôle continu ([Sujet](annales/2017-cc1.pdf))([Correction](annales/2017-cc1_cor.pdf))
 
 7 avril
-: 2e contrôle continu ([Code pour l'exercice 6](annales/2017-cc2))
+: 2e contrôle continu ([Sujet](annales/2017-cc2.pdf))([Code pour l'exercice 6](annales/2017-cc2))([Corrigé](annales/2017-cc2_cor.pdf))
 
-<!--4 mai
-: examen 1e session ([Sujet](annales/2016-exam))
+3 mai
+: examen 1e session
 
-15 juin
+<!--15 juin
 : examen 2e session ([Sujet](annales/2016-exam-2))-->
 
 **Note finale :** (Examen + CC)/2
