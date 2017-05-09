@@ -90,13 +90,13 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 ## Modalité de contrôle
 
 3 mars
-: 1er contrôle continu ([Sujet](annales/2017-cc1.pdf))([Correction](annales/2017-cc1_cor.pdf))
+: 1er contrôle continu ([Sujet](annales/2017-cc1.pdf))([Corrigé](annales/2017-cc1_cor.pdf))
 
 7 avril
 : 2e contrôle continu ([Sujet](annales/2017-cc2.pdf))([Code pour l'exercice 6](annales/2017-cc2))([Corrigé](annales/2017-cc2_cor.pdf))
 
 3 mai
-: examen 1e session
+: examen 1e session ([Sujet](annales/2017-exam.pdf)) ([Corrigé](annales/2017-exam_cor.pdf))
 
 <!--15 juin
 : examen 2e session ([Sujet](annales/2016-exam-2))-->
