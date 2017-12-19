@@ -12,7 +12,7 @@ Pendant ces TPs nous allons travailler avez l'environnement [SageMathCloud](http
 
 La plus simple utilisation que vous pouvez faire de Python est de l'utiliser comme une simple calculatrice. Vous pouvez essayer dans le terminal les calculs suivants :
 
-~~~
+~~~python
 >>> 2+6
 8
 >>> 10 - 12   # Les espaces sont optionnels
@@ -60,7 +60,7 @@ Une bonne habitude à prendre est d'écrire les noms de variables en minuscules 
 
 Le signe '`=`' est utilisé afin d'affecter une valeur à une variable. 
 
-~~~
+~~~python
 >>> n = 5
 >>> message = 'Bonjour'
 >>> pi = 3.14
@@ -69,7 +69,7 @@ Le signe '`=`' est utilisé afin d'affecter une valeur à une variable.
 
 On peut affecter une valeur à **plusieurs variables simultanément**. 
 
-~~~
+~~~python
 >>> x = y = z = 1
 >>> x
 1
@@ -81,7 +81,7 @@ On peut affecter une valeur à **plusieurs variables simultanément**.
 
 On peut aussi effectuer des **affectations parallèles**.
 
-~~~
+~~~python
 >>> x, y = 3.5, 7
 >>> x
 3.5
@@ -91,7 +91,7 @@ On peut aussi effectuer des **affectations parallèles**.
 
 En Python, contrairement à d'autres langages de programmation, il n'est pas nécessaire d'écrire des lignes de code spécifiques pour définir le type des variables avant de pouvoir les utiliser. Il suffit d'assigner une valeur à un nom de variable pour que celle-ci soit automatiquement créée avec le type qui correspond à la valeur fournie. On dit alors que Python est un langage à **typage dynamique**, contrairement aux langages à **typage statique** comme c'est le cas des langages C ou Java. De plus, les variables peuvent changer de type au gré des affectations. On peut vérifier ceci avec l'opérateur `type`.
 
-~~~
+~~~python
 >>> x = 3
 >>> type(x)
 <class 'int'>
@@ -105,7 +105,7 @@ En Python, contrairement à d'autres langages de programmation, il n'est pas né
 
 * **Fonction** `print()`. Pour afficher une valeur à l'écran, il existe deux possibilités. Soit, on entre au clavier le nom de la variable et ensuite on appuie sur *Enter* (comme on a fait jusqu'à ici), soit on peut utiliser la fonction `print()`.
 
-~~~
+~~~python
 >>> n = 3.5
 >>> print(n)
 3.5
@@ -118,7 +118,7 @@ En Python, contrairement à d'autres langages de programmation, il n'est pas né
 
 On peut combiner texte et variables dans une même fonction `print()`.
 
-~~~
+~~~python
 >>> poids = 3.67
 >>> print("Le poids du nouveau-né est", poids, "kilos.")
 Le poids du nouveau-né est 3.67 kilos.
@@ -136,7 +136,7 @@ Dans la plupart des programmes que vous allez écrire vous aurez besoin d'utilis
 
 L'instruction qui est sans doute la plus utile afin de permettre un tel comportement est l'instruction `if`. Son fonctionnement sous Python est très simple. Si la condition à droite du mot-clé `if` est vraie, alors le bloc d'instructions en dessus est exécuté. 
 
-~~~
+~~~python
 >>> if age > 18 :
 ...     print("La personne peut acheter de l'alcool.")
 ~~~
@@ -152,7 +152,7 @@ Pour cette raison, en Python on n'est pas libres d'insérer des retours
 *obligatoires* à la fin d'une instruction, et *permis* à l'intérieur
 des parenthèses. En effet, ce code n'est pas correct :
 
-~~~
+~~~python
 if a < 1
     and b < 2:
     print('hello')
@@ -160,7 +160,7 @@ if a < 1
 
 alors que ce code l'est :
 
-~~~
+~~~python
 if (a < 1
     and b < 2):
     print('hello')
@@ -168,7 +168,7 @@ if (a < 1
 
 On peut, si on le souhaite ajouter une instruction `else`  pour exécuter un autre bloc si la condition est fausse :
 
-~~~
+~~~python
 >>> if age > 18:
 ...     print("La personne peut acheter de l'alcool.")
 ... else:
@@ -177,7 +177,7 @@ On peut, si on le souhaite ajouter une instruction `else`  pour exécuter un aut
 
 Plutôt que d’emboîter des instructions `if`, on peut utiliser une instruction `if` suivie par une ou plusieurs instructions `elif` (raccourci de *else if*):
 
-~~~ 
+~~~python
 >>> if n == 0:
 ...     print("Le nombre est égal à zéro")
 ... elif n > 0:
@@ -200,7 +200,7 @@ Très souvent dans nos programmes nous avons besoin de répéter un certain nomb
 
 * La boucle `while` permet d'itérer un bloc d'instructions tant qu'une condition reste vraie.  
 
-~~~
+~~~python
 >>> a = 0
 >>> while a < 10: # N'oubliez pas le deux-points !
 ...     print(a)   # N'oubliez pas l'indentation !
@@ -215,7 +215,7 @@ Très souvent dans nos programmes nous avons besoin de répéter un certain nomb
 
 Avant d'introduire l'instruction `for` parlons un peu de la fonction `range()`. Cette fonction peut nous être très utile lorsque on veut itérer sur une suite de nombres. Elle génère des progressions arithmétiques.
 
-~~~
+~~~python
 range(2, 10) # 2, 3, 4, 5, 6, 7, 8, 9
 range(0, 15, 2) # 0, 2, 4, 6, 8, 10, 12, 14
 range(10, -50, -10) # 10, 0, -10, -20, -30, -40
@@ -224,7 +224,7 @@ range(10, -50, -10) # 10, 0, -10, -20, -30, -40
 
 La boucle `for` est très utile lorsque on veut répéter un bloc d'instructions un nombre des fois connu à l'avance. Si on veut par exemple imprimer tous les nombres de 0 à 5, voici comment on peut le faire à l'aide de l'instruction `for` et de la de la fonction `range`.
 
-~~~
+~~~python
 >>> for i in range(6): # N'oubliez pas le deux-points !
 ...     print(i)        # N'oubliez pas l'indentation !
 ...
@@ -257,7 +257,7 @@ Pour créer une fonction en Python, on commence par le mot-clé `def` (définiti
 
 Voici une fonction qui imprime les `n` premiers termes  de la suite *Fibonacci*.
 
-~~~
+~~~python
 >> def fibonacci(n):
 ...     a, b = 0, 1
 ...     for i in range(20):
@@ -272,7 +272,7 @@ Voici une fonction qui imprime les `n` premiers termes  de la suite *Fibonacci*.
 On peut bien sûr écrire une fonction qui nous renvoie quelque chose. Ceci se fait avec le mot-clé `return`.
 Voici une fonction qui renvoie la somme des carrés des entiers de 0 à `n`.
 
-~~~
+~~~python
 >>> def sommeCarres(n):
 ...     sum = 0
 ...     for i in range(n):
@@ -293,7 +293,7 @@ et affiche à l'écran les `fin` premiers éléments de la  table de multiplicat
 
 Par exemple :
 
-~~~
+~~~python
 >>> tableDeMultiplication(3, 10)
 0 3 6 9 12 15 18 21 24 27
 ~~~
@@ -302,14 +302,14 @@ Par exemple :
 
 Les listes sont des structures ordonnées de données. En Python, une liste est définie à l'aide des crochets.
 
-~~~
+~~~python
 nombres = [2,5,13,-35,0]
 fromages = ['roquefort', 'camembert', 'saint-nectaire', 'comté']
 ~~~
 
 On peut accéder aux données d'une liste à l'aide de leur indice associé.
 
-~~~
+~~~python
 >>> print(nombres[2])
 13
 >>> print(fromages[0])
@@ -322,7 +322,7 @@ comté
 
 On peut accéder à la taille d'une liste à l'aide de la fonction `len()`. Elle renvoie le nombre d'éléments présents dans la liste.
 
-~~~ 
+~~~python
 >>> len(nombres)
 5
 >>> len(fromages)
@@ -333,19 +333,19 @@ Il existe plusieurs manières de créer une liste. Voici quelques unes :
 
 * Liste vide
 
-~~~ 
+~~~python
 >>> liste = []
 ~~~
 
 * On peut créer une liste en indiquant à la création les éléments qu'elle doit contenir. Vous pouvez remarquer qu'une liste peut contenir d'éléments ayant des types variés.
 
-~~~ 
+~~~python
 >>> liste = ['ac/dc', 42, 3.14]
 ~~~
 
 * La syntaxe des *compréhensions de listes* permet de générer une liste par une boucle.
 
-~~~ 
+~~~python
 >>> liste = [i for i in range(20)]
 >>> print(liste)
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
@@ -353,7 +353,7 @@ Il existe plusieurs manières de créer une liste. Voici quelques unes :
 
 * Liste contenant le carré de tous les entiers de 0 à 9.
 
-~~~ 
+~~~python
 >>> liste = [i ** 2 for i in range(10)]
 >>> print(liste)
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
@@ -361,7 +361,7 @@ Il existe plusieurs manières de créer une liste. Voici quelques unes :
 
 On peut parcourir une liste à l'aide d'une boucle `for`,
 
-~~~ 
+~~~python
 >>> nombres = [9, 13, -2, 25, 31, 7, 4]
 >>> sum = 0
 >>> for i in nombres:
@@ -372,7 +372,7 @@ On peut parcourir une liste à l'aide d'une boucle `for`,
 
 où à l'aide d'une boucle `while`.
 
-~~~
+~~~python
 >>> i = 0
 >>> sum = 0
 >>> while i < len(nombres):
@@ -384,7 +384,7 @@ où à l'aide d'une boucle `while`.
 
 On peut tester si un élément est dans la liste à l'aide de l'instruction `in`.
 
-~~~ 
+~~~python
 >>> print(-2 in nombres) 
 True
 >>> print(8 in nombres) 
@@ -397,7 +397,7 @@ Voici quelques méthodes qui peuvent vous  être utiles.
 
 * La méthode `append(x)` qui permet d'ajouter un élément `x` à la fin d'une liste.
 
-~~~
+~~~python
 >>> liste = [0, 3, 1, 5.0, 6, 4.3]
 >>> liste.append(7)
 >>> print(liste)
@@ -406,7 +406,7 @@ Voici quelques méthodes qui peuvent vous  être utiles.
 
 * La méthode `insert(index,x)`qui insère l'élément `x` à la position `index` de la liste.
 
-~~~
+~~~python
 >>> liste.insert(3, 13.2)
 >>> liste
 [0, 3, 1, 13.2, 5.0, 6, 4.3, 7]
@@ -414,7 +414,7 @@ Voici quelques méthodes qui peuvent vous  être utiles.
 
 * La méthode `remove(x)` qui supprime de la liste le premier élément `x` trouvé.
 
-~~~
+~~~python
 >>> liste.remove(13.2)
 >>> liste
 [0, 3, 1, 5.0, 6, 4.3, 7]

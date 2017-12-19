@@ -45,6 +45,7 @@ On note $$ S = \sum_{i=1}^n s_i $$
 Jusqu'à quelle tailles de donnée peut-on utiliser l'algorithme exact?
 
 On peut générer des instances de test avec:
+
 ~~~python
 import random
 L = [ random.uniform(0,1) for _ in range(16) ]

@@ -8,7 +8,7 @@ Avant de commencer les exercices, voici quelques mots sur les chaînes de caract
 
 Les chaînes de caractères sont vu par Python comme une *collection ordonnée d'éléments*. Ceci veut dire que les caractères qui constituent une chaîne sont disposés dans un certain ordre et qu'on peut accéder à chaque caractère à l'aide d'un indice. **Attention !** Le premier caractère de la chaîne a comme indice 0 (et pas 1).
 
-~~~
+~~~python
 >>> chaine = "Algorithmique et Programmation"
 >>> print(chaine[0], chaine[2], chaine[10], chaine[-1])
 A g q n
@@ -16,14 +16,14 @@ A g q n
 
 Comme vous pouvez le voir, les indices négatifs peuvent être utilisés afin d'accéder aux caractères de la chaîne par la fin. Nous pouvons determiner la longueur d'une chaîne, c.-à-d. le nombre de ses caractères,  à l'aide de la fonction `len()`.
 
-~~~
+~~~python
 >>> print(len(chaine))
 30
 ~~~
 
 Il est possible de concaténer deux chaînes à l'aide de l'opérateur `+`.
 
-~~~
+~~~python
 >>> ch1 = "La raison est la tienne "
 >>> ch2 = "mais la chèvre est la mienne"
 >>> ch1 + ch2
@@ -62,7 +62,7 @@ Dans l'exemple suivant vous pouvez observer l'évolution de la pile à chaque le
 
 Voici une fonctionnalité des listes en Python qui peut vous aider dans la réalisation de votre programme :
 
-~~~
+~~~python
 >>> L = ['a', 'b', 'c', 'd']
 >>> L.pop()
 'd'
@@ -72,7 +72,7 @@ Voici une fonctionnalité des listes en Python qui peut vous aider dans la réal
 
 La méthode `pop()`appliquée à une liste, dépile et renvoie l'élément au sommet de la pile. La méthode `append(a)`quant à elle, ajoute l'élément `a` au sommet de la pile.
 
-~~~
+~~~python
 >>> L.append('e')
 >>> print(L)
 ['a', 'b', 'c', 'e']
@@ -140,7 +140,7 @@ On reconnaît un dictionnaire au fait que ses éléments sont entourés par une 
 
 Supposons qu'on souhaite créer un dictionnaire pour traduire les couleurs du français en anglais.
 
-~~~
+~~~python
 >>> dico = {}
 >>> dico['vert'] = 'green'
 >>> dico['rouge'] = 'red'
@@ -151,14 +151,14 @@ Supposons qu'on souhaite créer un dictionnaire pour traduire les couleurs du fr
 
 Lorsque on affiche un dictionnaire, ceci apparaît sous la forme *clé-valeur*. Ici les mots français sont les clés, et les mots anglais les valeurs. Pour voir la traduction du mot *rouge* en anglais il suffit d'écrire
 
-~~~
+~~~python
 >>> print(dico['rouge'])
 red
 ~~~
 
 On peut supprimer un couple clé-valeur du dictionnaire avec la commande `del`
 
-~~~
+~~~python
 >>> del dico['noir']
 >>> print(dico)
 {'vert': 'green', 'rouge': 'red'}
@@ -166,14 +166,14 @@ On peut supprimer un couple clé-valeur du dictionnaire avec la commande `del`
 
 On peut connaître le nombre d'entrées dans le dictionnaire à chaque instant en utilisant la fonction `len()`.
 
-~~~
+~~~python
 >>> print(len(dico))
 2
 ~~~
 
 Il possible de tester si la traduction d'une couleur se trouve dans le dictionnaire ou pas à l'aide du mot-clé `in`.
 
-~~~
+~~~python
 >>> couleur = "blanc"
 >>> if couleur in dico :
 ...     print("Traduction :", dico[couleur])
@@ -185,21 +185,21 @@ La traduction de ce mot est inconnue.
 
 Nous pouvons appliquer aux dictionnaires quelques méthodes spécifiques. La méthode `keys()` renvoie la séquence des clés utilisées dans le dictionnaire.
 
-~~~
+~~~python
 >>> print(dico.keys())
 dict_keys(['vert', 'rouge'])
 ~~~
 
 De façon analogue, la méthode `values()` permet de voir la séquence des *valeurs* qui se trouvent dans le dictionnaire.
 
-~~~
+~~~python
 >>> print(dico.values())
 dict_values(['green', 'red'])
 ~~~
 
 On peut parcourir un dictionnaire de plusieurs façons en utilisant une simple boucle `for`.
 
-~~~
+~~~python
 >>> for cle in dico :
 ...     print(cle)
 ... 
@@ -207,7 +207,7 @@ vert
 rouge
 ~~~
 
-~~~
+~~~python
 >>> for cle in dico :
 ...     print(cle, dico[cle])
 ... 
@@ -215,7 +215,7 @@ vert green
 rouge red
 ~~~
 
-~~~
+~~~python
 >>> for cle, valeur in dico.items() :
 ...     print(cle, valeur)
 ... 
@@ -245,7 +245,7 @@ Ecrivez les fonctions suivantes :
 
 * Une fonction `creerDictionnaire()` qui crée et retourne le dictionnaire des correspondances. Pour cela, vous pouvez utiliser le code ASCII des lettres minuscules. Les fonctions `ord(c)` et `chr(c)` vous seront sans doute utiles :
 
-~~~
+~~~python
 >>> ord('a')
 97
 >>> chr(97)

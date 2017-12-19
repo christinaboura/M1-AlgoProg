@@ -12,7 +12,7 @@ $$[5, 1, 2, 4, 3].$$
 
 Voici comment se passe le premier *passage*.
 
-~~~
+~~~python
 [5, 1, 2, 4, 3] # On compare 5 et 1 et on les inverse.
 [1, 5, 2, 4, 3] # On compare 5 et 2 et on les inverse.
 [1, 2, 5, 4, 3] # On compare 5 et 4 et on les inverse.
@@ -22,7 +22,7 @@ Voici comment se passe le premier *passage*.
 
 Comme on peut le voir, l'algorithme compare à chaque fois des éléments adjacents et les échange s'ils ne sont pas dans l'ordre. À la fin de ce premier passage, l'élément le plus grand du tableau (ici l'élément 5) se retrouve à la fin du tableau à sa position définitive. Le tableau n'est cependant pas encore complètement trié et nous devons donc continuer par un nouveau passage. Pendant ce nouveau passage on peut ignorer la dernière casse du tableau, car cette casse contient déjà l'élément le plus grand et ne nécessite donc pas d'être traité à nouveau.  
 
-~~~
+~~~python
 [1, 2, 4, 3, 5] # On compare 1 et 2 et on ne fait rien.
 [1, 2, 4, 3, 5] # On compare 2 et 4 et on ne fait rien.
 [1, 2, 4, 3, 5] # On compare 4 et 3 et on les inverse.
@@ -45,13 +45,13 @@ Tri-Bulles(T)
 
 * Implémentez cette version de l'algorithme en Python et testez-là en lui donnant en entrée une liste aléatoire de nombres entiers. Pour générer une liste `L` de `t` nombres entiers aléatoires compris dans l'interval `[a, b)`on peut écrire :
 
-~~~
+~~~python
 L = random.sample(range(a, b), t)
 ~~~
 
 Par exemple, pour générer une liste de 10 entiers compris entre 0 et 99 il suffit d'écrire :
 
-~~~
+~~~python
 >>> import random
 >>> L = random.sample(range(0, 100), 10)
 >>> L

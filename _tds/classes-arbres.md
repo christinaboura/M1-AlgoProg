@@ -8,7 +8,7 @@ Python est un langage orienté-objet. En ce langage, absolument tout est un obje
 
 La création d'un objet se fait en deux étapes. On décrit d'abord à quoi ressemble notre objet et on demande ensuite à l’ordinateur d’utiliser cette description pour le fabriquer. Créons une classe `Etudiant`.
 
-~~~
+~~~python
 >>> class Etudiant :
 ...     def __init__(self, nom, prenom, numero_etudiant, age) :
 ...         self.nom = nom
@@ -27,13 +27,13 @@ La classe `Etudiant` modélise d'une certaine façon l'entité *étudiant* et d�
 
 Créons maintenant un objet `Etudiant`.
 
-~~~
+~~~python
 >>> unEtudiant = Etudiant("Dupont", "Marcel", 2110012, 23)
 ~~~
 
 Nous allons maintenant voir comment définir les *méthodes d'instance* d'une classe. Ce sont des méthodes (fonctions) qui s'appliquent directement aux objets, instances de la classe. Vous avez déjà utilisé des méthodes d'instance plusieurs fois sans vous en rendre probablement compte. Par exemple, lorsque vous écrivez
 
-~~~
+~~~python
 >>> liste = list([1, 2, 3])
 >>> liste.append(4)
 >>> print(liste)
@@ -44,7 +44,7 @@ vous appelez la *méthode* `append()` de la classe `list` sur l'objet `liste` qu
 
 Voici alors quelques méthodes que nous pouvons définir dans notre classe `Etudiant`.
 
-~~~
+~~~python
 >>> class Etudiant :
 ...     def __init__(self, nom, prenom, numero_etudiant, age) :
 ...         self.nom = nom
@@ -67,7 +67,7 @@ Voici alors quelques méthodes que nous pouvons définir dans notre classe `Etud
 
 * Toutes les méthodes d'instance prennent `self` comme premier argument. L'utilisation d'une méthode d'instance est très simple. Il suffit d'écrire le nom de l'objet, suivi par un '`.`' et suivi ensuite par le nom de la méthode.
 
-~~~
+~~~python
 >>> print(unEtudiant.getNom())
 Dupont
 >>> print(unEtudiant.getPrenom())
@@ -107,7 +107,7 @@ Ajoutez ensuite les 3 méthodes suivantes à votre classe :
 
 Testez votre classe en tapant :
 
-~~~
+~~~python
 
 >>> liste = ["Maisons-Alfort", 94, 51091, 5.4, 100]
 >>> ville = Ville(liste)
@@ -121,7 +121,7 @@ Maisons-Alfort 94 51091 5.4
 
 Vous devez maintenant parcourir le fichier et créer un nouvel objet ville à partir des informations contenues dans chaque ligne du fichier. Pour cela, il vous suffit de copier-coller le code ci-dessous :
 
-~~~
+~~~python
 >>> fichier = open("villes.txt", "r")
 >>> for ligne in fichier :
 ...     liste = ligne.rsplit(" ")
@@ -138,7 +138,7 @@ Notre but maintenant est d'insérer toutes ces villes dans un arbre binaire de r
 
 Commencez par créer une classe `Noeud` ayant le constructeur suivant :
 
-~~~
+~~~python
 >>> class Noeud:
 ...    def __init__(self,liste):
 ...        self.gauche = None
@@ -154,7 +154,7 @@ Cette classe a donc trois attributs (comme attendu pour un ABR) : un fils gauche
 
 Testez votre code :
 
-~~~
+~~~python
 >>> fichier = open("villes.txt", "r")
 >>> liste = ["Maisons-Alfort", 94, 51091, 5.4, 100]
 >>> noeud = Noeud(liste)
@@ -201,7 +201,7 @@ Bordeaux 33 215374 49.4
 
 Testez votre code :
 
-~~~
+~~~python
 >>> unNoeud = noeud.rechercher(130)
 >>> if unNoeud is not None :
 ...    unNoeud.ville.afficherNom()
@@ -214,7 +214,7 @@ Saint-Brieuc
 
 Testez votre code :
 
-~~~
+~~~python
 >>> unNoeud = noeud.rechercher(130)
 >>> nombreEnfants = unNoeud.compterEnfants()
 >>> print("Nombre d'enfants = ", nombreEnfants)

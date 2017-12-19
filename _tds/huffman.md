@@ -18,7 +18,7 @@ Cet exercice a comme but de construire l'arbre de Huffman en Python et de l'util
 
 **:**{:.exercise} Commencez par créer une classe `Node` qui représentera le noeud d'un arbre binaire contenant les données nécessaires à l'algorithme de Huffman. Ces données sont une variable `symbol` pour représenter un symbole de l'alphabet à encoder ainsi qu'un nombre réel `freq` pour représenter sa fréquence. Les champs `left` et `right` permettent de pointer vers les noeuds fils, et ils ont la valuer spéciale `None` lorsque le noeud est une feuille. Complétez le constructeur de la classe.
 
-~~~
+~~~python
 >>> class Node :
 ...     def __init__(self, symbol, freq, right, left) :
         # A completer
@@ -36,14 +36,14 @@ Cet exercice a comme but de construire l'arbre de Huffman en Python et de l'util
 
 Testez votre méthode avec les données suivantes :
 
-~~~
+~~~python
 symbols = ['a', 'b', 'c', 'd']
 freqs = [0.25, 0.45, 0.20, 0.10]
 ~~~
 
 ou lorsque vous êtes vraiment sûrs de votre code avec :
 
-~~~
+~~~python
 symbols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -57,7 +57,7 @@ freqs = [0.03, 0.12, 0.01, 0.06, 0.04, 0.04, 0.04, 0.01, 0.04,
 
 *Complétez la méthode `createCode`, qui prend en entrée la racine de l’arbre de Huffman, et qui renvoie un dictionnaire, contenant dans l’ordre les codages (binaires) des symboles de ‘a’ à ‘z’. Pour cette méthode, un algorithme récursif est le plus adapté à parcourir l’arbre. Par exemple, vous pouvez ajouter une méthode
 
-~~~
+~~~python
 def traversal(node, code, codes)
 ~~~
 qui parcourt tout le sous-arbre en dessous de `node`, en remplissant le dictionnaire de `codes`. Ici, `node`est un noeud quelconque de l'arbre, `code` est une chaîne contenant le code du chemin parcouru jusqu'au noeud et codes est le dictionnaire qui sera rempli avec les encodages.
