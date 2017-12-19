@@ -115,8 +115,10 @@ Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
 
 ## Bibliographie
 
-A. Bostan, F. Chyzak, M. Giusti, R. Lebreton, G. Lecerf, B. Salvy. *Algorithmes Efficaces en Calcul Formel*.
-: Notes de cours du MPRI. <http://perso.ens-lyon.fr/bruno.salvy/mpri/poly.pdf>.
+A. Bostan, F. Chyzak, M. Giusti, R. Lebreton, G. Lecerf, B. Salvy, É. Schost. *Algorithmes Efficaces en Calcul Formel*.
+: 686 pages. Imprimé par CreateSpace. Aussi disponible en version
+  électronique. Palaiseau: Frédéric Chyzak (auto-édit.), sept. 2017. ISBN:
+  979-10-699-0947-2. <https://hal.archives-ouvertes.fr/AECF/>
 
 T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. *Introduction à l'Algorithmique*.
 : Trad. X. Cazin, G.-L. Kocher. Dunod 2010. ISBN:
