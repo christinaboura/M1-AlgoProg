@@ -26,7 +26,6 @@ defaults:
       addons:
         favicon: yes
         mathjax: yes
-        highlightjs: yes
   - scope:
       path: '_tds'
     values:
