@@ -24,6 +24,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 **TD :** [(Ré)-introduction à Python](tds/intro-python)
 
 
+
 2 février
 
 **Algorithmes de tri.**
@@ -33,12 +34,14 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 **TD :** [Algorithmes de tri](tds/tris)
 
 
+
 9 février
 
 **Structures de données.**
    - Tableaux, listes, piles, files, tables de hachage
 	
 **TD :** [Structures de données](tds/structures-donnees)
+
 
 
 16 février
@@ -50,6 +53,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 **TD :** [Arbres](tds/classes-arbres), [Code de Huffman](tds/huffman)
 
 
+
 23 février
 
 **Programmation dynamique.**
@@ -57,14 +61,17 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 **TD :** [Programmation dynamique](tds/prog-dynamique)
 
 
+
 2 mars
 
 ***Vacances.***
 
 
+
 9 mars
 
 ***1er contrôle continu.***
+
 
 
 16 mars
@@ -74,6 +81,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
    - Parcours en largeur et en profondeur
 	
 **TD :** [Graphes](tds/graphes)
+
 
 
 23 mars
@@ -86,6 +94,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 **TD :** [Graphes (bis)](tds/graphes2)
 
 
+
 30 mars
 
 **Algèbre linéaire.**
@@ -93,6 +102,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
    - Exposant ω de l'algèbre linéaire, et equivalence multiplication ↔ inversion ;
 
 **TD :** [Algèbre linéaire](tds/linalg)
+
 
 
 06 avril
@@ -104,6 +114,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
    - Algorithmes d'approximation
 
 **TD :** [Bin packing](tds/binpacking)
+
 
 
 13 avril
