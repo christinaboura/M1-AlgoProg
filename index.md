@@ -15,97 +15,99 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 ## Liste des cours
 
 26 janvier
-Introduction à l'analyse des algorithmes.
 
-	- Tri par insertion
-	- Analyse de complexité
-	- Complexité asymtotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
+**Introduction à l'analyse des algorithmes.**
+   - Tri par insertion
+   - Analyse de complexité
+   - Complexité asymtotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
 
 **TD :** [(Ré)-introduction à Python](tds/intro-python)
 
 
 2 février
-Algorithmes de tri.
 
-	- Classes de complexité, P vs NP, principe "diviser pour régner"
-	- Tris : bubble sort, merge sort, quick sort
+**Algorithmes de tri.**
+   - Classes de complexité, P vs NP, principe "diviser pour régner"
+   - Tris : bubble sort, merge sort, quick sort
 
 **TD :** [Algorithmes de tri](tds/tris)
 
 
 9 février
-Structures de données.
 
-	- Tableaux, listes, piles, files, tables de hachage
+**Structures de données.**
+   - Tableaux, listes, piles, files, tables de hachage
 	
-**TD :** [Structures de données en Python](tds/structures-donnees)
+**TD :** [Structures de données](tds/structures-donnees)
 
 
 16 février
-Arbres.
 
-	- Arbres binaires de recherche
-	- Arbres rouge-noir
+**Arbres.**
+   - Arbres binaires de recherche
+   - Arbres rouge-noir
 
-**TD :** [Classes python, les arbres avec Python](tds/classes-arbres), [Code de Huffman](tds/huffman)
+**TD :** [Arbres](tds/classes-arbres), [Code de Huffman](tds/huffman)
 
 
 23 février
-Programmation dynamique.
+
+**Programmation dynamique.**
 
 **TD :** [Programmation dynamique](tds/prog-dynamique)
 
 
 2 mars
-Vacances.
+
+***Vacances.***
 
 
 9 mars
-1er contrôle continu.
+
+***1er contrôle continu.***
 
 
 16 mars
-Graphes.
 
-	- Notions de base, représentation, matrice d'adjacence
-	- Parcours en largeur et en profondeur
+**Graphes.**
+   - Notions de base, représentation, matrice d'adjacence
+   - Parcours en largeur et en profondeur
 	
 **TD :** [Graphes](tds/graphes)
 
 
 23 mars
-Graphes (suite).
 
-	- Tri topologique
-	- Arbres couvrants minimaux, algorithme de Prim
-	- Chemins les plus courts, algorithme de Dijkstra
+**Graphes (suite).**
+   - Tri topologique
+   - Arbres couvrants minimaux, algorithme de Prim
+   - Chemins les plus courts, algorithme de Dijkstra
 
-**TD :** [Graphes, suite](tds/graphes2)
+**TD :** [Graphes (bis)](tds/graphes2)
 
 
 30 mars
-Algèbre linéaire.
 
-	- Méthode de Strassen pour la mutliplication de matrices
-	- Exposant ω de l'algèbre linéaire, et equivalence multiplication ↔ inversion ;
+**Algèbre linéaire.**
+   - Méthode de Strassen pour la mutliplication de matrices
+   - Exposant ω de l'algèbre linéaire, et equivalence multiplication ↔ inversion ;
 
 **TD :** [Algèbre linéaire](tds/linalg)
 
 
 06 avril
-Problèmes NP-complets.
-	- Problèmes d'optimisation, problèmes décionnels,
-	- Problèmes NP-complets, NP-durs, SAT,
-	- Autres problèmes.
-	- Algorithmes d'approximation
-	
-	Références : CLRS §16.2, §34, §35.2.
+
+**Problèmes NP-complets.**
+   - Problèmes d'optimisation, problèmes décionnels,
+   - Problèmes NP-complets, NP-durs, SAT,
+   - Autres problèmes.
+   - Algorithmes d'approximation
 
 **TD :** [Bin packing](tds/binpacking)
 
 
 13 avril
-2nd contrôle continu.
+***2nd contrôle continu.***
 
 
 
@@ -129,21 +131,21 @@ Problèmes NP-complets.
 
 2016
 
- [CC1 2016](annales/2016-cc1.pdf)
+ [CC1](annales/2016-cc1.pdf)
 
- [CC2 2016](annales/2016-cc2)
+ [CC2](annales/2016-cc2)
 
- [Examen 2016](annales/2016-exam)
+ [Examen](annales/2016-exam)
 
- [Rattrapage 2016](annales/2016-exam-2)
+ [Rattrapage](annales/2016-exam-2)
  
 2017
 
- [CC1 2017](annales/2017-cc1.pdf)
+ [CC1](annales/2017-cc1.pdf)
 
- [CC2 2017](annales/2017-cc2.pdf)
+ [CC2](annales/2017-cc2.pdf)
 
- [Examen 2017](annales/2017-exam)
+ [Examen](annales/2017-exam)
  
 
 
