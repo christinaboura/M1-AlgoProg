@@ -25,6 +25,8 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
+
+
 2 février
 
 **Algorithmes de tri.**
@@ -144,11 +146,11 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
  [CC1](annales/2016-cc1.pdf)
 
- [CC2](annales/2016-cc2)
+ [CC2](annales/2016-cc2.pdf)
 
- [Examen](annales/2016-exam)
+ [Examen](annales/2016-exam.pdf)
 
- [Rattrapage](annales/2016-exam-2)
+ [Rattrapage](annales/2016-exam-2.pdf)
  
 2017
 
@@ -156,7 +158,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
  [CC2](annales/2017-cc2.pdf)
 
- [Examen](annales/2017-exam)
+ [Examen](annales/2017-exam.pdf)
  
 
 
