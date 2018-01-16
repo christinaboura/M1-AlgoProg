@@ -25,8 +25,6 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-
-
 2 février
 
 **Algorithmes de tri.**
