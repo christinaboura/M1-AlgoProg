@@ -6,75 +6,94 @@ title: Home
 
 ## Info pratiques
 
-Cours & TD le vendredi de 13h40 à 17h40, salle Jungle (Bât Descartes - 2ème étage).
+Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème étage).
 
 **Chargé de cours et TD :** [Alex Gélin](https://alexgelin.github.io/).
+
+
 
 ## Liste des cours
 
 26 janvier
-: **Introduction à l'analyse des algorithmes :**
+Introduction à l'analyse des algorithmes.
 
-    - Tri par insertion
-    - Analyse de complexité
-    - Complexité asymtotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
+	- Tri par insertion
+	- Analyse de complexité
+	- Complexité asymtotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
 
-    Références :  CLRS §1, §2 et §3.
+**TD :** [(Ré)-introduction à Python](tds/intro-python)
 
-: **TD :** [(Re)-introduction à Python](tds/intro-python)
 
-27 janvier
-: Classes de complexité, P vs NP, principe *diviser pour régner*.
-: Tris : bubble sort, merge sort, quick sort.
-: **TD :** [Algorithmes de tri](tds/tris)
+2 février
+Algorithmes de tri.
 
-3 février
-: Tableaux, listes, piles, files, Tables de hachage.
-: **TD :** [Structures de données en Python](tds/structures-donnees)
+	- Classes de complexité, P vs NP, principe "diviser pour régner"
+	- Tris : bubble sort, merge sort, quick sort
 
-10 février
-: Arbres binaires de recherche, arbres rouge-noir
-: **TD :** [Classes python, les arbres avec Python](tds/classes-arbres), [Code de Huffman](tds/huffman)
+**TD :** [Algorithmes de tri](tds/tris)
 
-24 février
-: Programmation dynamique
-: **TD :** [Programmation dynamique](tds/prog-dynamique)
 
-10 mars
-: **Graphes :**
+9 février
+Structures de données.
+
+	- Tableaux, listes, piles, files, tables de hachage
 	
-	- Notions de base, représentation, matrice d'adjacence ;
-	- Parcours en largeur et en profondeur ;
+**TD :** [Structures de données en Python](tds/structures-donnees)
+
+
+16 février
+Arbres.
+
+	- Arbres binaires de recherche
+	- Arbres rouge-noir
+
+**TD :** [Classes python, les arbres avec Python](tds/classes-arbres), [Code de Huffman](tds/huffman)
+
+
+23 février
+Programmation dynamique.
+
+**TD :** [Programmation dynamique](tds/prog-dynamique)
+
+
+2 mars
+Vacances.
+
+
+9 mars
+1er contrôle continu.
+
+
+16 mars
+Graphes.
+
+	- Notions de base, représentation, matrice d'adjacence
+	- Parcours en largeur et en profondeur
 	
-	Références : CLRS §22, §B.4.
+**TD :** [Graphes](tds/graphes)
 
-: **TD :** [Graphes](tds/graphes)
 
-17 mars
-: **Graphes (suite) :**
+23 mars
+Graphes (suite).
 
 	- Tri topologique
-	- Arbres couvrants minimaux, algorithme de Prim ;
-	- Chemins les plus courts, algorithme de Dijkstra.
+	- Arbres couvrants minimaux, algorithme de Prim
+	- Chemins les plus courts, algorithme de Dijkstra
 
-	Références : CLRS §23, §24, et §B.5.
+**TD :** [Graphes, suite](tds/graphes2)
 
-: **TD :** [Graphes, suite](tds/graphes2)
 
-24 mars
-: **Algèbre linéaire :**
+30 mars
+Algèbre linéaire.
 
-	- Méthode de Strassen pour la mutliplication de matrices ;
-	- Exposant ω de l'algèbre linéaire, et equivalence multiplication
-      ↔ inversion ;
+	- Méthode de Strassen pour la mutliplication de matrices
+	- Exposant ω de l'algèbre linéaire, et equivalence multiplication ↔ inversion ;
 
-	Références : CLRS §4.2 et §28. Bostan et al. §8.
+**TD :** [Algèbre linéaire](tds/linalg)
 
-: **TD :** [Algèbre linéaire](tds/linalg)
 
-31 mars
-: **Problèmes NP-complets**
-	
+06 avril
+Problèmes NP-complets.
 	- Problèmes d'optimisation, problèmes décionnels,
 	- Problèmes NP-complets, NP-durs, SAT,
 	- Autres problèmes.
@@ -82,51 +101,72 @@ Cours & TD le vendredi de 13h40 à 17h40, salle Jungle (Bât Descartes - 2ème �
 	
 	Références : CLRS §16.2, §34, §35.2.
 
-: **TD :** [Bin packing](tds/binpacking)
+**TD :** [Bin packing](tds/binpacking)
 
-7 avril
-: [2e contrôle continu](annales/2016-cc2)
 
-## Modalité de contrôle
+13 avril
+2nd contrôle continu.
 
-3 mars
-: 1er contrôle continu ([Sujet](annales/2017-cc1.pdf))([Corrigé](annales/2017-cc1_cor.pdf))
 
-7 avril
-: 2e contrôle continu ([Sujet](annales/2017-cc2.pdf))([Code pour l'exercice 6](annales/2017-cc2))([Corrigé](annales/2017-cc2_cor.pdf))
 
-3 mai
-: examen 1e session ([Sujet](annales/2017-exam.pdf)) ([Corrigé](annales/2017-exam_cor.pdf))
 
-<!--15 juin
-: examen 2e session ([Sujet](annales/2016-exam-2))-->
 
-**Note finale :** (Examen + CC)/2
+## Modalités d'évaluation :
 
-## Sujets d'examen
+9 mars : 1er contrôle continu.
 
- [1er contrôle 2016](annales/2016-cc1.pdf)
+7 avril : 2nd contrôle continu.
 
- [2e contrôle 2016](annales/2016-cc2)
+ mai : Examen 
+ 
+**Note finale :** (Examen + CC)/2, où CC = (CC1 + CC2)/2.
 
- [Examen 1e session 2016](annales/2016-exam)
 
- [Examen 2e session 2016](annales/2016-exam-2)
+
+
+
+## Annales
+
+2016
+
+ [CC1 2016](annales/2016-cc1.pdf)
+
+ [CC2 2016](annales/2016-cc2)
+
+ [Examen 2016](annales/2016-exam)
+
+ [Rattrapage 2016](annales/2016-exam-2)
+ 
+2017
+
+ [CC1 2017](annales/2017-cc1.pdf)
+
+ [CC2 2017](annales/2017-cc2.pdf)
+
+ [Examen 2017](annales/2017-exam)
+ 
+
+
+ 
 
 ## Bibliographie
 
-A. Bostan, F. Chyzak, M. Giusti, R. Lebreton, G. Lecerf, B. Salvy, É. Schost. *Algorithmes Efficaces en Calcul Formel*.
-: 686 pages. Imprimé par CreateSpace. Aussi disponible en version
-  électronique. Palaiseau: Frédéric Chyzak (auto-édit.), sept. 2017. ISBN:
-  979-10-699-0947-2. <https://hal.archives-ouvertes.fr/AECF/>
+A. Bostan, F. Chyzak, M. Giusti, R. Lebreton, G. Lecerf, B. Salvy, É. Schost.
+*Algorithmes Efficaces en Calcul Formel*.
+686 pages. Imprimé par CreateSpace. Aussi disponible en version électronique.
+Palaiseau: Frédéric Chyzak (auto-édit.), sept. 2017.
+ISBN : 979-10-699-0947-2. <https://hal.archives-ouvertes.fr/AECF/>
 
-T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. *Introduction à l'Algorithmique*.
-: Trad. X. Cazin, G.-L. Kocher. Dunod 2010. ISBN:
-978-2-10-054526-1. Côte BU: 005.1 COR.
+T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein.
+*Introduction à l'Algorithmique*.
+Trad. X. Cazin, G.-L. Kocher. Dunod 2010.
+ISBN : 978-2-10-054526-1. Côte BU: 005.1 COR.
 
-G. Swinnen. *Apprendre à programmer avec Python 3*.
-: Eyrolles 2009-2010. ISBN:
-978-2-212-12708-9. Côte BU: 005.13pyt SWI.
+G. Swinnen.
+*Apprendre à programmer avec Python 3*.
+Eyrolles 2009-2010.
+ISBN : 978-2-212-12708-9. Côte BU : 005.13pyt SWI.
 
-C. H. Papadimitriou. *Computational complexity*.
-: Addison-Wesley, 1994. 523 pages.
+C. H. Papadimitriou.
+*Computational complexity*.
+Addison-Wesley, 1994. 523 pages.
