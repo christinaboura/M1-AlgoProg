@@ -6,13 +6,13 @@ title: Home
 
 ## Info pratiques
 
-Cours+TDs les vendredis de 13h30 à 17h30, salle 2105.
+Cours & TD le vendredi de 13h40 à 17h40, salle Jungle (Bât Descartes - 2ème étage).
 
-**Chargés des cours et des TDs :** [Christina Boura](http://christina-boura.info/en/content/home), [Gaëtan Leurent](https://who.rocq.inria.fr/Gaetan.Leurent/).
+**Chargé de cours et TD :** [Alex Gélin](https://alexgelin.github.io/).
 
 ## Liste des cours
 
-20 janvier
+26 janvier
 : **Introduction à l'analyse des algorithmes :**
 
     - Tri par insertion
