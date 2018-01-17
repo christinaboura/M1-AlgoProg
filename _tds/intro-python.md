@@ -6,7 +6,7 @@ Python est un langage de programmation orienté objet (mais oublions le côté o
 
 Ce mini-tutoriel est une introduction très basique et rapide à la syntaxe et aux règles du langage. Si vous voulez approfondir plus, plein de tutoriels bien faits existent sur le net, n'hésitez pas à les consulter.
 
-Pendant ces TPs nous allons travailler avez l'environnement [SageMathCloud](https://cloud.sagemath.com/). Commencez par y ouvrir un compte. La première partie de ce tutoriel va se faire en *mode terminal*. Pour ceci, cliquez sur `New Project...` pour créer un nouveau projet, et ensuite sur `New` pour créer un nouveau terminal. Tapez dans le terminal `python3` pour lancer l'interpréteur. Vous êtes maintenant prêts pour commencer ! 
+Pendant ces TP nous allons travailler avez l'environnement `Jupyter` et l'interpréteur `python3`. Tout cela est disponible sur les cartables numériques, mais aussi [en ligne](https://sage.prism.uvsq.fr/hub/login). Cliquez sur `New --> Python 3` pour créer un nouveau notebook. `python3` est aussi accessible directement dans un terminal : tapez `python3` pour lancer l'interpréteur. 
 
 ## Python en mode calculatrice
 
