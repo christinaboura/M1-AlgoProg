@@ -450,8 +450,7 @@ Modifier la fonction `fibonacci(n)` de la Section 5 afin qu'elle renvoie une lis
 
 # Exercices
 
-Vous êtes prêts maintenant à écrire par vous mêmes des programmes un peu plus longs et compliqués. Le mode terminal que nous avons utilisé jusqu'ici n'est plus très adapté. Pour cette raison vous allez utiliser des *scripts* pour écrire, sauvegarder et modifier vos programmes. Pour écrire un script il suffit dans votre compte [SageMathCloud](https://cloud.sagemath.com/) de cliquer sur `New` et créer un fichier dont le nom se termine par `.py` afin d'indiquer qu'il s'agit bien d'un script Python. Vous pouvez ensuite l'exécuter dans un terminal en écrivant
-
+Vous êtes prêts maintenant à écrire par vous mêmes des programmes un peu plus longs et compliqués. Si le notebook est toujours pratique, le mode terminal lui ne l'est plus. L'alternative est d'utiliser des *scripts* pour écrire, sauvegarder et modifier vos programmes. Pour écrire un script il vous suffit de créer un fichier dont le nom se termine par `.py` afin d'indiquer qu'il s'agit bien d'un script Python. Vous pouvez ensuite l'exécuter dans un terminal en écrivant
 ~~~
 python3 monPremierScript.py
 ~~~
