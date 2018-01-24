@@ -19,7 +19,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 **Introduction à l'analyse des algorithmes.**
    - Tri par insertion
    - Analyse de complexité
-   - Complexité asymtotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
+   - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
 
 **TD :** [(Ré)-introduction à Python](tds/intro-python)
 
