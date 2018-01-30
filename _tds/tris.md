@@ -1,5 +1,5 @@
 ---
-title: Implantation des algorithmes de tri en Python
+title: Implémentation des algorithmes de tri en Python
 ---
 
 ## Tri à bulles (bubble sort)
@@ -120,7 +120,7 @@ Dans l'exemple ci-dessous (source [en.wikipedia.org](https://en.wikipedia.org/wi
 
 Le tri par paquets fonctionne bien si les éléments sont uniformément distribués sur un espace. Dans ce cas, si le nombre d'urnes est proportionnel au nombre d'éléments à trier, le temps d'exécution en moyenne est $$\Theta(n)$$. Cependant, la complexité peut vite devenir quadratique si les éléments ne sont pas uniformément distribués et qu'il y a donc des urnes qui contiennent beaucoup plus d'éléments que d'autres. Le pire cas survient notamment si tous les éléments à trier finissent dans une seule urne tandis que les autres urnes restent vides. Dans ce cas, la complexité est donné par le temps d'exécution du tri par insertion sur l'unique urne non-vide et ce temps est comme on le sait quadratique.
 
-* Implantez le tri par paquets en suivant les étapes suivantes :
+* Implémentez le tri par paquets en suivant les étapes suivantes :
 
  - Initialisez une liste de listes (urnes) vides.
 
