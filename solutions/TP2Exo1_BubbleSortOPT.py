@@ -18,5 +18,5 @@ def bubblesortOPT(L) :
 
 L = random.sample(range(0, 100), 15)
 print(L)
-Ltrie = bubblesortOPT(L)
+Ltriee = bubblesortOPT(L)
 print(Ltrie)
