@@ -33,5 +33,5 @@ def triFusion(T) :
 
 L = random.sample(range(0, 10000), 30) # generation de 30 nombres aleatoires de 0 a 9999
 print(L)
-Ltrie = triFusion(L)
+Ltriee = triFusion(L)
 print(Ltrie)
