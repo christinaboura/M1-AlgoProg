@@ -452,7 +452,7 @@ Modifier la fonction `fibonacci(n)` de la Section 5 afin qu'elle renvoie une lis
 
 Vous êtes prêts maintenant à écrire par vous mêmes des programmes un peu plus longs et compliqués. Si le notebook est toujours pratique, le mode terminal lui ne l'est plus. L'alternative est d'utiliser des *scripts* pour écrire, sauvegarder et modifier vos programmes. Pour écrire un script il vous suffit de créer un fichier dont le nom se termine par `.py` afin d'indiquer qu'il s'agit bien d'un script Python. Vous pouvez ensuite l'exécuter dans un terminal en écrivant
 ~~~
-python3 monPremierScript.py
+python3 script.py
 ~~~
 
 ## Crible d'Ératosthène
