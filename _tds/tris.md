@@ -70,9 +70,9 @@ Par exemple, pour générer une liste de 10 entiers compris entre 0 et 99 il suf
 ## Tri par sélection (selection sort)
 
 Le tri par sélection est encore un algorithme de tri qui a l'avantage d'être simple à mettre en oeuvre. L'idée de ce tri est la suivante : 
-  - rechercher le plus petit élément du tableau et le placer à la première position, 
-  - rechercher ensuite le deuxième élément le plus petit et le placer en deuxième position,
-  - continuer de la même façon jusqu'à ce que le tableau soit entièrement trié.
+ - rechercher le plus petit élément du tableau et le placer à la première position, 
+ - rechercher ensuite le deuxième élément le plus petit et le placer en deuxième position,
+ - continuer de la même façon jusqu'à ce que le tableau soit entièrement trié.
 
 Le tableau est alors divisé en deux parties : la partie gauche avec les éléments déjà triés et la partie droite occupée par les éléments pas encore traités. Au départ, la partie gauche est vide. L'algorithme recherche à chaque fois le plus petit élément de la partie droite (qui au début est le tableau entier) et l'échange avec l'élément le plus à gauche de la partie de droite. À la fin de chaque étape la limite droite de la partie de gauche est avancée d'une position vers la droite.
 
@@ -87,6 +87,8 @@ Voici un exemple du fonctionnement de l'algorithme sur le tableau `[10, 9, 5, 7,
 [3, 5, 7, 9, 10]    # Sous-tableau gauche trié : [3,5,7,9,10]. Fin. 
 ~~~
 
+**:**{:.exercise} 
+
 * Faites un pseudo-code pour cet algorithme et implementez-le ensuite en Python. 
 
 * Quelle est la complexité de cet algorithme dans le pire cas ?
@@ -96,11 +98,11 @@ Voici un exemple du fonctionnement de l'algorithme sur le tableau `[10, 9, 5, 7,
 ## Tri fusion (merge sort) 
 
 Le tri fusion se base sur le principe diviser pour régner.
-
  - Si le tableau a une seule case, alors il est considéré comme trié.
  - Sinon, on découpe le tableau en deux parties de même taille (à une case près, si le nombre d'éléments du tableau est impair) et on trie chacune des deux parties.
  - On fusionne les deux parties triées.
 
+**:**{:.exercise} 
 
 * Appliquez le tri fusion *à la main* pour trier le tableau `[5, 2, 4, 7, 1, 3, 2, 6]`.
 
@@ -120,15 +122,17 @@ Dans l'exemple ci-dessous (source [en.wikipedia.org](https://en.wikipedia.org/wi
 
 Le tri par paquets fonctionne bien si les éléments sont uniformément distribués sur un espace. Dans ce cas, si le nombre d'urnes est proportionnel au nombre d'éléments à trier, le temps d'exécution en moyenne est $$\Theta(n)$$. Cependant, la complexité peut vite devenir quadratique si les éléments ne sont pas uniformément distribués et qu'il y a donc des urnes qui contiennent beaucoup plus d'éléments que d'autres. Le pire cas survient notamment si tous les éléments à trier finissent dans une seule urne tandis que les autres urnes restent vides. Dans ce cas, la complexité est donné par le temps d'exécution du tri par insertion sur l'unique urne non-vide et ce temps est comme on le sait quadratique.
 
+**:**{:.exercise} 
+
 * Implémentez le tri par paquets en suivant les étapes suivantes :
 
- - Initialisez une liste de listes (urnes) vides.
+     - Initialisez une liste de listes (urnes) vides.
 
- - Parcourez le tableau à trier et mettez chaque élément dans l'urne qui lui correspond.
+     - Parcourez le tableau à trier et mettez chaque élément dans l'urne qui lui correspond.
 
- - Triez chaque urne en utilisant le tri par insertion.
+     - Triez chaque urne en utilisant le tri par insertion.
 
- - Parcourez les urnes dans l'ordre et remettez les éléments dans le tableau initial.
+     - Parcourez les urnes dans l'ordre et remettez les éléments dans le tableau initial.
 
 * Testez votre implémentation sur un tableau de grande taille généré aléatoirement. Comparez ses performances aux autres algorithmes de tri.
 
