@@ -99,7 +99,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 **Algèbre linéaire.**
    - Méthode de Strassen pour la mutliplication de matrices
-   - Exposant ω de l'algèbre linéaire, et equivalence multiplication ↔ inversion ;
+   - Exposant ω de l'algèbre linéaire, et equivalence multiplication ↔ inversion
 
 **TD :** [Algèbre linéaire](tds/linalg)
 
@@ -108,9 +108,9 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 06 avril
 
 **Problèmes NP-complets.**
-   - Problèmes d'optimisation, problèmes décionnels,
-   - Problèmes NP-complets, NP-durs, SAT,
-   - Autres problèmes.
+   - Problèmes d'optimisation, problèmes décionnels
+   - Problèmes NP-complets, NP-durs, SAT
+   - Autres problèmes
    - Algorithmes d'approximation
 
 **TD :** [Bin packing](tds/binpacking)
