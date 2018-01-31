@@ -19,7 +19,6 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 **Introduction à l'analyse des algorithmes.**
    - Tri par insertion
    - Analyse de complexité
-   - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
 
 **TD :** [(Ré)-introduction à Python](tds/intro-python)
 
@@ -28,8 +27,9 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 2 février
 
 **Algorithmes de tri.**
-   - Classes de complexité, P vs NP, principe "diviser pour régner"
-   - Tris : bubble sort, merge sort, quick sort
+   - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
+   - Principe *"diviser pour régner"*
+   - Exemples : *tri fusion*, *tri rapide*
 
 **TD :** [Algorithmes de tri](tds/tris)
 
