@@ -38,7 +38,10 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 9 février
 
 **Structures de données.**
-   - Tableaux, listes, piles, files, tables de hachage
+   - Tableaux
+   - Piles et files
+   - Listes chaînées
+   - Tables de hachage
 	
 **TD :** [Structures de données](tds/structures-donnees)
 
@@ -50,15 +53,19 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
    - Arbres binaires de recherche
    - Arbres rouge-noir
 
-**TD :** [Arbres](tds/classes-arbres), [Code de Huffman](tds/huffman)
+**TD :** [Arbres](tds/classes-arbres)
 
 
 
 23 février
 
-**Programmation dynamique.**
+**Arbres (suite).**
+   - Arbres rouge-noir
 
-**TD :** [Programmation dynamique](tds/prog-dynamique)
+**TD :** [Code de Huffman](tds/huffman)
+
+
+
 
 
 
@@ -76,6 +83,14 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 16 mars
 
+**Programmation dynamique.**
+
+**TD :** [Programmation dynamique](tds/prog-dynamique)
+
+
+
+23 mars
+
 **Graphes.**
    - Notions de base, représentation, matrice d'adjacence
    - Parcours en largeur et en profondeur
@@ -84,7 +99,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-23 mars
+30 mars
 
 **Graphes (suite).**
    - Tri topologique
@@ -95,25 +110,13 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-30 mars
+06 avril
 
 **Algèbre linéaire.**
    - Méthode de Strassen pour la mutliplication de matrices
    - Exposant ω de l'algèbre linéaire, et equivalence multiplication ↔ inversion
 
 **TD :** [Algèbre linéaire](tds/linalg)
-
-
-
-06 avril
-
-**Problèmes NP-complets.**
-   - Problèmes d'optimisation, problèmes décionnels
-   - Problèmes NP-complets, NP-durs, SAT
-   - Autres problèmes
-   - Algorithmes d'approximation
-
-**TD :** [Bin packing](tds/binpacking)
 
 
 
@@ -132,7 +135,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
  mai : Examen 
  
-**Note finale :** (Examen + CC)/2, où CC = (CC1 + CC2)/2.
+**Note finale :** 60% Examen + 40% CC, où CC = (CC1 + CC2)/2.
 
 
 
@@ -144,11 +147,11 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
  [CC1](annales/2016-cc1.pdf)
 
- [CC2](annales/2016-cc2.pdf)
+ [CC2](annales/2016-cc2)
 
- [Examen](annales/2016-exam.pdf)
+ [Examen](annales/2016-exam)
 
- [Rattrapage](annales/2016-exam-2.pdf)
+ [Rattrapage](annales/2016-exam-2)
  
 2017
 
