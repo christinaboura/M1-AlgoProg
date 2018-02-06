@@ -1,13 +1,12 @@
 #-*- coding: utf-8 -*-
 
-
 class Ville :
-    """Classe définissant une ville de France. Chaque ville a 4 attributs :
+    """classe définissant une ville de France. Chaque ville a 4 attributs :
         - nom
         - numero de departement
         - population (hab)
         - superficie (km^2)
-        - rang au niveau national (place)'"""
+        - rang au niveau national (place)"""
 
     def __init__(self,liste) :
         self.nom = liste[0]
@@ -33,22 +32,17 @@ class Ville :
 
       
 class Noeud:
-    
-    """
-        Un noeud de l'arbre : fils gauche + fils droit + un objet de type ville     
-    """
+    """un noeud de l'arbre : fils gauche + fils droit + un objet de type ville"""
+
     def __init__(self,liste):
         self.gauche = None
         self.droite = None
         self.ville = Ville(liste)
     
     def inserer(self, liste):
-        """
-            Insère un nouveau noeud contenant une ville
-        """
         ville = Ville(liste)
-            #if self.ville:
         if ville.getRang() < self.ville.getRang() :
+        # if ville.getSuperficie() < self.ville.getSuperficie() :    
             if self.gauche is None:
                 self.gauche = Noeud(liste)
             else:
@@ -91,6 +85,7 @@ class Noeud:
             return self.droite.rechercheMax()
         return self
 
+
 fichier = open("villes.txt", "r")
 
 liste = ["Maisons-Alfort", 94, 51091, 5.4, 100]
@@ -103,19 +98,17 @@ for ligne in fichier:
 fichier.close()
 noeud.afficherArbre()
 
-unNoeud = noeud.rechercheMax()
-if unNoeud is not None :
-    unNoeud.ville.afficherNom()
-else :
-    print("Arbre vide")
-
-'''unNoeud = noeud.rechercher(200)
+unNoeud = noeud.rechercher(130)
 if unNoeud is not None :
     unNoeud.ville.afficherNom()
 else :
     print("Non trouvé")
 
 nombreEnfants = unNoeud.compter_enfants()
-print("Nombre d'enfants = ", nombreEnfants)'''
+print("Nombre d'enfants = ", nombreEnfants)
 
-
+# unNoeud = noeud.rechercheMax()
+# if unNoeud is not None :
+#     unNoeud.ville.afficherNom()
+# else :
+#     print("Arbre vide")
