@@ -10,8 +10,8 @@ class Node :
 def insert(nodes, node, k) : #nodes is sorted
     nodes += [node]
     while k > 0 and nodes[k-1].freq <= node.freq :
+        nodes[k] = nodes[k-1]
         k -= 1;
-        nodes[k+1] = nodes[k]
     nodes[k] = node
 
 def createTree(symbols,freqs) :
@@ -26,12 +26,12 @@ def createTree(symbols,freqs) :
     return nodes.pop()
 
 def traversal(node, code, codes) :
+    if node.symbol != None :
+        codes[node.symbol]=code
     if node.left != None :
         traversal(node.left, code+'1', codes)
     if node.right != None :
         traversal(node.right, code+'0', codes)
-    if node.symbol != None :
-        codes[node.symbol]=code
     
 def createCode(node) :
     codes={}
@@ -45,8 +45,6 @@ tree = createTree(symbols, freqs)
 dico = createCode(tree)
 print dico
 
-
-
 def encoder(codes, phrase) :
     code = ''
     for char in phrase :
@@ -56,7 +54,6 @@ def encoder(codes, phrase) :
 
 code = encoder(dico, 'l algorithmique c est super top')
 print code
-
 
 def inverseDictionnaire(dico) :
     dicoInv = {}
@@ -70,7 +67,7 @@ def decoder(codes, code) :
     i = 0
     tmp = ''
     while i < len(code) :
-        while i < len(code) and tmp not in codesInv :
+        while tmp not in codesInv :
             tmp += code[i]
             i += 1
         phrase += codesInv[tmp]
