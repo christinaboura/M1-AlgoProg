@@ -37,6 +37,12 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 9 février
 
+***Cours annulé.***
+
+
+
+16 février
+
 **Structures de données.**
    - Piles et files
    - Listes chaînées
@@ -46,25 +52,13 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-16 février
+23 février
 
 **Arbres.**
    - Arbres binaires de recherche
    - Arbres rouge-noir
 
 **TD :** [Arbres](tds/classes-arbres)
-
-
-
-23 février
-
-**Arbres (suite).**
-   - Arbres rouge-noir
-
-**TD :** [Code de Huffman](tds/huffman)
-
-
-
 
 
 
@@ -76,11 +70,20 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 9 mars
 
-***1er contrôle continu.***
+**Arbres (suite).**
+   - Arbres rouge-noir
+
+**TD :** [Code de Huffman](tds/huffman)
 
 
 
 16 mars
+
+***1er contrôle continu.***
+
+
+
+23 mars
 
 **Programmation dynamique.**
 
@@ -88,7 +91,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-23 mars
+30 mars
 
 **Graphes.**
    - Notions de base, représentation, matrice d'adjacence
@@ -98,7 +101,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-30 mars
+06 avril
 
 **Graphes (suite).**
    - Tri topologique
@@ -109,7 +112,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-06 avril
+13 avril
 
 **Algèbre linéaire.**
    - Méthode de Strassen pour la mutliplication de matrices
@@ -119,7 +122,8 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-13 avril
+20 avril
+
 ***2nd contrôle continu.***
 
 
@@ -128,9 +132,9 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 ## Modalités d'évaluation :
 
-9 mars : 1er contrôle continu.
+16 mars : 1er contrôle continu.
 
-7 avril : 2nd contrôle continu.
+20 avril : 2nd contrôle continu.
 
  mai : Examen 
  
