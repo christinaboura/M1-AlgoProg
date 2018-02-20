@@ -46,6 +46,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 **Structures de données.**
    - Piles et files
    - Listes chaînées
+   - Arbres
    - Tables de hachage
 	
 **TD :** [Structures de données](tds/structures-donnees)
@@ -56,7 +57,6 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 **Arbres.**
    - Arbres binaires de recherche
-   - Arbres rouge-noir
 
 **TD :** [Arbres](tds/classes-arbres)
 
@@ -188,4 +188,4 @@ ISBN : 978-2-212-12708-9. Côte BU : 005.13pyt SWI.
 
 C. H. Papadimitriou.
 *Computational complexity*.
-Addison-Wesley, 1994. 523 pages.
+<Addison-Wesley, 1994. 523 pages.
