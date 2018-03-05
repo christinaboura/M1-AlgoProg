@@ -116,7 +116,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 13 avril
 
 **Algèbre linéaire.**
-   - Méthode de Strassen pour la mutliplication de matrices
+   - Méthode de Strassen pour la multiplication de matrices
    - Exposant ω de l'algèbre linéaire, et equivalence multiplication ↔ inversion
 
 **TD :** [Algèbre linéaire](tds/linalg)
@@ -171,16 +171,16 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 ## Bibliographie
 
+T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein.
+*Introduction à l'Algorithmique*.
+Trad. X. Cazin, G.-L. Kocher. Dunod 2010.
+ISBN : 978-2-10-054526-1. Côte BU: 005.1 COR.
+
 A. Bostan, F. Chyzak, M. Giusti, R. Lebreton, G. Lecerf, B. Salvy, É. Schost.
 *Algorithmes Efficaces en Calcul Formel*.
 686 pages. Imprimé par CreateSpace. Aussi disponible en version électronique.
 Palaiseau: Frédéric Chyzak (auto-édit.), sept. 2017.
 ISBN : 979-10-699-0947-2. <https://hal.archives-ouvertes.fr/AECF/>
-
-T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein.
-*Introduction à l'Algorithmique*.
-Trad. X. Cazin, G.-L. Kocher. Dunod 2010.
-ISBN : 978-2-10-054526-1. Côte BU: 005.1 COR.
 
 G. Swinnen.
 *Apprendre à programmer avec Python 3*.
@@ -189,4 +189,4 @@ ISBN : 978-2-212-12708-9. Côte BU : 005.13pyt SWI.
 
 C. H. Papadimitriou.
 *Computational complexity*.
-<Addison-Wesley, 1994. 523 pages.
+Addison-Wesley, 1994. 523 pages.
