@@ -93,7 +93,9 @@ Saint-Priest 69 40944 29.7 155
 Versailles 78 85761 26.2 46
 ~~~
 
-**:**{:.exercise} Créez une classe `Ville` ayant 5 champs : chacun de ces champs doit correspondre aux 5 informations concernant une ville comme décrit ci-dessus (nom, numéro de département, population, superficie, rang). Le constructeur prendra en paramètre une liste `liste`, et initialisera les 5 champs avec les 5 premières cases de la liste (`liste[0], liste[1]`) etc.
+**:**{:.exercise} 
+
+Créez une classe `Ville` ayant 5 champs : chacun de ces champs doit correspondre aux 5 informations concernant une ville comme décrit ci-dessus (nom, numéro de département, population, superficie, rang). Le constructeur prendra en paramètre une liste `liste`, et initialisera les 5 champs avec les 5 premières cases de la liste (`liste[0], liste[1]`) etc.
 
 Ajoutez ensuite les 3 méthodes suivantes à votre classe :
 
@@ -148,9 +150,13 @@ Commencez par créer une classe `Noeud` ayant le constructeur suivant :
 
 Cette classe a donc trois attributs (comme attendu pour un ABR) : un fils gauche, un fils droite, et une *valeur* pouvant être comparée (ou ayant des champs pouvant être comparés), qui est ici un objet de type `Ville`.
 
-**:**{:.exercise} Dotez votre classe `Noeud` d'une méthode `inserer(self, liste)` qui prendra comme argument une liste (de longueur 5 dans notre cas) et insérera l'objet `Ville` construit à partir de cette liste, dans l'arbre. Vous pouvez utiliser l'algorithme d'insertion vu en cours.
+**:**{:.exercise} 
 
-**:**{:.exercise} Écrivez une méthode  `afficherArbre(self)` qui affichera les noms des villes sauvegardées dans l'arbre en suivant un **parcours infixe**.
+Dotez votre classe `Noeud` d'une méthode `inserer(self, liste)` qui prendra comme argument une liste (de longueur 5 dans notre cas) et insérera l'objet `Ville` construit à partir de cette liste, dans l'arbre. Vous pouvez utiliser l'algorithme d'insertion vu en cours.
+
+**:**{:.exercise} 
+
+Écrivez une méthode  `afficherArbre(self)` qui affichera les noms des villes sauvegardées dans l'arbre en suivant un **parcours infixe**.
 
 Testez votre code :
 
@@ -181,7 +187,9 @@ Bordeaux
 ...
 ~~~
 
-**:**{:.exercise} Modifiez la méthode `afficherArbre(self)`afin qu'elle affiche le nom, le numéro de département et la population de chaque ville.
+**:**{:.exercise} 
+
+Modifiez la méthode `afficherArbre(self)`afin qu'elle affiche le nom, le numéro de département et la population de chaque ville.
 
 
 ~~~
@@ -197,7 +205,9 @@ Bordeaux 33 215374 49.4
 ...
 ~~~
 
-**:**{:.exercise} Nous avons maintenant besoin d'une méthode qui permet de rechercher une ville dans l'arbre à partir de son rang. Écrivez une méthode `rechercher(self, rang)` qui prend en entrée un entier correspondant au rang de la ville recherchée et qui renvoie l'objet contentant la ville (noeud) en question correspondant. Si l'objet n'est pas trouvé, la méthode doit renvoyer `None`.
+**:**{:.exercise} 
+
+Nous avons maintenant besoin d'une méthode qui permet de rechercher une ville dans l'arbre à partir de son rang. Écrivez une méthode `rechercher(self, rang)` qui prend en entrée un entier correspondant au rang de la ville recherchée et qui renvoie l'objet contentant la ville (noeud) en question correspondant. Si l'objet n'est pas trouvé, la méthode doit renvoyer `None`.
 
 Testez votre code :
 
@@ -210,7 +220,9 @@ Testez votre code :
 Saint-Brieuc
 ~~~
 
-**:**{:.exercise} Écrivez une méthode `compterEnfants(self)` qui compte le nombre d'enfants (0, 1 ou 2) d'un noeud de l'arbre.
+**:**{:.exercise} 
+
+Écrivez une méthode `compterEnfants(self)` qui compte le nombre d'enfants (0, 1 ou 2) d'un noeud de l'arbre.
 
 Testez votre code :
 
@@ -229,6 +241,10 @@ Testez votre code :
 0
 ~~~
 
-**:**{:.exercise} Modifiez la construction de votre arbre, afin que la comparaison se fasse maintenant à partir de la superficie d'une ville.
+**:**{:.exercise} 
 
-**:**{:.exercise} En utilisant cette nouvelle construction, écrivez une méthode `rechercheMax(self)` qui renvoie la ville ayant la plus grande superficie.
+Modifiez la construction de votre arbre, afin que la comparaison se fasse maintenant à partir de la superficie d'une ville.
+
+**:**{:.exercise} 
+
+En utilisant cette nouvelle construction, écrivez une méthode `rechercheMax(self)` qui renvoie la ville ayant la plus grande superficie.
