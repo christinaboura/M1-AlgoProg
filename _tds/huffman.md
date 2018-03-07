@@ -13,7 +13,9 @@ Cet exercice a pour but de construire l'arbre de Huffman en Python et de l'utili
 
 ## Construction de l'arbre de Huffman
 
-**:**{:.exercise} Commencez par créer une classe `Node` qui représentera le noeud d'un arbre binaire contenant les données nécessaires à l'algorithme de Huffman. Ces données sont une variable `symbol` pour représenter un symbole de l'alphabet à encoder ainsi qu'un nombre réel `freq` pour représenter sa fréquence. Les champs `left` et `right` permettent de pointer vers les noeuds fils et ils ont la valeur spéciale `None` lorsque le noeud est une feuille. Complétez le constructeur de la classe.
+**:**{:.exercise} 
+
+Commencez par créer une classe `Node` qui représentera le noeud d'un arbre binaire contenant les données nécessaires à l'algorithme de Huffman. Ces données sont une variable `symbol` pour représenter un symbole de l'alphabet à encoder ainsi qu'un nombre réel `freq` pour représenter sa fréquence. Les champs `left` et `right` permettent de pointer vers les noeuds fils et ils ont la valeur spéciale `None` lorsque le noeud est une feuille. Complétez le constructeur de la classe.
 
 ~~~python
 >>> class Node :
@@ -92,9 +94,13 @@ k : 00010
 
 ## Codage et décodage avec Huffman
 
-**:**{:.exercise} Créer une fonction `encoder(codes, phrase)` qui prend en entrée le dictionnaire `codes` ci-dessus ainsi qu'une phrase à encoder et renvoie une suite binaire correspondant au codage pour le code de Huffman.
+**:**{:.exercise} 
 
-**:**{:.exercise} Créer une fonction `decoder(codes, code)` qui prend en entrée le dictionnaire `codes` et un encodage et qui renvoie la phrase avant l'encodage. Testez votre code en essayent de décoder 
+Créer une fonction `encoder(codes, phrase)` qui prend en entrée le dictionnaire `codes` ci-dessus ainsi qu'une phrase à encoder et renvoie une suite binaire correspondant au codage pour le code de Huffman.
+
+**:**{:.exercise}
+
+Créer une fonction `decoder(codes, code)` qui prend en entrée le dictionnaire `codes` et un encodage et qui renvoie la phrase avant l'encodage. Testez votre code en essayent de décoder 
 
 ~~~
 "000110010101111101111101000000001011010000101000001100110111000101\
