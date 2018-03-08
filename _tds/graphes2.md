@@ -180,34 +180,37 @@ G1 = Graphe(nodes)
 
 ## Tri topolgique
 
-**:**{:.exercise} Coder l'algorithme de tri topologique, en utilisant un
-parcours de graphe en profondeur.  On rapelle l'algorithme:
+**:**{:.exercise} 
+
+Coder l'algorithme de tri topologique, en utilisant un parcours de graphe en profondeur. On rappelle l'algorithme :
 
 > **Initialisation :** une liste $$L$$ (vide)
 >
-> 1. Parcourir le graphe avec un parcours en profondeur
-> 2. Ajouter les nœud dans L quand on a finit de les explorer
+> - Parcourir le graphe avec un parcours en profondeur
+> - Ajouter les nœuds dans L quand on a fini de les explorer
 {: style="margin-left: 2em"}
 
 
-**:**{:.exercise} Ajouter un test pour detecter si le graphe est acyclique.
+**:**{:.exercise}
+
+Ajouter un test pour détecter si le graphe est acyclique.
 
 ## Algorithme de Prim
 
-**:**{:.exercise} Coder l'algorithme de Prim vu en cours.
+**:**{:.exercise}
+
+Coder l'algorithme de Prim vu en cours.
 
 On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
 
 > **Entrée :** un arbre $$T$$ (initialisé avec un seul nœud)
 >
-> 1. Parmi tous les arêtes $$e:T→u$$ qui partent d'un nœud de
->    $$T$$ et qui arrivent sur un nœud pas dans $$T$$,
->    choisir celle de poids minimal ;
-> 2. Ajouter $$e$$ et $$u$$ à $$T$$ ;
-> 3. Continuer tant qu'il reste des arêtes qui sortent de $$T$$.
+> - Parmi tous les arêtes $$e:T→u$$ qui partent d'un nœud de $$T$$ et qui arrivent sur un nœud qui n'est pas dans $$T$$, choisir celle de poids minimal ;
+> - Ajouter $$e$$ et $$u$$ à $$T$$ ;
+> - Continuer tant qu'il reste des arêtes qui sortent de $$T$$.
 {: style="margin-left: 2em"}
 
-On pourra utiliser le gaphe suivant comme test:
+On pourra utiliser le graphe suivant comme test:
 
 ![Graphe](https://upload.wikimedia.org/wikipedia/commons/b/b4/Kruskal_Algorithm_1.svg){: style="width:15em"}
 {:.centered}
@@ -240,18 +243,19 @@ G2 = Graphe([A, B, C, D, E, F, G])
 
 ## Algorithme de Dijkstra
 
-**:**{:.exercise} Coder l'algorithme de Dijkstra vu en cours.
+**:**{:.exercise}
+
+Coder l'algorithme de Dijkstra vu en cours.
 
 ## Parcours Eulériens
 
-On appelle *cycle Eulérien* un cycle (un parcours qui part et termine
-sur le même nœud) qui passe exactement une fois par chaque arête, mais
-potentiellement plusieurs fois par chaque nœud.
+On appelle *cycle Eulérien* un cycle (un parcours qui part et termine sur le même nœud) qui passe exactement une fois par chaque arête, mais potentiellement plusieurs fois par chaque nœud.
 
-**:**{:.exercise} Prouvez qu'un graphe dirigé possède un cycle
-Eulérien si et seulement si le degré sortant de chaque nœud est égal
-au degré entrant.
+**:**{:.exercise}
 
-**:**{:.exercise} Codez un algorithme calculant, si possible, un cycle
-Eulérien (suggestion : trouvez une procédure pour unir des cycles
+Prouvez qu'un graphe dirigé possède un cycle Eulérien si et seulement si le degré sortant de chaque nœud est égal au degré entrant.
+
+**:**{:.exercise}
+
+Codez un algorithme calculant, si possible, un cycle Eulérien (suggestion : trouvez une procédure pour unir des cycles
 disjoints).
