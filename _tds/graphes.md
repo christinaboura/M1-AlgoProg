@@ -96,13 +96,13 @@ On rappelle ici le fonctionnement de l'algorithme, en pseudo-code.
 
 > **Entrée :** une file $$F$$ (initialisée avec un seul nœud)
 >
-> - Sortir l'élement $$u$$ en tête de la file ;
-> - Marquer $$u$$ comme visité ;
-> - Pour chaque arrête $$e:u→v$$ :
->    - si $$v$$ n'a pas été visité :
->       - marquer $$u$$ comme parent de $$v$$ ;
->       - insérer $$v$$ dans la file ;
-> - Tant que la file n'est pas vide, recommencer.
+> Sortir l'élement $$u$$ en tête de la file ;
+> Marquer $$u$$ comme visité ;
+> Pour chaque arrête $$e:u→v$$ :
+>     si $$v$$ n'a pas été visité :
+>         marquer $$u$$ comme parent de $$v$$ ;
+>         insérer $$v$$ dans la file ;
+> Tant que la file n'est pas vide, recommencer.
 {: style="margin-left: 2em"}
 
 Vous pouvez utiliser une liste python pour remplir la file et vous servir des méthodes `pop` (on rappelle que `pop` prend un argument optionnel) et `append`.
