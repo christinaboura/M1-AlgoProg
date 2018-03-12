@@ -117,7 +117,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 **Algèbre linéaire.**
    - Méthode de Strassen pour la multiplication de matrices
-   - Exposant ω de l'algèbre linéaire, et equivalence multiplication ↔ inversion
+   - Exposant ω de l'algèbre linéaire et équivalence multiplication ↔ inversion
 
 **TD :** [Algèbre linéaire](tds/linalg)
 
@@ -133,12 +133,14 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 ## Modalités d'évaluation :
 
-16 mars : 1er contrôle continu.
+16 mars - 14h : 1er contrôle continu (sur feuille)
 
-20 avril : 2nd contrôle continu.
+20 avril - 14h : 2nd contrôle continu (sur machine).
 
- mai : Examen 
- 
+4 mai - 14h : Examen (sur feuille).
+
+19 juin - 14h : Rattrapage (sur feuille).
+
 **Note finale :** 60% Examen + 40% CC, où CC = (CC1 + CC2)/2.
 
 
