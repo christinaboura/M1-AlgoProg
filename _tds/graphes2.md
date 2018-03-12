@@ -247,15 +247,15 @@ G2 = Graphe([A, B, C, D, E, F, G])
 
 Coder l'algorithme de Dijkstra vu en cours.
 
-## Parcours Eulériens
+<!-- ## Parcours Eulériens -->
 
-On appelle *cycle Eulérien* un cycle (un parcours qui part et termine sur le même nœud) qui passe exactement une fois par chaque arête, mais potentiellement plusieurs fois par chaque nœud.
+<!-- On appelle *cycle Eulérien* un cycle (un parcours qui part et termine sur le même nœud) qui passe exactement une fois par chaque arête, mais potentiellement plusieurs fois par chaque nœud. -->
 
-**:**{:.exercise}
+<!-- **:**{:.exercise} -->
 
-Prouvez qu'un graphe dirigé possède un cycle Eulérien si et seulement si le degré sortant de chaque nœud est égal au degré entrant.
+<!-- Prouvez qu'un graphe dirigé possède un cycle Eulérien si et seulement si le degré sortant de chaque nœud est égal au degré entrant. -->
 
-**:**{:.exercise}
+<!-- **:**{:.exercise} -->
 
-Codez un algorithme calculant, si possible, un cycle Eulérien (suggestion : trouvez une procédure pour unir des cycles
-disjoints).
+<!-- Codez un algorithme calculant, si possible, un cycle Eulérien (suggestion : trouvez une procédure pour unir des cycles
+disjoints). -->
