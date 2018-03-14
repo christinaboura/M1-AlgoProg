@@ -97,7 +97,8 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 **Graphes.**
    - Notions de base, représentation, matrice d'adjacence
    - Parcours en largeur et en profondeur
-	
+   - Tri topologique
+
 **TD :** [Graphes](tds/graphes)
 
 
@@ -105,7 +106,6 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 06 avril
 
 **Graphes (suite).**
-   - Tri topologique
    - Arbres couvrants minimaux, algorithme de Prim
    - Chemins les plus courts, algorithme de Dijkstra
 
