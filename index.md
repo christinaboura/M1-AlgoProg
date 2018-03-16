@@ -79,8 +79,9 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 16 mars
 
-***1er contrôle continu.***
-(Durée : 2 heures, à partir de 14h00.)
+***1er contrôle continu :***
+[sujet](annales/2018-CC1.pdf) et 
+[corrigé](annales/2018-CC1c.pdf)
 
 
 
