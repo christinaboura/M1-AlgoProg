@@ -133,10 +133,8 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 ## Modalités d'évaluation :
 
-16 mars - 14h : 1er contrôle continu (sur feuille)
-
-[sujet](annales/2018-CC1.pdf)
- et 
+16 mars - 14h : 1er contrôle continu (sur feuille) : 
+[sujet](annales/2018-CC1.pdf) et 
 [corrigé](annales/2018-CC1c.pdf)
 
 
