@@ -6,9 +6,9 @@ title: Home
 
 ## Info pratiques
 
-Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème étage).
+Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème étage)
 
-**Chargé de cours et TD :** [Alex Gélin](https://alexgelin.github.io/).
+**Chargé de cours et TD :** [Alex Gélin](https://alexgelin.github.io/)
 
 
 
@@ -16,7 +16,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 26 janvier
 
-**Introduction à l'analyse des algorithmes.**
+**Introduction à l'analyse des algorithmes**
    - Tri par insertion
    - Analyse de complexité
 
@@ -26,8 +26,8 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 2 février
 
-**Algorithmes de tri.**
-   - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$. 
+**Algorithmes de tri**
+   - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$
    - Principe *"diviser pour régner"*
    - Exemples : *tri fusion*, *tri rapide*
 
@@ -37,13 +37,13 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 9 février
 
-***Cours annulé.***
+***Cours annulé***
 
 
 
 16 février
 
-**Structures de données.**
+**Structures de données**
    - Piles et files
    - Listes chaînées
    - Arbres
@@ -55,7 +55,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 23 février
 
-**Arbres.**
+**Arbres**
    - Arbres binaires de recherche
 
 **TD :** [Arbres](tds/classes-arbres)
@@ -64,13 +64,13 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 2 mars
 
-***Vacances.***
+***Vacances***
 
 
 
 9 mars
 
-**Arbres (suite).**
+**Arbres (suite)**
    - Arbres rouge-noir
 
 **TD :** [Code de Huffman](tds/huffman)
@@ -87,7 +87,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 23 mars
 
-**Programmation dynamique.**
+**Programmation dynamique**
 
 **TD :** [Programmation dynamique](tds/prog-dynamique)
 
@@ -95,7 +95,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 30 mars
 
-**Graphes.**
+**Graphes**
    - Notions de base, représentation, matrice d'adjacence
    - Parcours en largeur et en profondeur
    - Tri topologique
@@ -106,7 +106,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 06 avril
 
-**Graphes (suite).**
+**Graphes (suite)**
    - Arbres couvrants minimaux, algorithme de Prim
    - Chemins les plus courts, algorithme de Dijkstra
 
@@ -116,9 +116,10 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 13 avril
 
-**Algèbre linéaire.**
-   - Méthode de Strassen pour la multiplication de matrices
-   - Exposant ω de l'algèbre linéaire et équivalence multiplication ↔ inversion
+**Algèbre linéaire**
+   - Algorithme de Strassen pour la multiplication de matrices
+   - Exposant ω de l'algèbre linéaire
+   - Équivalence multiplication ↔ inversion
 
 **TD :** [Algèbre linéaire](tds/linalg)
 
@@ -126,7 +127,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 20 avril
 
-***2nd contrôle continu.***
+***2nd contrôle continu***
 
 
 
@@ -139,13 +140,13 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 [corrigé](annales/2018-CC1c.pdf)
 
 
-20 avril - 14h : 2nd contrôle continu (sur machine).
+20 avril - 14h : 2nd contrôle continu (sur machine)
 
-4 mai - 14h : Examen (sur feuille).
+4 mai - 14h : Examen (sur feuille)
 
-19 juin - 14h : Rattrapage (sur feuille).
+19 juin - 14h : Rattrapage (sur feuille)
 
-**Note finale :** 60% Examen + 40% CC, où CC = (CC1 + CC2)/2.
+**Note finale :** 60% Examen + 40% CC, où CC = (CC1 + CC2)/2
 
 
 
