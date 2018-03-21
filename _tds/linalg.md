@@ -4,50 +4,23 @@ title: Algèbre linéaire
 
 ## Analyse de complexité
 
-V. Pan a découvert en 1978 une méthode pour multiplier:
+Victor Pan a découvert en 1978 une méthode pour multiplier
 - des matrices $$68 × 68$$ à l'aide de 132464 multiplications
 - des matrices $$70 × 70$$ à l'aide de 143640 multiplications
 - des matrices $$72 × 72$$ à l'aide de 155424 multiplications
 
-**:**{:.exercise} Quelle est la complexité d'un algorithme diviser pour
-régner utilisant ces formules?  Comparer avec la complexité de
-l'algorithme de Strassen.
+**:**{:.exercise} 
+
+Quelle est la complexité d'un algorithme diviser pour régner utilisant ces formules ? 
+Laquelle présente la meilleure complexité ?
+Comparer avec la complexité de l'algorithme de Strassen.
 
 
 ## Arithmétique naïve des matrices
 
-Ce TD est à développer **de préférence** dans un *notebook* Jupyter.
+Nous allons enrichir la classe `Matrice`, créée au [TD précédent](graphes2), avec les méthodes pour les opérations arithmétiques de base : addition, négation, multiplication.
 
-- Dans SageMathCloud, créez un nouveau notebook via l'onglet
-  _« ⊕ New »_, en cliquant sur le bouton _« Jupyter Notebook »_.
-  Ensuite modifiez le noyau à travers le menu de Jupyter en cliquant
-  _« Kernel → Change kernel → Python 3 »_.
-
-- Dans un cartable numérique, tapez la commande
-  
-  ~~~
-  ipython3 notebook
-  ~~~
-  
-  pour lancer un notebook. À la fin de la session, vous pouvez
-  sauvegarder votre travail en cliquant _File → Download as →
-  IPython Notebook (.ipynb)_, et en transférant le fichier sur votre
-  clef usb.
-
-- Alternativement, vous pouvez
-  [installer Jupyter](http://jupyter.readthedocs.org/en/latest/install.html)
-  sur votre propre machine.
-
-
-Nous allons enrichir la classe `Matrice`, créée au
-[TD précédent](graphes2), avec les méthodes pour les opérations
-arithmétiques de base : addition, négation, multiplication.
-
-Nous avons déjà appris à définir la méthode spéciale `__repr__` pour
-contrôler l'affichage d'un objet Python. D'autres méthodes spéciales
-permettent de définir un comportement lorsque un objet est combiné
-avec un opérateur arithmétique.  Par exemple, le code suivant permet
-de définir un comportement pour l'addition :
+Nous avons déjà appris à définir la méthode spéciale `__repr__` pour contrôler l'affichage d'un objet Python. D'autres méthodes spéciales permettent de définir un comportement lorsque un objet est combiné avec un opérateur arithmétique.  Par exemple, le code suivant permet de définir un comportement pour l'addition :
 
 ~~~python
 >>> class MaxPlus:
@@ -64,8 +37,7 @@ de définir un comportement pour l'addition :
 10
 ~~~
 
-Voici une liste des méthodes spéciales qui nous intéressent pour les
-matrices :
+Voici une liste des méthodes spéciales qui nous intéressent pour les matrices :
 
 | Méthode spéciale | opération | opérateur
 |-
@@ -78,38 +50,25 @@ matrices :
 | `__eq__(self, other)` | test d'égalité | `a==b`
 {:.pretty style="margin:auto"}
 
-À l'exception de `__neg__` et `__invert__`, qui représentent des
-opérations unaires, toutes les méthodes prennent deux paramètres : le
-premier est l'opérande gauche, le deuxième l'opérande
-droit.[^operands] À l'exception de `__eq__`, qui donne une valeur
-booléene, toutes les autes méthodes doivent donner un objet en retour,
-typiquement un nouvel objet appartenant à la même classe et
-représentant le résultat de l'opération.
+À l'exception de `__neg__` et `__invert__`, qui représentent des opérations unaires, toutes les méthodes prennent deux paramètres : le premier est l'opérande gauche, le deuxième l'opérande droit.[^operands] À l'exception de `__eq__`, qui donne une valeur booléene, toutes les autes méthodes doivent donner un objet en retour, typiquement un nouvel objet appartenant à la même classe et représentant le résultat de l'opération.
 
-[^operands]: C'est toujours la méthode de la classe de l'opérande
-	gauche qui est appelée. Python ne donne aucune garantie sur la classe
-	de l'opérande droit, c'est la responsabilité du développeur de
-	vérifier que l'opérande droit peut bien être combiné avec l'opérande
-	gauche.
+[^operands]: C'est toujours la méthode de la classe de l'opérande gauche qui est appelée. Python ne donne aucune garantie sur la classe	de l'opérande droit, c'est la responsabilité du développeur de vérifier que l'opérande droit peut bien être combiné avec l'opérande gauche.
 
-**:**{:.exercise} Implanter la méthode `__eq__` pour la classe
-`Matrice`. Deux matrices sont égales si et seulement si toutes leurs
-entrées sont égales.
+**:**{:.exercise} 
 
-**:**{:.exercise} Implanter les méthodes `__add__`, `__neg__` et
-`__sub__` pour la classe `Matrice`.
+Implémenter la méthode `__eq__` pour la classe `Matrice`. Deux matrices sont égales si et seulement si toutes leurs entrées sont égales.
 
-**:**{:.exercise} Implanter la méthode `__mul__` pour la classe
-`Matrice`, en utilisant l'algorithme de multiplication naïf.
+**:**{:.exercise}
 
+Implémenter les méthodes `__add__`, `__neg__` et `__sub__` pour la classe `Matrice`.
+
+**:**{:.exercise} 
+
+Implémenter la méthode `__mul__` pour la classe `Matrice`, en utilisant l'algorithme de multiplication naïf.
 
 ## Algorithme de multiplication de Strassen
 
-On rappelle les formules de Strassen. Étant données deux matrices
-$$A=\bigl(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\bigr)$$ et
-$$X=\bigl(\begin{smallmatrix}x&y\\z&t\end{smallmatrix}\bigr)$$, à
-coefficients dans un anneau non-commutatif, le produit $$AX$$ se
-calcule comme suit :
+On rappelle les formules de Strassen. Étant données deux matrices $$A=\bigl(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\bigr)$$ et $$X=\bigl(\begin{smallmatrix}x&y\\z&t\end{smallmatrix}\bigr)$$, à coefficients dans un anneau non-commutatif, le produit $$AX$$ se calcule comme suit :
 
 $$\begin{align}
 q_1 &= a(x + z),\\
@@ -126,61 +85,50 @@ q_1 + q_5 & q_2 + q_3 + q_4 - q_5\\
 q_1 + q_3 + q_6 - q_7 & q_2 + q_7\\
 \end{pmatrix}.$$
 
-**:**{:.exercise} Ajouter une méthode `strassen` à la classe
-`Matrice`, qui calcule le produit de deux matrices carrées en
-utilisant la méthode de Strassen récursive.
+**:**{:.exercise}
 
-**Note :** Pour simplifier, on pourra se limiter à implanter une
-méthode qui multiplie des matrices de taille une puissance de 2.
+Ajouter une méthode `strassen` à la classe `Matrice`, qui calcule le produit de deux matrices carrées en utilisant la méthode de Strassen récursive.
+
+**Note :** Pour simplifier, on pourra se limiter à implémenter une méthode qui multiplie des matrices de taille une puissance de 2.
 
 ### Comparer les performances
 
-Nous voulons maintenant comparer les performances des méthodes naïve
-et de Strassen, afin de mesurer la taille à partir de laquelle la
-deuxième devient intéressante.
+Nous voulons maintenant comparer les performances des méthodes naïve et de Strassen, afin de mesurer la taille à partir de laquelle la deuxième devient intéressante.
 
-#### Avec Jupyter
+#### Grâce à Jupyter
 
-Le notebook Jupyter nous permet de faire ces mesures aisément. La
-*clef magique* `%time` permet de mesurer le temps d'exécution d'une
-instruction Python. Par exemple
+Le notebook Jupyter nous permet de faire ces mesures aisément. La *clé magique* `%time` permet de mesurer le temps d'exécution d'une instruction Python. Par exemple :
 
 ~~~python
 %time A.strassen(X)
 ~~~
 
-affichera plusieurs informations sur le temps d'exécution de la
-méthode `strassen`. La clef magique `%timeit` fait des mesures plus
-précises en exécutant plusieurs fois la même instruction, et en
-prenant une moyenne.
+affichera plusieurs informations sur le temps d'exécution de la méthode `strassen`.
 
 #### Sans Jupyter
 
-Nous pouvons aussi utiliser le module `timeit` en python.
+Nous pouvons aussi utiliser le module `time` en python.
 
-Avec python ≥ 3.6, on utilise:
 ~~~python
-print(timeit.autorange('A.strassen(X)', globals=globals()))
+t0=time.time()
+A.strassen(X)
+print(time.time()-t0)
 ~~~
 
-Avec python ≥ 3.5:
-~~~python
-print(timeit.repeat('A.strassen(X)', globals=globals()))
-~~~
+**:**{:.exercise}
+Déterminer le point où l'algorithme de Strassen *croise* l'algorithme naïf.
 
+**:**{:.exercise}
 
-**:**{:.exercise} Déterminer le point où l'algorithme de Strassen
-*croise* l'algorithme naïf.
-
-**:**{:.exercise} Optimiser la méthode de Strassen en arrêtant la
-récursion en dessous d'un seuil déterminé expérimentalement.
+Optimiser la méthode de Strassen en arrêtant la récursion en dessous d'un seuil déterminé expérimentalement.
 
 ## Solution de systèmes
 
-**:**{:.exercise} Implanter une méthode `solve` qui prend en entrée un
-vecteur $$b$$, et qui calcule une solution au système $$Ax=b$$ par la
-méthode de Gauss.
+**:**{:.exercise} 
 
-**:**{:.exercise} Implanter la méthode `__invert__` pour inverser une
-matrice carrée (**suggestion :** vous pouvez utiliser la méthode
+Implémenter une méthode `solve` qui prend en entrée un vecteur $$b$$, et qui calcule une solution au système $$Ax=b$$ par la méthode de Gauss.
+
+**:**{:.exercise}
+
+Implémenter la méthode `__invert__` pour inverser une matrice carrée (**suggestion :** vous pouvez utiliser la méthode
 `solve` de façon répétée).
