@@ -50,7 +50,7 @@ Voici une liste des méthodes spéciales qui nous intéressent pour les matrices
 | `__eq__(self, other)` | test d'égalité | `a==b`
 {:.pretty style="margin:auto"}
 
-À l'exception de `__neg__` et `__invert__`, qui représentent des opérations unaires, toutes les méthodes prennent deux paramètres : le premier est l'opérande gauche, le deuxième l'opérande droit.[^operands] À l'exception de `__eq__`, qui donne une valeur booléene, toutes les autes méthodes doivent donner un objet en retour, typiquement un nouvel objet appartenant à la même classe et représentant le résultat de l'opération.
+À l'exception de `__neg__` et `__invert__`, qui représentent des opérations unaires, toutes les méthodes prennent deux paramètres : le premier est l'opérande gauche, le deuxième l'opérande droit.[^operands] À l'exception de `__eq__`, qui donne une valeur booléene, toutes les autres méthodes doivent donner un objet en retour, typiquement un nouvel objet appartenant à la même classe et représentant le résultat de l'opération.
 
 [^operands]: C'est toujours la méthode de la classe de l'opérande gauche qui est appelée. Python ne donne aucune garantie sur la classe	de l'opérande droit, c'est la responsabilité du développeur de vérifier que l'opérande droit peut bien être combiné avec l'opérande gauche.
 
@@ -116,6 +116,7 @@ print(time.time()-t0)
 ~~~
 
 **:**{:.exercise}
+
 Déterminer le point où l'algorithme de Strassen *croise* l'algorithme naïf.
 
 **:**{:.exercise}
