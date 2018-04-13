@@ -142,7 +142,7 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 20 avril - 14h : 2nd contrôle continu (sur machine)
 
-4 mai - 14h : Examen (sur feuille)
+30 avril - 14h : Examen (sur feuille)
 
 19 juin - 14h : Rattrapage (sur feuille)
 
