@@ -6,10 +6,6 @@ title: Home
 
 
 
-# [ANNEXE POUR LE CC](annales/2018-Annexe.txt)
-
-
-
 ## Info pratiques
 
 Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème étage)
@@ -145,8 +141,9 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 [sujet](annales/2018-CC1.pdf) et 
 [corrigé](annales/2018-CC1c.pdf)
 
-
-20 avril - 14h : 2nd contrôle continu (sur machine)
+20 avril - 14h : 2nd contrôle continu (sur machine) :
+[sujet](annales/2018-CC2.pdf) et 
+[corrigé](annales/2018-CC2.ipynb)
 
 30 avril - 14h : Examen (sur feuille)
 
