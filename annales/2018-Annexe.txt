@@ -1,1 +1,67 @@
-Patience...
+#EXERCICE 1
+
+import random,time
+
+def initTabs():
+    Tabs=[]
+    for i in range(100):
+        random.seed(i)
+        Tabs.append(random.sample(range(0,100000),1024))
+    return Tabs
+
+t0=time.time()
+Tabs=initTabs()
+print(time.time()-t0)
+for tab in Tabs:
+    print(tab[0], end=" ")
+print()
+
+def isSorted(tab):
+    n=len(tab)-1
+    while n>0 and tab[n]>=tab[n-1]:
+        n-=1
+    if n==0:
+        return "T" #True
+    return "F" #False
+
+for tabs in Tabs:
+    print(isSorted(tab), end="")
+print()
+
+
+
+#EXERCICE 2
+
+class Node:
+    def __init__(self,key):
+        self.left = None
+        self.right = None
+        self.key = key
+    
+    def inserer(self,key):
+        #TO BE COMPLETED
+        
+    def parcours(self):
+        #TO BE COMPLETED
+            
+    def recherche_modifiee(self,key,h=0):
+        if key<self.key:
+            if self.left:
+                return self.left.recherche_modifiee(key,h+1)
+            else:
+                return None
+        elif key>self.key:
+            if self.right:
+                return self.right.recherche_modifiee(key,h+1)
+            else:
+                return None
+        else:
+            return h
+
+
+
+#EXERCICE 3
+
+A=[[2,5,13,29,47],[3,11,23,43,67],[7,19,41,61,79],[17,37,59,73,89],[31,53,71,83,97]]
+b=[19,38,74,114,144]
+#A,b=[copy.deepcopy(v) for v in [A0,b0]]
