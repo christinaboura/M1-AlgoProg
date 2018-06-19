@@ -145,9 +145,9 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 [sujet](annales/2018-CC2.pdf) et 
 [corrigé](annales/2018-CC2.ipynb)
 
-30 avril - 14h : Examen (sur feuille)
-
-19 juin - 14h : Rattrapage (sur feuille)
+30 avril - 14h : Examen (sur feuille) : 
+[sujet](annales/2018-Exam.pdf) et 
+[corrigé](annales/2018-Cor.pdf)
 
 **Note finale :** 60% Examen + 40% CC, où CC = (CC1 + CC2)/2
 
