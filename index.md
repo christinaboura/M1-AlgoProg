@@ -2,21 +2,19 @@
 title: Home
 ---
 
-# {{ site.title }}
-
-
-
 ## Info pratiques
 
-Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème étage)
+Cours & TD le mercredi de 13h40 à 15h50, sur Zoom (lien dans l'espace Moodle)
 
-**Chargé de cours et TD :** [Alex Gélin](https://alexgelin.github.io/)
+**Chargés de cours et TD :** [Christina Boura](https://christinaboura.wordpress.com/) et [Yann Rotella](https://rotella.fr/)
+
+**Serveur pour les TPs:** [https://jupyter.ens.uvsq.fr/](https://jupyter.ens.uvsq.fr/)
 
 
 
-## Liste des cours
+## Calendrier
 
-26 janvier
+3 février
 
 **Introduction à l'analyse des algorithmes**
    - Tri par insertion
@@ -26,36 +24,30 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-2 février
+10 février
 
 **Algorithmes de tri**
    - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$
-   - Principe *"diviser pour régner"*
+   - Principe *diviser pour régner*
    - Exemples : *tri fusion*, *tri rapide*
 
 **TD :** [Algorithmes de tri](tds/tris)
 
 
 
-9 février
-
-***Cours annulé***
-
-
-
-16 février
+17 février
 
 **Structures de données**
    - Piles et files
    - Listes chaînées
    - Arbres
    - Tables de hachage
-	
+    
 **TD :** [Structures de données](tds/structures-donnees)
 
 
 
-23 février
+3 mars
 
 **Arbres**
    - Arbres binaires de recherche
@@ -64,72 +56,66 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 
 
-2 mars
-
-***Vacances***
-
-
-
-9 mars
-
-**Arbres (suite)**
-   - Arbres rouge-noir
-
-**TD :** [Code de Huffman](tds/huffman)
-
-
-
-16 mars
-
-***1er contrôle continu :***
-[sujet](annales/2018-CC1.pdf) et 
-[corrigé](annales/2018-CC1c.pdf)
-
-
-
-23 mars
+10 mars
 
 **Programmation dynamique**
-
+   - Exponentiation rapide
+   - Puissance d'une matrice, square and multiply
+    
+    
 **TD :** [Programmation dynamique](tds/prog-dynamique)
 
 
+17 mars
 
-30 mars
+**1er contrôle continu**
+
+
+24 mars
+
+**Systèmes linéaires**
+   - Résolution de systèmes linéaires de type AX = B,
+   - Pivot de Gauss
+    
+**TD :** [Algèbre linéaire](tds/linalg)
+
+
+31 mars
+
+**Programmation linéaire**
+    - Algorithme du simplexe
+    
+**TD :** [Programmation linéaire]()
+
+
+7 avril
 
 **Graphes**
    - Notions de base, représentation, matrice d'adjacence
    - Parcours en largeur et en profondeur
    - Tri topologique
+   
+**TD :** [Graphes](tds/graphes1)
 
-**TD :** [Graphes](tds/graphes)
 
-
-
-06 avril
+14 avril
 
 **Graphes (suite)**
    - Arbres couvrants minimaux, algorithme de Prim
    - Chemins les plus courts, algorithme de Dijkstra
+    
+**TD :** [Graphes (bis)](tds/graphes2)
 
-**TD :** [Graphes (bis)](tds/graphes2)
 
+21 avril
 
-
-13 avril
-
-**Algèbre linéaire**
-   - Algorithme de Strassen pour la multiplication de matrices
-   - Exposant ω de l'algèbre linéaire
-   - Équivalence multiplication ↔ inversion
-
-**TD :** [Algèbre linéaire](tds/linalg)
+**2nd contrôle continu**
 
 
 
-20 avril
+5 mai
 
-***2nd contrôle continu***
+**Problèmes NP complets, machines de Turing**
 
 
 
@@ -137,43 +123,17 @@ Cours & TD le vendredi de 13h40 à 17h50, salle Jungle (Bât Descartes - 2ème �
 
 ## Modalités d'évaluation :
 
-16 mars - 14h : 1er contrôle continu (sur feuille) : 
-[sujet](annales/2018-CC1.pdf) et 
-[corrigé](annales/2018-CC1c.pdf)
+17 mars - 13h : 1er contrôle continu (sur feuille + machine) : 
 
-20 avril - 14h : 2nd contrôle continu (sur machine) :
-[sujet](annales/2018-CC2.pdf) et 
-[corrigé](annales/2018-CC2.ipynb)
+21 avril - 13h : 2nd contrôle continu (sur feuille + machine) :
 
-30 avril - 14h : Examen (sur feuille) : 
-[sujet](annales/2018-Exam.pdf) et 
-[corrigé](annales/2018-Cor.pdf)
-
-**Note finale :** 60% Examen + 40% CC, où CC = (CC1 + CC2)/2
+**Note finale :** 100% CC, où CC = (CC1 + CC2)/2
 
 
 
 
 
 ## Annales
-
-2016
-
- [CC1](annales/2016-cc1.pdf) et 
- [CC2](annales/2016-cc2)
-
- [Examen](annales/2016-exam) et 
- [Rattrapage](annales/2016-exam-2)
- 
-2017
-
- [CC1](annales/2017-cc1.pdf) et 
- [CC2](annales/2017-cc2.pdf)
-
- [Examen](annales/2017-exam.pdf)
- 
-
-
 
 
 ## Bibliographie
@@ -197,3 +157,8 @@ ISBN : 978-2-212-12708-9. Côte BU : 005.13pyt SWI.
 C. H. Papadimitriou.
 *Computational complexity*.
 Addison-Wesley, 1994. 523 pages.
+
+B. Cordeau, L. Pointal. Une introduction à Python 3. Polycopié, licence libre CC3.0. 2015. https://perso.limsi.fr/pointal/python:courspython3.
+
+G. Swinnen. Apprendre à programmer avec Python 3. Eyrolles 2009-2010. ISBN : 978-2-212-12708-9. Côte BU : 005.13pyt SWI.
+
