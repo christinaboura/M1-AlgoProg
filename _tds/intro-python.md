@@ -2,11 +2,13 @@
 title: Introduction à Python
 ---
 
-Python est un langage de programmation orienté objet (mais oublions le côté objet pour l'instant). Sa première version a été écrite par Guido van Rossum qui était un grand fan de Monty Python. Ici, nous allons utiliser la version 3 du langage qui apporte beaucoup de modifications par rapport aux versions précédentes. 
+Python est un langage de programmation orienté objet (mais oublions le côté objet pour l'instant). Sa première version a été écrite par Guido van Rossum, qui était un grand fan de Monty Python, en 1991. 
 
 Ce mini-tutoriel est une introduction très basique et rapide à la syntaxe et aux règles du langage. Si vous voulez approfondir plus, plein de tutoriels bien faits existent sur le net, n'hésitez pas à les consulter.
 
-Pendant ces TP nous allons travailler avez l'environnement `Jupyter` et l'interpréteur `python3`. Tout cela est disponible sur les cartables numériques, mais aussi [en ligne](https://sage.prism.uvsq.fr/hub/login). Cliquez sur `New --> Python 3` pour créer un nouveau notebook. `python3` est aussi accessible directement dans un terminal : tapez `python3` pour lancer l'interpréteur. 
+Pendant ces TP nous allons travailler avez l'environnement `Jupyter` et l'interpréteur `python3`. Tout cela est disponible sur les cartables numériques, mais aussi sur le serveur de calcul [https://jupyter.ens.uvsq.fr/](https://jupyter.ens.uvsq.fr/). Cliquez sur `File --> New --> Python 3` pour créer un nouveau *notebook*. Avec cet environnement, il est possible de revenir en arrière et modifier vos lignes de code. Les notebooks sont sauvegardés automatiquement dans des fichiers d'extension `.ipynb`. En les utilisant, vous retrouverez votre travail dans votre espace en ligne d'une semaine sur l'autre.
+
+`python3` est aussi accessible directement dans un terminal : tapez `python3` pour lancer l'interpréteur. 
 
 ## Python en mode calculatrice
 
@@ -138,7 +140,7 @@ L'instruction qui est sans doute la plus utile afin de permettre un tel comporte
 
 ~~~python
 >>> if age > 18 :
-...     print("La personne peut acheter de l'alcool.")
+...     print("La personne peut voter.")
 ~~~
 
 #### Indentation
@@ -222,7 +224,7 @@ range(10, -50, -10) # 10, 0, -10, -20, -30, -40
 ~~~
 
 
-La boucle `for` est très utile lorsque on veut répéter un bloc d'instructions un nombre des fois connu à l'avance. Si on veut par exemple imprimer tous les nombres de 0 à 5, voici comment on peut le faire à l'aide de l'instruction `for` et de la de la fonction `range`.
+La boucle `for` est très utile lorsque on veut répéter un bloc d'instructions un nombre de fois connu à l'avance. Si on veut par exemple imprimer tous les nombres de 0 à 5, voici comment on peut le faire à l'aide de l'instruction `for` et de la de la fonction `range`.
 
 ~~~python
 >>> for i in range(6): # N'oubliez pas le deux-points !
@@ -241,7 +243,7 @@ Comme on va le voir un peu plus tard, la boucle `for` peut être utilisée très
 **:**{:.exercise} 
 
 Initialisez deux entiers : `a = 0` et `b = 15`.
-Écrivez une boucle qui affiche et incrémente la valeur de `a` tant qu’elle reste inférieure
+Écrivez une boucle qui affiche et incrémente de 1 la valeur de `a` tant qu’elle reste inférieure
 à celle de `b`.
 
 Écrivez ensuite une autre boucle qui décrémente la valeur de `b` et affiche sa valeur seulement si elle est
@@ -421,6 +423,35 @@ Voici quelques méthodes qui peuvent vous  être utiles.
 ~~~
 
 Cette liste des méthodes est loin d'être exhaustive. Vous pouvez trouver plus d'informations sur la page [docs.python.org](https://docs.python.org/3.1/tutorial/datastructures.html).
+
+**Copie d'une liste**: Que fait le code suivant ?
+
+~~~python
+L1 = [1, 2, 3, 4, 5, 6]
+L2 = L1
+print(L2)
+
+L2.append(7)
+print(L2)
+print(L1)
+~~~
+
+En modifiant L2, la liste L1 a été modifiée aussi !
+
+* Il ne faut jamais utiliser l'opérateur `=` pour copier une liste.
+
+* Les deux objets L1 et L2 partagent la même zone mémoire. Une modification de l’un entraine une modification de l’autre.
+
+Toutes les méthodes suivantes sont des manières légitimes de correctement copier une liste :
+
+~~~python
+L1 = [1, 2, 3, 4, 5, 6]
+
+L2 = list(L1)
+L3 = L1.copy()
+L4 = L1[:]
+L5 = [i for i in L1]
+~~~
 
 **:**{:.exercise}
 
