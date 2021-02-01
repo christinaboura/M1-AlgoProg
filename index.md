@@ -4,7 +4,7 @@ title: Home
 
 ## Info pratiques
 
-Cours & TD le mercredi de 13h40 à 15h50, sur Zoom (lien dans l'espace Moodle)
+Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 **Chargés de cours et TD :** [Christina Boura](https://christinaboura.wordpress.com/) et [Yann Rotella](https://rotella.fr/)
 
