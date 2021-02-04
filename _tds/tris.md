@@ -64,7 +64,7 @@ Par exemple, pour générer une liste de 10 entiers compris entre 0 et 99 il suf
 
 * Quel est le temps d'exécution de cet algorithme dans le cas le plus défavorable ? Et dans le cas le plus favorable ?
 
-* Calculez en pratique le temps d'exécution de vos deux tris (version naïve et version optimisée). Pour cela, il faut introduire au début de votre script le module `time` en écrivant `import time`. Débutez le compteur en insérant l'instruction `debut = time.time()` et arrêtez-le avec l'instruction `fin = time.time()`. Imprimez le temps en secondes écoulé en écrivant `print("Le temps en secondes écoulé pour faire le tri est", fin-debut)`. Afin de pouvoir observer la différence, générez de tableaux de taille significative (par exemple de taille 50000). 
+* Calculez en pratique le temps d'exécution de vos deux tris (version naïve et version optimisée). Pour cela, il faut introduire au début de votre script le module `time` en écrivant `import time`. Débutez le compteur en insérant l'instruction `debut = time.time()` et arrêtez-le avec l'instruction `fin = time.time()`. Imprimez le temps en secondes écoulé en écrivant `print("Le temps en secondes écoulé pour faire le tri est", fin-debut)`. Afin de pouvoir observer la différence, générez des tableaux de taille très grande (par exemple de taille 50000). 
 
 
 ## Tri par sélection (selection sort)
