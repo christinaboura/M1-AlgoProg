@@ -36,7 +36,7 @@ Il est possible de concaténer deux chaînes à l'aide de l'opérateur `+`.
 
 Le but de cet exercice est d'écrire un programme en Python capable de vérifier si une expression est bien parenthésée ou pas. Les trois types de parenthésage qui seront pris en compte sont les parenthèses `(`, `)`, les crochets `[`, `]` et les accolades `{`, `}`.
 
-Votre programme doit par exemple retourner `True` pour les expressions suivantes :
+Votre programme doit par exemple renvoyer `True` pour les expressions suivantes :
 
 * `[a+(b+c)]`
 * `[((5*3)+(2*10))/2]`
