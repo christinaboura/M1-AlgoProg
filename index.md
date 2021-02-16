@@ -29,19 +29,17 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **Algorithmes de tri**
    - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$
    - Principe *diviser pour régner*
-   - Exemples : *tri fusion*, *tri rapide*
+   - Exemple : *tri fusion*
+   
+**Structures de données**
+    - Listes chaînées
+    - Arbres
+    - Tables de hachage
+
+
+17 février (16h - 18h50)
 
 **TD :** [Algorithmes de tri](tds/tris)
-
-
-
-17 février
-
-**Structures de données**
-   - Piles et files
-   - Listes chaînées
-   - Arbres
-   - Tables de hachage
     
 **TD :** [Structures de données](tds/structures-donnees)
 
