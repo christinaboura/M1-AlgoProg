@@ -235,7 +235,7 @@ Nous utiliserons ici les *dictionnaires* afin de stocker la correspondance entre
 
 Ecrivez les fonctions suivantes :
 
-* Une fonction `creerDictionnaire()` qui crée et retourne le dictionnaire des correspondances. Pour cela, vous pouvez utiliser le code ASCII des lettres minuscules. Les fonctions `ord(c)` et `chr(c)` vous seront sans doute utiles :
+* Une fonction `creerDictionnaire(d)` qui crée et retourne le dictionnaire des correspondances. Le paramètre `d` indique le décalage souhaité. Pour cela, vous pouvez utiliser le code ASCII des lettres minuscules. Les fonctions `ord(c)` et `chr(c)` vous seront sans doute utiles :
 
 ~~~python
 >>> ord('a')
