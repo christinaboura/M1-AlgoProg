@@ -24,7 +24,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 
 
-10 février
+#### 10 février
 
 **Algorithmes de tri**
    - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$
@@ -32,12 +32,12 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
    - Exemple : *tri fusion*
    
 **Structures de données**
-    - Listes chaînées
-    - Arbres
-    - Tables de hachage
+  - Listes chaînées
+  - Arbres
+  - Tables de hachage
 
 
-17 février (16h - 18h50)
+#### 17 février (16h - 18h50)
 
 **TD :** [Algorithmes de tri](tds/tris)
     
@@ -45,7 +45,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 
 
-3 mars
+#### 3 mars
 
 **Arbres**
    - Arbres binaires de recherche
@@ -54,7 +54,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 
 
-10 mars
+#### 10 mars
 
 **Programmation dynamique**
    - Exponentiation rapide
@@ -64,12 +64,12 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **TD :** [Programmation dynamique](tds/prog-dynamique)
 
 
-17 mars
+#### 17 mars
 
 **1er contrôle continu**
 
 
-24 mars
+#### 24 mars
 
 **Systèmes linéaires**
    - Résolution de systèmes linéaires de type AX = B,
@@ -78,7 +78,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **TD :** [Algèbre linéaire](tds/linalg)
 
 
-31 mars
+#### 31 mars
 
 **Programmation linéaire**
     - Algorithme du simplexe
@@ -86,7 +86,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **TD :** [Programmation linéaire]()
 
 
-7 avril
+#### 7 avril
 
 **Graphes**
    - Notions de base, représentation, matrice d'adjacence
@@ -96,7 +96,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **TD :** [Graphes](tds/graphes1)
 
 
-14 avril
+#### 14 avril
 
 **Graphes (suite)**
    - Arbres couvrants minimaux, algorithme de Prim
@@ -105,13 +105,13 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **TD :** [Graphes (bis)](tds/graphes2)
 
 
-21 avril
+#### 21 avril
 
 **2nd contrôle continu**
 
 
 
-5 mai
+#### 5 mai
 
 **Problèmes NP complets, machines de Turing**
 
