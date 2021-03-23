@@ -71,19 +71,19 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 #### 24 mars
 
+**Programmation linéaire**
+    - Algorithme du simplexe
+    
+**TD :** [Programmation linéaire](tds/linprog.md)
+
+
+#### 31 mars
+
 **Systèmes linéaires**
    - Résolution de systèmes linéaires de type AX = B,
    - Pivot de Gauss
     
 **TD :** [Algèbre linéaire](tds/linalg)
-
-
-#### 31 mars
-
-**Programmation linéaire**
-    - Algorithme du simplexe
-    
-**TD :** [Programmation linéaire]()
 
 
 #### 7 avril
