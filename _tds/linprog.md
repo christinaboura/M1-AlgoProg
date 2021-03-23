@@ -39,10 +39,10 @@ où $$c$$ est la fonction de coût, $$b$$ le vecteur des constantes, et
 $$\bar{x}$$ le vecteur des variables (base et hors-base), la
 méthode encode ce programme dans le tableau
 
-$$\begin{array}{c c | c}
-1 & c & 0\\
+$$\begin{array}{ c | c}
+ c & 0\\
 \hline
-  & A & b
+A & b
 \end{array}$$
 
 Ensuite, tant qu'il existe une entrée négative dans la ligne de coût
@@ -89,13 +89,13 @@ Soit le programme linéaire sous forme standard
 
 le tableau correspondant est
 
-$$\begin{array}{c c c c c c | c}
-  & x_1 & x_2 & x_3 & x_5 & x_5\\
-1 & 1 & 1 & \\
+$$\begin{array}{ c c c c c | c}
+  x_1 & x_2 & x_3 & x_5 & x_5\\
+ 1 & 1 & \\
 \hline
-& 4 & -1 & 1 &  &  & 8\\
-& 2 & 1 &  & 1 &  & 10\\
-& -5 & 2 &  &  & 1 & 2
+4 & -1 & 1 &  &  & 8\\
+2 & 1 &  & 1 &  & 10\\
+-5 & 2 &  &  & 1 & 2
 \end{array},$$
 
 où on reconnaît les variables hors-base $$x_1,x_2$$ et les variables
@@ -113,13 +113,13 @@ pivoter. Choisissons la variable $$x_1$$, le pivot va alors calculer
 La ligne choisie pour pivoter sera donc la ligne 1, ce qui va donner
 après pivotage le tableau
 
-$$\begin{array}{c c c c c c | c}
-  & x_1 & x_2 & x_3 & x_4 & x_5\\
-1 & & \frac{5}{4} & -\frac{1}{4} & & & 2 \\
+$$\begin{array}{c c c c c | c}
+   x_1 & x_2 & x_3 & x_4 & x_5\\
+ & \frac{5}{4} & -\frac{1}{4} & & & 2 \\
 \hline
-  & 1 & -\frac{1}{4} &  \frac{1}{4} &   &   & 2\\
-  &   &  \frac{3}{2} & -\frac{1}{2} & 1 &   & 6\\
-  &   &  \frac{3}{4} & \frac{5}{4} &   & 1 & 12
+   1 & -\frac{1}{4} &  \frac{1}{4} &   &   & 2\\
+     &  \frac{3}{2} & -\frac{1}{2} & 1 &   & 6\\
+     &  \frac{3}{4} & \frac{5}{4} &   & 1 & 12
 \end{array},$$
 
 où $$x_1,x_4,x_5$$ sont devenues variables de base, et où la solution réalisable de base correspond à $$(x_1,x_2,x_3,x_4,x_5)=(2,0, 0, 6, 12)$$. La valeur de l'objectif est maintenant $$2$$.
