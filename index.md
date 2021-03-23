@@ -74,7 +74,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **Programmation linéaire**
     - Algorithme du simplexe
     
-**TD :** [Programmation linéaire](tds/linprog.md)
+**TD :** [Programmation linéaire](tds/linprod)
 
 
 #### 31 mars
