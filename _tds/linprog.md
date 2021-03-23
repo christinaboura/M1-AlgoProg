@@ -2,9 +2,30 @@
 title: Programmation linéaire
 ---
 
-Ce TD est à développer dans un notebook Jupyter.
+## Un problème simple
 
-## Algorithme du simplexe
+Cet exercice est à faire à la main.
+
+Soit le programme linéaire écrit sous forme canonique
+
+> Maximiser $$18x_1 + 12.5x_2$$  
+> Sous  
+> $$\begin{array}{c r r r}
+> x_1 & + & x_2 & \leq & 20\\
+> x_1 &  &  & \leq & 12\\
+>  &  & x_2 & \leq & 16\\
+>  &  & x_1,x_2 & \ge & 0\\
+> \end{array}$$
+
+1. Écrire le programme sous forme standard.
+2. Résoudre le problème de manière géométrique.
+3. Résoudre le problème en utilisant l'algorithme du simplexe.
+
+
+
+*Le reste du TD est à développer dans un notebook Jupyter.*
+
+## Algorithme du simplexe 
 
 On va coder l'algorithme du simplexe, en utilisant la méthode des
 tableaux vue en cours.

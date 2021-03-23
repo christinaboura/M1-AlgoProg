@@ -14,7 +14,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 ## Calendrier
 
-3 février
+#### 3 février
 
 **Introduction à l'analyse des algorithmes**
    - Tri par insertion
