@@ -148,7 +148,31 @@ modifiés. Si l'algorithme a déjà atteint le maximum, on n'opérera pas
 de pivot, on donnera en sortie `(cout, variables, faisable)`, où
 `cout` et `variables` n'ont pas été modifiés.
 
+Appliquer cette fonction à :
+
+~~~python
+cout = [1, 1, 0, 0, 0, 0]
+variables = [
+    [ 4, -1, 1, 0, 0,  8],
+    [ 2,  1, 0, 1, 0, 10],
+    [-5,  2, 0, 0, 1,  2]
+]
+pivot(cout, variables)
+~~~
+
+
 **:**{:.exercise} Écrire l'algorithme du simplexe complet.
+
+Appliquer votre programme à l'example ci-dessus :
+
+~~~python
+c = [1, 1]
+A = [[4, -1],
+     [2, 1],
+     [-5, 2]]
+b = [8, 10, 2]
+simplexe(c, A, b)
+~~~
 
 ## Visualisation de l'algorithme
 
