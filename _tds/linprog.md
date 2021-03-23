@@ -18,7 +18,7 @@ Soit le programme linéaire écrit sous forme canonique
 > \end{array}$$
 
 1. Écrire le programme sous forme standard.
-2. Résoudre le problème de manière géométrique.
+2. Résoudre le problème avec une approche géométrique.
 3. Résoudre le problème en utilisant l'algorithme du simplexe.
 
 
@@ -28,15 +28,15 @@ Soit le programme linéaire écrit sous forme canonique
 ## Algorithme du simplexe 
 
 On va coder l'algorithme du simplexe, en utilisant la méthode des
-tableaux vue en cours.
+tableaux.
 
-Étant donné un programme linéaire sous forme relaxée
+Étant donné un programme linéaire sous forme standard
 
-> Minimiser $$c·\bar{x}$$,  
+> Maximiser $$c·\bar{x}$$,  
 > Sous $$A\bar{x} = b$$,
 
 où $$c$$ est la fonction de coût, $$b$$ le vecteur des constantes, et
-$$\bar{x}$$ le vecteur des variables (basiques et non-basiques), la
+$$\bar{x}$$ le vecteur des variables (base et hors-base), la
 méthode encode ce programme dans le tableau
 
 $$\begin{array}{c c | c}
@@ -52,7 +52,7 @@ négatives dans le coût, ou bien lorsqu'il détermine que le programme
 linéaire est non-borné.
 
 Si $$v$$ est la variable (non-basique) de $$x$$ sélectionnée pour
-opérer le pivot, une itération du pivot consiste en les opération
+opérer le pivot, une itération du pivot consiste en les opérations
 suivantes :
 
 - Pour chaque ligne $$A_i\bar{x} = b_i$$, calculer la valeur
@@ -77,34 +77,34 @@ basiques valent l'entrée correspondante dans le vecteur $$b$$.
 
 ### Exemple
 
-Soit le programme linéaire sous forme relaxée
+Soit le programme linéaire sous forme standard
 
-> Minimiser $$-x - y$$  
+> Maximiser $$x_1 + x_2$$  
 > Sous  
 > $$\begin{array}{c r r r}
-> r =& 8& - 4x& + y\\
-> s =& 10& - 2x& - y\\
-> t =& 2& + 5x& - 2y
+> x_3 =& 8& - 4x_1& + x_2\\
+> x_4 =& 10& - 2x_1& - x_2\\
+> x_5 =& 2& + 5x_1& - 2x_2
 > \end{array}$$
 
 le tableau correspondant est
 
 $$\begin{array}{c c c c c c | c}
-  & x & y & r & s & t\\
-1 & -1 & -1 & \\
+  & x_1 & x_2 & x_3 & x_5 & x_5\\
+1 & 1 & 1 & \\
 \hline
 & 4 & -1 & 1 &  &  & 8\\
 & 2 & 1 &  & 1 &  & 10\\
 & -5 & 2 &  &  & 1 & 2
 \end{array},$$
 
-où on reconnaît les variables non-basiques $$x,y$$ et les variables
-basiques $$r,s,t$$ (associées à la matrice identitée), et auquel on
-associe le point faisable $$x,y=0$$ et $$r,s,t=(8,10,2)$$.
+où on reconnaît les variables hors-base $$x_1,x_2$$ et les variables
+de base $$x_3,x_4,x_5$$ (associées à la matrice identité), et auquel on
+associe la solution réalisable de base $$(x_1,x_2,x_3,x_4,x_5)=(0,0, 8, 10, 2)$$.
 
-Puisque les coûts associées sont $$-1,-1$$, l'algorithme du simplexe
-peut choisir aussi bien la variable $$x$$ que la variable $$y$$ pour
-pivoter. Choisissons la variable $$x$$, le pivot va alors calculer
+Puisque les coûts associées sont $$1,1$$, l'algorithme du simplexe
+peut choisir aussi bien la variable $$x_1$$ que la variable $$x_2$$ comme variable entrante pour
+pivoter. Choisissons la variable $$x_1$$, le pivot va alors calculer
 
 - $$d_1 = 8/4 = 2$$,
 - $$d_2 = 10/2 = 5$$,
@@ -114,16 +114,15 @@ La ligne choisie pour pivoter sera donc la ligne 1, ce qui va donner
 après pivotage le tableau
 
 $$\begin{array}{c c c c c c | c}
-  & x & y & r & s & t\\
-1 & & -\frac{5}{4} & \frac{1}{4} & & & 2 \\
+  & x_1 & x_2 & x_3 & x_4 & x_5\\
+1 & & \frac{5}{4} & -\frac{1}{4} & & & 2 \\
 \hline
   & 1 & -\frac{1}{4} &  \frac{1}{4} &   &   & 2\\
   &   &  \frac{3}{2} & -\frac{1}{2} & 1 &   & 6\\
   &   &  \frac{1}{4} & \frac{5}{4} &   & 1 & 12
 \end{array},$$
 
-où $$x,s,t$$ sont devenues basiques, et où le point faisable
-correspond à $$y,r=0$$ et $$x,s,t=(2,6,12)$$.
+où $$x_1,x_4,x_5$$ sont devenues variables de base, et où la solution réalisable de base correspond à $$(x_1,x_2,x_3,x_4,x_5)=(2,0, 0, 6, 12)$$. La valeur de l'objectif est maintenant $$2$$.
 
 **:**{:.exercise} Écrire une fonction `pivot(cout, variables)` 
 prenant les entrées suivantes :
