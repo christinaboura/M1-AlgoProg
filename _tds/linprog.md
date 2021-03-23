@@ -119,7 +119,7 @@ $$\begin{array}{c c c c c c | c}
 \hline
   & 1 & -\frac{1}{4} &  \frac{1}{4} &   &   & 2\\
   &   &  \frac{3}{2} & -\frac{1}{2} & 1 &   & 6\\
-  &   &  \frac{1}{4} & \frac{5}{4} &   & 1 & 12
+  &   &  \frac{3}{4} & \frac{5}{4} &   & 1 & 12
 \end{array},$$
 
 où $$x_1,x_4,x_5$$ sont devenues variables de base, et où la solution réalisable de base correspond à $$(x_1,x_2,x_3,x_4,x_5)=(2,0, 0, 6, 12)$$. La valeur de l'objectif est maintenant $$2$$.
