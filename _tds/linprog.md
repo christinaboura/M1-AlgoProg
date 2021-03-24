@@ -90,8 +90,8 @@ Soit le programme linéaire sous forme standard
 le tableau correspondant est
 
 $$\begin{array}{ c c c c c | c}
-  x_1 & x_2 & x_3 & x_5 & x_5\\
- 1 & 1 & \\
+  x_1 & x_2 & x_3 & x_4 & x_5\\
+ 1 & 1 & 0 & 0 & 0 & 0\\
 \hline
 4 & -1 & 1 &  &  & 8\\
 2 & 1 &  & 1 &  & 10\\
