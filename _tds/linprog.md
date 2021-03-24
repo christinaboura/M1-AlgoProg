@@ -45,13 +45,13 @@ $$\begin{array}{ c | c}
 A & b
 \end{array}$$
 
-Ensuite, tant qu'il existe une entrée négative dans la ligne de coût
+Ensuite, tant qu'il existe une entrée positive dans la ligne de coût
 $$c$$, l'algorithme exécute une transformation appelée *pivot* sur les
 lignes du tableau. L'algorithme termine lorsqu'il n'y a plus d'entrées
-négatives dans le coût, ou bien lorsqu'il détermine que le programme
+positives dans le coût, ou bien lorsqu'il détermine que le programme
 linéaire est non-borné.
 
-Si $$v$$ est la variable (non-basique) de $$x$$ sélectionnée pour
+Si $$v$$ est la variable hors-base de $$x$$ sélectionnée pour
 opérer le pivot, une itération du pivot consiste en les opérations
 suivantes :
 
@@ -70,10 +70,10 @@ suivantes :
 - Faire apparaître des $$0$$ dans la colonne de $$v$$ en faisant des
   combinaisons linéaires de la ligne $$i$$ avec les autres lignes.
 
-La conséquence d'un pivot est de transformer la variable $$v$$ de
-non-basique en basique. La solution associée à la transformation sera
-celle où les variables non-basiques valent $$0$$, et les variables
-basiques valent l'entrée correspondante dans le vecteur $$b$$.
+La conséquence d'un pivot est de transformer la variable $$v$$ de variable hors base
+en variable de base. La solution associée à la transformation sera
+celle où les variables hors base valent $$0$$, et les variables
+de base valent l'entrée correspondante dans le vecteur $$b$$.
 
 ### Exemple
 
@@ -130,8 +130,7 @@ prenant les entrées suivantes :
 - `cout` est une liste contenant la fonction de cout ;
 - `variables` est le tableau des variables basiques, non-basiques, et
   des constantes, avec les colonnes apparaissant dans le même ordre
-  que dans la fonction de coût. Utilisez une liste de listes, comme
-  vous avez fait pour les matrices.
+  que dans la fonction de coût. Utilisez une liste de listes (liste en deux dimensions).
   
 La fonction doit donner en sortie le résultat d'un pivot de
 l'algorithme du simplexe, c'est à dire un tuple
