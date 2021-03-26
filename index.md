@@ -79,11 +79,11 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 #### 31 mars
 
-**Systèmes linéaires**
-   - Résolution de systèmes linéaires de type AX = B,
-   - Pivot de Gauss
+**String matching**
+   - Rabin-Karp,
+   - Automates finis
     
-**TD :** [Algèbre linéaire](tds/linalg)
+**TD :** [String matching](tds/strings)
 
 
 #### 7 avril
