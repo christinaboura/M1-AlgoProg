@@ -92,28 +92,28 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
    - Notions de base, représentation, matrice d'adjacence
    - Parcours en largeur et en profondeur
    - Tri topologique
-   
-**TD :** [Graphes](tds/graphes1)
+   - Plus court chemins, Dijkstra et Bellman-Ford
 
 
 #### 14 avril
 
-**Graphes (suite)**
-   - Arbres couvrants minimaux, algorithme de Prim
-   - Chemins les plus courts, algorithme de Dijkstra
+**TD Graphes **
+   - Programmation des algorithmes vus en cours
+   - Arbre couvrant minimum
+   - Preuves en exercice
     
-**TD :** [Graphes (bis)](tds/graphes2)
+**TD :** [Graphes (bis)](tds/graphes)
 
 
 #### 21 avril
 
-**2nd contrôle continu**
+**Problèmes NP complets, machines de Turing**
 
 
 
 #### 5 mai
 
-**Problèmes NP complets, machines de Turing**
+**Second et dernier CC**
 
 
 
