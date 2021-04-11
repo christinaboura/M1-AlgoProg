@@ -102,7 +102,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
    - Arbre couvrant minimum
    - Preuves en exercice
     
-**TD :** [Graphes (bis)](tds/graphes)
+**TD :** [Graphes](tds/graphes)
 
 
 #### 21 avril

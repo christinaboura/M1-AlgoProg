@@ -150,7 +150,7 @@ Prouvez l'exactitude de l'algorithme du tri topolique en utilisant le parcours e
 
 **:**{:.exercise}
 
-Prouvez la propriété de relâchement du chemin: si $G=(S,A)$ pondéré par une fonction de pondération $w:A\to \mathbb{R}$. Soit $p=(v_0,...,v_k)$ un plus court chemin. Si l'on applique les relâchements successifs $(v_0,v_1)$, $(v_1,v_2)$,...,$(v_{k-1},v_k)$ en faisant n'importe quels autres relâchements entre, alors $d[v_k] = \delta(s,v_k)$. 
+Prouvez la propriété de relâchement du chemin: si $$G=(S,A)$$ pondéré par une fonction de pondération $$w:A\to \mathbb{R}$$. Soit $$p=(v_0,...,v_k)$$ un plus court chemin. Si l'on applique les relâchements successifs $$(v_0,v_1)$$, $$(v_1,v_2)$$,...,$$(v_{k-1},v_k)$$ en faisant n'importe quels autres relâchements entre, alors $$d[v_k] = \delta(s,v_k)$$. 
 
 En déduire l'exactitude de l'algorithme de Bellman Ford.
 
