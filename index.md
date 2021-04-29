@@ -106,6 +106,8 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 **Correction** [Classes graphes](tds/graphes2)
 
+[Jupyter](tds/TD6.ipynb)
+
 
 #### 21 avril
 
