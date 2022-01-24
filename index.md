@@ -4,7 +4,7 @@ title: Home
 
 ## Info pratiques
 
-Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
+Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
 
 **Chargés de cours et TD :** [Christina Boura](https://christinaboura.wordpress.com/) et [Yann Rotella](https://rotella.fr/)
 
@@ -14,7 +14,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 ## Calendrier
 
-#### 3 février
+#### 2 février
 
 **Introduction à l'analyse des algorithmes**
    - Tri par insertion
