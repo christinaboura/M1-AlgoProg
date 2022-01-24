@@ -24,7 +24,7 @@ Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
 
 
 
-#### 10 février
+#### 9 février
 
 **Algorithmes de tri**
    - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$
