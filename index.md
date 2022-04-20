@@ -141,6 +141,9 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
   - [Devoir à la maison (CC2), 2020](annales/2020-dm.pdf)
   - [Examen 2020](annales/2020-exam.pdf)
   - [Rattrapage 2020](annales/2020-rat.pdf)
+  - [CC 1, 2021](annales/2021-cc1.pdf)
+  - [CC 2, 2021](annales/2021-cc2.pdf)
+  - [Rattrapage 2021](annales/2021-rat.pdf)
 
 
 ## Bibliographie
