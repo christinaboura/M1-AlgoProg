@@ -4,7 +4,7 @@ title: Home
 
 ## Info pratiques
 
-Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
+Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
 
 **Chargés de cours et TD :** [Christina Boura](https://christinaboura.wordpress.com/) et [Yann Rotella](https://rotella.fr/)
 
@@ -14,7 +14,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 ## Calendrier
 
-#### 3 février
+#### 2 février
 
 **Introduction à l'analyse des algorithmes**
    - Tri par insertion
@@ -24,28 +24,26 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 
 
-#### 10 février
+#### 9 février
 
 **Algorithmes de tri**
    - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$
    - Principe *diviser pour régner*
    - Exemple : *tri fusion*
    
+   **TD :** [Algorithmes de tri](tds/tris)
+   
+#### 16 février
+   
 **Structures de données**
   - Listes chaînées
   - Arbres
   - Tables de hachage
+  
+  **TD :** [Structures de données](tds/structures-donnees)
 
 
-#### 17 février (16h - 18h50)
-
-**TD :** [Algorithmes de tri](tds/tris)
-    
-**TD :** [Structures de données](tds/structures-donnees)
-
-
-
-#### 3 mars
+#### 23 février
 
 **Arbres**
    - Arbres binaires de recherche
@@ -53,8 +51,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **TD :** [Arbres](tds/classes-arbres)
 
 
-
-#### 10 mars
+#### 9 mars
 
 **Programmation dynamique**
    - Exponentiation rapide
@@ -64,12 +61,31 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **TD :** [Programmation dynamique](tds/prog-dynamique)
 
 
-#### 17 mars
+#### 16 mars
+
+**Graphes (1)**
+   - Notions de base, représentation, matrice d'adjacence
+   - Parcours en largeur et en profondeur
+   - Tri topologique
+   - Plus court chemins, Dijkstra et Bellman-Ford
+   
+**TD :** [Graphes](tds/graphes)
+- Programmation des algorithmes vus en cours
+- Arbre couvrant minimum
+- Preuves en exercice
+
+#### 18 mars
 
 **1er contrôle continu**
 
 
-#### 24 mars
+#### 30 mars
+
+**Graphes (2)**
+
+**TD :** [Graphes](tds/graphes)
+
+#### 13 avril
 
 **Programmation linéaire**
     - Algorithme du simplexe
@@ -77,7 +93,7 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **TD :** [Programmation linéaire](tds/linprog)
 
 
-#### 31 mars
+#### 20 avril
 
 **String matching**
    - Rabin-Karp,
@@ -86,36 +102,13 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 **TD :** [String matching](tds/strings)
 
 
-#### 7 avril
-
-**Graphes**
-   - Notions de base, représentation, matrice d'adjacence
-   - Parcours en largeur et en profondeur
-   - Tri topologique
-   - Plus court chemins, Dijkstra et Bellman-Ford
-
-
-#### 14 avril
-
-**TD Graphes**
-   - Programmation des algorithmes vus en cours
-   - Arbre couvrant minimum
-   - Preuves en exercice
-    
-**TD :** [Graphes](tds/graphes)
-
-**Correction** [Classes graphes](tds/graphes2)
-
-[Jupyter](tds/TD6.ipynb)
-
-
-#### 21 avril
+#### 27 avril
 
 **Problèmes NP complets, machines de Turing**
 
 
 
-#### 5 mai
+#### 29 avril
 
 **Second et dernier CC**
 
@@ -125,9 +118,9 @@ Cours & TD le mercredi de 13h à 15h50, sur Zoom (lien dans l'espace Moodle)
 
 ## Modalités d'évaluation :
 
-17 mars - 13h : 1er contrôle continu (sur feuille + machine) : 
+18 mars - 13 h 50 : 1er contrôle continu (sur feuille + machine) : 
 
-21 avril - 13h : 2nd contrôle continu (sur feuille + machine) :
+ 27 avril - 13 h 50 : 2nd contrôle continu (sur feuille + machine) :
 
 **Note finale :** 100% CC, où CC = (CC1 + CC2)/2
 
