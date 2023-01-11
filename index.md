@@ -4,9 +4,9 @@ title: Home
 
 ## Info pratiques
 
-Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
+Cours & TD le mercredi de 13h50 à 17h00, salle G107 Bâtiment Sphie Germain (en Amphi J exceptionnellement le 19 avril)
 
-**Chargés de cours et TD :** [Christina Boura](https://christinaboura.wordpress.com/) et [Yann Rotella](https://rotella.fr/)
+**Chargés de cours et TD :** Kahina Bouchama et [Yann Rotella](https://rotella.fr/)
 
 **Serveur pour les TPs:** [https://jupyter.ens.uvsq.fr/](https://jupyter.ens.uvsq.fr/)
 
@@ -14,7 +14,7 @@ Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
 
 ## Calendrier
 
-#### 2 février
+#### 1 février Kahina Bouchama
 
 **Introduction à l'analyse des algorithmes**
    - Tri par insertion
@@ -24,7 +24,7 @@ Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
 
 
 
-#### 9 février
+#### 8 février Kahina Bouchama
 
 **Algorithmes de tri**
    - Complexité asymptotique, notation $$\mathcal{\Theta}$$ et $$\mathcal{O}$$
@@ -33,7 +33,7 @@ Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
    
    **TD :** [Algorithmes de tri](tds/tris)
    
-#### 16 février
+#### 15 février Kahina Bouchama
    
 **Structures de données**
   - Listes chaînées
@@ -43,7 +43,7 @@ Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
   **TD :** [Structures de données](tds/structures-donnees)
 
 
-#### 23 février
+#### 22 février Yann Rotella
 
 **Arbres**
    - Arbres binaires de recherche
@@ -51,7 +51,7 @@ Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
 **TD :** [Arbres](tds/classes-arbres)
 
 
-#### 9 mars
+#### 8 mars Yann Rotella
 
 **Programmation dynamique**
    - Exponentiation rapide
@@ -60,8 +60,28 @@ Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
     
 **TD :** [Programmation dynamique](tds/prog-dynamique)
 
+#### 15 mars Yann Rotella
 
-#### 16 mars
+**1er contrôle continu**
+
+#### 22 mars Kahina Bouchama
+
+**Programmation linéaire**
+    - Algorithme du simplexe
+    
+**TD :** [Programmation linéaire](tds/linprog)
+
+
+#### 29 mars Kahina Bouchama
+
+**Heuristiques**
+    - Algorithmes probabilistes
+    
+**TD :** [TBA](tds/heuristique)
+
+
+
+#### 5 avril
 
 **Graphes (1)**
    - Notions de base, représentation, matrice d'adjacence
@@ -74,43 +94,30 @@ Cours & TD le mercredi de 13h50 à 17h00, salle Centre (bât. Descartes)
 - Arbre couvrant minimum
 - Preuves en exercice
 
-#### 18 mars
-
-**1er contrôle continu**
-
-
-#### 30 mars
+#### 12 avril Yann Rotella
 
 **Graphes (2)**
 
 **TD :** [Graphes](tds/graphes)
 
-#### 13 avril
 
-**Programmation linéaire**
-    - Algorithme du simplexe
-    
-**TD :** [Programmation linéaire](tds/linprog)
+#### 19 avril Yann Rotella
+
+**Problèmes NP complets, machines de Turing**
 
 
-#### 20 avril
+
+#### 26 avril Kahina Bouchama
+
+**Second et dernier CC**
+
+#### Pour aller plus loin (cours de l'année passée)
 
 **String matching**
    - Rabin-Karp,
    - Automates finis
     
 **TD :** [String matching](tds/strings)
-
-
-#### 27 avril
-
-**Problèmes NP complets, machines de Turing**
-
-
-
-#### 29 avril
-
-**Second et dernier CC**
 
 
 
