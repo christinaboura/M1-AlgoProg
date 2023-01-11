@@ -137,10 +137,6 @@ Cours & TD le mercredi de 13h50 à 17h00, salle G107 Bâtiment Sphie Germain (en
 
 ## Annales
 
-  - [CC 1, 2020](annales/2020-cc1.pdf)
-  - [Devoir à la maison (CC2), 2020](annales/2020-dm.pdf)
-  - [Examen 2020](annales/2020-exam.pdf)
-  - [Rattrapage 2020](annales/2020-rat.pdf)
   - [CC 1, 2021](annales/2021-cc1.pdf)
   - [CC 2, 2021](annales/2021-cc2.pdf)
   - [Rattrapage 2021](annales/2021-rat.pdf)
