@@ -1,5 +1,7 @@
 ---
 title: Home
+published: true
+layout: post
 ---
 
 ## Info pratiques
@@ -16,9 +18,11 @@ Cours & TD le mercredi de 13h50 à 17h00, salle G107 Bâtiment Sphie Germain (en
 
 #### 1 février Kahina Bouchama
 
-**Introduction à l'analyse des algorithmes**
+**Introduction à l'analyse des algorithmes** [Slides](https://github.com/Kahinabouchama/cours_analyse_algo)
    - Tri par insertion
    - Analyse de complexité
+ 
+ 
 
 **TD :** [(Ré)-introduction à Python](tds/intro-python)
 
@@ -171,4 +175,3 @@ Addison-Wesley, 1994. 523 pages.
 B. Cordeau, L. Pointal. Une introduction à Python 3. Polycopié, licence libre CC3.0. 2015. https://perso.limsi.fr/pointal/python:courspython3.
 
 G. Swinnen. Apprendre à programmer avec Python 3. Eyrolles 2009-2010. ISBN : 978-2-212-12708-9. Côte BU : 005.13pyt SWI.
-
