@@ -19,6 +19,7 @@ Cours & TD le mercredi de 13h50 à 17h00, salle G107 Bâtiment Sphie Germain (en
 **Introduction à l'analyse des algorithmes**
    - Tri par insertion
    - Analyse de complexité
+   - [Slides Cours](tds/introcours1kahina.pdf)
 
 **TD :** [(Ré)-introduction à Python](tds/intro-python)
 
