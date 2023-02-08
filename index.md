@@ -10,7 +10,7 @@ Cours & TD le mercredi de 13h50 à 17h00, salle G107 Bâtiment Sphie Germain (en
 
 **Serveur pour les TPs:** [https://jupyter.ens.uvsq.fr/](https://jupyter.ens.uvsq.fr/)
 
-
+**Lien cours Kahina** [Lien](https://github.com/Kahinabouchama/cours_analyse_algo)
 
 ## Calendrier
 
@@ -19,7 +19,6 @@ Cours & TD le mercredi de 13h50 à 17h00, salle G107 Bâtiment Sphie Germain (en
 **Introduction à l'analyse des algorithmes**
    - Tri par insertion
    - Analyse de complexité
-   - [Slides Cours](tds/introcours1kahina.pdf)
 
 **TD :** [(Ré)-introduction à Python](tds/intro-python)
 
